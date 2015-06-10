@@ -1,0 +1,29 @@
+<div class="navbar-header navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="/">Leandri Kers</a>
+        <div class="navbar-collapse collapse">
+            <ul class="nav navbar-nav navbar-right">
+                <li {% if mixture.url == "index" %}class="active"{% endif %}><a href="/">Home</a></li>
+                <li {% if mixture.url == "about" %}class="active"{% endif %}><a href="/about">About Me</a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My Work <span class="caret"></span></a>
+                  <ul class="dropdown-menu" role="menu">
+                    <li><a href="/work/weddings">Weddings</a></li>
+                    <li><a href="/work/portraits">Portraits</a></li>
+                    <li><a href="/work/editorial">Editorial</a></li>
+                  </ul>
+                </li>
+                <li {% if mixture.url == "contact" %}class="active"{% endif %}><a href="/contact">Contact Me</a></li>
+
+                <li><a href="" class="fa fa-instagram"></a></li>
+                <li><a href="" class="fa fa-facebook"></a></li>
+                <li><a href="" class="fa fa-twitter"></a></li>
+            </ul>
+        </div>
+    </div>
+</div>
