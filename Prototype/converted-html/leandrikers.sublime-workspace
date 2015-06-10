@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"bac",
+				"background-color"
+			],
+			[
 				"te",
 				"text-align"
 			],
@@ -138,10 +142,6 @@
 			[
 				"back",
 				"background"
-			],
-			[
-				"bac",
-				"background-color"
 			],
 			[
 				"brand",
@@ -573,6 +573,9 @@
 	"file_history":
 	[
 		"/Users/iaanvn/Sites/LeandriKers/Prototype/public/less/theme.less",
+		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/index.liquid",
+		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/includes/posts.liquid",
+		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/work/single.liquid",
 		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/layouts/layout.liquid",
 		"/Users/iaanvn/Sites/LeandriKers/Prototype/public/js/ppm.js",
 		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/includes/footer.liquid",
@@ -580,14 +583,11 @@
 		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/includes/navigation.liquid",
 		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/contact.liquid",
 		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/includes/subnav.liquid",
-		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/index.liquid",
 		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/about.liquid",
 		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/work/weddings.liquid",
 		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/work/portraits.liquid",
 		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/work/editorial.liquid",
 		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/work/personal.liquid",
-		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/includes/posts.liquid",
-		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/work/single.liquid",
 		"/Users/iaanvn/Sites/LeandriKers/Prototype/templates/work.liquid",
 		"/Users/iaanvn/Sites/LeandriKers/Prototype/public/css/theme.less",
 		"/Users/iaanvn/Sites/lnt/wp-content/themes/lnt/library/css/style.css",
@@ -710,6 +710,7 @@
 		"height": 93.0,
 		"where_history":
 		[
+			"/Users/iaanvn/Sites/LeandriKers/Prototype",
 			"/Users/iaanvn/Sites/lnt/wp-content/themes/lnt",
 			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
 			"/Users/iaanvn/Sites/theprettyblog",
@@ -832,6 +833,7 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"transition",
 			"disab",
 			"6px 11px 6px 7px",
 			"#footer",
@@ -958,8 +960,7 @@
 			"radius-base",
 			"radius",
 			".form-control-focus",
-			".form-control-focus();",
-			"tab-focus"
+			".form-control-focus();"
 		],
 		"highlight": true,
 		"in_selection": false,

@@ -1,3 +1,13 @@
+.post-item {
+  padding: 15px;
+  background-color: #ffffff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+}
+.post-item:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+}
 .carousel .carousel-control .glyphicon {
   display: none;
 }
