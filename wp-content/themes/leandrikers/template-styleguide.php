@@ -44,9 +44,7 @@
 			<h2>Image Feed</h2>
 				<p>Description</p>
 				<div class="section_instagram">
-					<div class="col-md-offset-1 col-md-10">
-						<?php get_template_part('styleguide/section','image_feed'); ?>
-					</div>
+					<?php get_template_part('styleguide/section','image_feed'); ?>
 				</div>
 
 			
