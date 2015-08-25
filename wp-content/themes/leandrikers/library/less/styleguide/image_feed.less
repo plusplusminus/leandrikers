@@ -1,0 +1,39 @@
+// Image Feed
+.image_feed{
+	.text-center();
+}
+
+.section_title{
+	padding-bottom: 60px;
+	.section_title--text{
+		font-family: @font-family-serif;
+		text-transform: uppercase;
+		.letter-spacing();
+		span:before,
+		span:after{
+			content: "-";
+			margin: 0 16px;
+		}
+	}
+}
+
+.image_feed-images{
+	.make-row();
+}
+
+.image_feed-content{
+	.make-xs-column-offset(1);
+	.make-xs-column(12);
+}
+
+.image_feed-image{
+	.make-xs-column(2);
+	img{
+		box-shadow: 0px 0px 15px rgba(87, 87, 87, 0.08);
+		.img-responsive();
+		.transition(0.5s);
+		.image_feed-link:hover &{
+			box-shadow: 0px 0px 15px rgba(87, 87, 87, 0);
+		}
+	}
+}

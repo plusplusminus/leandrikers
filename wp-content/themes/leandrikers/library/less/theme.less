@@ -1,0 +1,28 @@
+// MIXINS
+.letter-spacing(){
+	letter-spacing: 0.2em;
+}
+
+.btn{
+	.btn-default();
+	.letter-spacing();
+	text-transform: uppercase;
+	color: @brand-gold;
+	border-color: @brand-gold;
+	font-family: @font-family-sans-serif;
+	font-weight: 100;
+	padding-left: @padding-large-horizontal;
+	padding-right: @padding-large-horizontal;
+	&:hover{
+		border-color: @brand-gold;
+		color: @brand-gold;
+		background: transparent;
+	}
+}
+
+.btn-link{
+	text-transform: uppercase;
+	font-family: @font-family-sans-serif;
+	font-weight: 100;
+	.letter-spacing();
+}
