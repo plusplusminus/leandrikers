@@ -36,9 +36,12 @@ class WP_Feed_Cache_Transient {
 		$this->lifetime = apply_filters( 'wp_feed_cache_transient_lifetime', $lifetime, $filename);
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @access public
 	 */
+=======
+>>>>>>> Stashed changes
 	public function save($data) {
 		if ( $data instanceof SimplePie ) {
 			$data = $data->data;
@@ -49,30 +52,42 @@ class WP_Feed_Cache_Transient {
 		return true;
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @access public
 	 */
+=======
+>>>>>>> Stashed changes
 	public function load() {
 		return get_transient($this->name);
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @access public
 	 */
+=======
+>>>>>>> Stashed changes
 	public function mtime() {
 		return get_transient($this->mod_name);
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @access public
 	 */
+=======
+>>>>>>> Stashed changes
 	public function touch() {
 		return set_transient($this->mod_name, time(), $this->lifetime);
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @access public
 	 */
+=======
+>>>>>>> Stashed changes
 	public function unlink() {
 		delete_transient($this->name);
 		delete_transient($this->mod_name);

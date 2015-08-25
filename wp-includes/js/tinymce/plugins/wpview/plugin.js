@@ -729,7 +729,10 @@ tinymce.PluginManager.add( 'wpview', function( editor ) {
 	// Add to editor.wp
 	editor.wp = editor.wp || {};
 	editor.wp.getView = getView;
+<<<<<<< Updated upstream
 	editor.wp.setViewCursor = setViewCursor;
+=======
+>>>>>>> Stashed changes
 
 	// Keep for back-compat.
 	return {

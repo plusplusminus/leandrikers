@@ -14,8 +14,11 @@
  * wp-includes/ms-files.php (wp-content/blogs.php in MU).
  *
  * @since 3.0.0
+<<<<<<< Updated upstream
  *
  * @global wpdb $wpdb
+=======
+>>>>>>> Stashed changes
  */
 function ms_upload_constants() {
 	global $wpdb;
@@ -116,9 +119,12 @@ function ms_file_constants() {
  * we will have translations loaded and can trigger warnings easily.
  *
  * @since 3.0.0
+<<<<<<< Updated upstream
  *
  * @staticvar bool $subdomain_error
  * @staticvar bool $subdomain_error_warn
+=======
+>>>>>>> Stashed changes
  */
 function ms_subdomain_constants() {
 	static $subdomain_error = null;
@@ -155,3 +161,7 @@ function ms_subdomain_constants() {
 		define( 'VHOST', 'no' );
 	}
 }
+<<<<<<< Updated upstream
+=======
+add_action( 'init', 'ms_subdomain_constants' );
+>>>>>>> Stashed changes

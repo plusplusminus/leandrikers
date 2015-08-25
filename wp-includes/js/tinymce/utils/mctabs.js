@@ -1,8 +1,13 @@
 /**
  * mctabs.js
  *
+<<<<<<< Updated upstream
  * Released under LGPL License.
  * Copyright (c) 1999-2015 Ephox Corp. All rights reserved
+=======
+ * Copyright, Moxiecode Systems AB
+ * Released under LGPL License.
+>>>>>>> Stashed changes
  *
  * License: http://www.tinymce.com/license
  * Contributing: http://www.tinymce.com/contributing
@@ -48,14 +53,22 @@ MCTabs.prototype.hideTab =function(tab){
 };
 
 MCTabs.prototype.showPanel = function(panel) {
+<<<<<<< Updated upstream
 	panel.className = 'current';
+=======
+	panel.className = 'current'; 
+>>>>>>> Stashed changes
 	panel.setAttribute("aria-hidden", false);
 };
 
 MCTabs.prototype.hidePanel = function(panel) {
 	panel.className = 'panel';
 	panel.setAttribute("aria-hidden", true);
+<<<<<<< Updated upstream
 };
+=======
+}; 
+>>>>>>> Stashed changes
 
 MCTabs.prototype.getPanelForTab = function(tabElm) {
 	return tinyMCEPopup.dom.getAttrib(tabElm, "aria-controls");
@@ -98,7 +111,11 @@ MCTabs.prototype.displayTab = function(tab_id, panel_id, avoid_focus) {
 				t.hidePanel(nodes[i]);
 		}
 
+<<<<<<< Updated upstream
 		if (!avoid_focus) {
+=======
+		if (!avoid_focus) { 
+>>>>>>> Stashed changes
 			tabElm.focus();
 		}
 

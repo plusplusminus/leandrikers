@@ -140,13 +140,18 @@ class Services_JSON
     *                                   strings or numbers, if you return an object, make sure it does
     *                                   not have a toJSON method, otherwise an error will occur.
     */
+<<<<<<< Updated upstream
     function __construct( $use = 0 )
+=======
+    function Services_JSON($use = 0)
+>>>>>>> Stashed changes
     {
         $this->use = $use;
         $this->_mb_strlen            = function_exists('mb_strlen');
         $this->_mb_convert_encoding  = function_exists('mb_convert_encoding');
         $this->_mb_substr            = function_exists('mb_substr');
     }
+<<<<<<< Updated upstream
 
 	/**
 	 * PHP4 constructor.
@@ -154,6 +159,8 @@ class Services_JSON
 	public function Services_JSON( $use = 0 ) {
 		self::__construct( $use );
 	}
+=======
+>>>>>>> Stashed changes
     // private - cache the mbstring lookup results..
     var $_mb_strlen = false;
     var $_mb_substr = false;
@@ -917,17 +924,24 @@ if (class_exists('PEAR_Error')) {
 
     class Services_JSON_Error extends PEAR_Error
     {
+<<<<<<< Updated upstream
         function __construct($message = 'unknown error', $code = null,
+=======
+        function Services_JSON_Error($message = 'unknown error', $code = null,
+>>>>>>> Stashed changes
                                      $mode = null, $options = null, $userinfo = null)
         {
             parent::PEAR_Error($message, $code, $mode, $options, $userinfo);
         }
+<<<<<<< Updated upstream
 
 	public function Services_JSON_Error($message = 'unknown error', $code = null,
                                      $mode = null, $options = null, $userinfo = null) {
 		self::__construct($message = 'unknown error', $code = null,
                                      $mode = null, $options = null, $userinfo = null);
 	}
+=======
+>>>>>>> Stashed changes
     }
 
 } else {
@@ -937,6 +951,7 @@ if (class_exists('PEAR_Error')) {
      */
     class Services_JSON_Error
     {
+<<<<<<< Updated upstream
 	    /**
 	     * PHP5 constructor.
 	     */
@@ -953,6 +968,13 @@ if (class_exists('PEAR_Error')) {
 	                                     $mode = null, $options = null, $userinfo = null ) {
 			self::__construct( $message, $code, $mode, $options, $userinfo );
 		}
+=======
+        function Services_JSON_Error($message = 'unknown error', $code = null,
+                                     $mode = null, $options = null, $userinfo = null)
+        {
+
+        }
+>>>>>>> Stashed changes
     }
     
 }

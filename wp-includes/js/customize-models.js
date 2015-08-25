@@ -1,4 +1,8 @@
+<<<<<<< Updated upstream
 /* global _wpCustomizeHeader */
+=======
+/* globals _wpCustomizeHeader, _ */
+>>>>>>> Stashed changes
 (function( $, wp ) {
 	var api = wp.customize;
 	api.HeaderTool = {};

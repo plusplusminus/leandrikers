@@ -11,8 +11,11 @@ class WP_Embed {
 	public $post_ID;
 	public $usecache = true;
 	public $linkifunknown = true;
+<<<<<<< Updated upstream
 	public $last_attr = array();
 	public $last_url = '';
+=======
+>>>>>>> Stashed changes
 
 	/**
 	 * When an URL cannot be embedded, return false instead of returning a link
@@ -44,7 +47,11 @@ class WP_Embed {
 	 * this function removes all existing shortcodes, registers the [embed] shortcode,
 	 * calls {@link do_shortcode()}, and then re-registers the old shortcodes.
 	 *
+<<<<<<< Updated upstream
 	 * @global array $shortcode_tags
+=======
+	 * @uses $shortcode_tags
+>>>>>>> Stashed changes
 	 *
 	 * @param string $content Content to parse
 	 * @return string Content with shortcode parsed
@@ -92,7 +99,11 @@ class WP_Embed {
 	 *
 	 * @param string $id An internal ID/name for the handler. Needs to be unique.
 	 * @param string $regex The regex that will be used to see if this handler should be used for a URL.
+<<<<<<< Updated upstream
 	 * @param callable $callback The callback function that will be called if the regex is matched.
+=======
+	 * @param callback $callback The callback function that will be called if the regex is matched.
+>>>>>>> Stashed changes
 	 * @param int $priority Optional. Used to specify the order in which the registered handlers will be tested (default: 10). Lower numbers correspond with earlier testing, and handlers with the same priority are tested in the order in which they were added to the action.
 	 */
 	public function register_handler( $id, $regex, $callback, $priority = 10 ) {
@@ -109,7 +120,12 @@ class WP_Embed {
 	 * @param int $priority Optional. The priority of the handler to be removed (default: 10).
 	 */
 	public function unregister_handler( $id, $priority = 10 ) {
+<<<<<<< Updated upstream
 		unset( $this->handlers[ $priority ][ $id ] );
+=======
+		if ( isset($this->handlers[$priority][$id]) )
+			unset($this->handlers[$priority][$id]);
+>>>>>>> Stashed changes
 	}
 
 	/**
@@ -135,18 +151,27 @@ class WP_Embed {
 			$url = $attr['src'];
 		}
 
+<<<<<<< Updated upstream
 		$this->last_url = $url;
 
 		if ( empty( $url ) ) {
 			$this->last_attr = $attr;
 			return '';
 		}
+=======
+
+		if ( empty( $url ) )
+			return '';
+>>>>>>> Stashed changes
 
 		$rawattr = $attr;
 		$attr = wp_parse_args( $attr, wp_embed_defaults( $url ) );
 
+<<<<<<< Updated upstream
 		$this->last_attr = $attr;
 
+=======
+>>>>>>> Stashed changes
 		// kses converts & into &amp; and we need to undo this
 		// See https://core.trac.wordpress.org/ticket/11311
 		$url = str_replace( '&amp;', '&', $url );

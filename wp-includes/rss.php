@@ -55,10 +55,14 @@ class MagpieRSS {
 
 	var $_CONTENT_CONSTRUCTS = array('content', 'summary', 'info', 'title', 'tagline', 'copyright');
 
+<<<<<<< Updated upstream
 	/**
 	 * PHP5 constructor.
 	 */
 	function __construct( $source ) {
+=======
+	function MagpieRSS ($source) {
+>>>>>>> Stashed changes
 
 		# if PHP xml isn't compiled in, die
 		#
@@ -100,6 +104,7 @@ class MagpieRSS {
 		$this->normalize();
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * PHP4 constructor.
 	 */
@@ -107,6 +112,8 @@ class MagpieRSS {
 		self::__construct( $source );
 	}
 
+=======
+>>>>>>> Stashed changes
 	function feed_start_element($p, $element, &$attrs) {
 		$el = $element = strtolower($element);
 		$attrs = array_change_key_case($attrs, CASE_LOWER);
@@ -719,10 +726,14 @@ class RSSCache {
 	var $MAX_AGE	= 43200;  		// when are files stale, default twelve hours
 	var $ERROR 		= '';			// accumulate error messages
 
+<<<<<<< Updated upstream
 	/**
 	 * PHP5 constructor.
 	 */
 	function __construct( $base = '', $age = '' ) {
+=======
+	function RSSCache ($base='', $age='') {
+>>>>>>> Stashed changes
 		$this->BASE_CACHE = WP_CONTENT_DIR . '/cache';
 		if ( $base ) {
 			$this->BASE_CACHE = $base;
@@ -733,6 +744,7 @@ class RSSCache {
 
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * PHP4 constructor.
 	 */
@@ -740,6 +752,8 @@ class RSSCache {
 		self::__construct( $base, $age );
 	}
 
+=======
+>>>>>>> Stashed changes
 /*=======================================================================*\
 	Function:	set
 	Purpose:	add an item to the cache, keyed on url

@@ -545,7 +545,11 @@ function prep_atom_text_construct($data) {
 		}
 	}
 
+<<<<<<< Updated upstream
 	if (strpos($data, ']]>') === false) {
+=======
+	if (strpos($data, ']]>') == false) {
+>>>>>>> Stashed changes
 		return array('html', "<![CDATA[$data]]>");
 	} else {
 		return array('html', htmlspecialchars($data));
@@ -553,6 +557,7 @@ function prep_atom_text_construct($data) {
 }
 
 /**
+<<<<<<< Updated upstream
  * Displays Site Icon in atom feeds.
  *
  * @since 4.3.0
@@ -591,6 +596,8 @@ function rss2_site_icon() {
 }
 
 /**
+=======
+>>>>>>> Stashed changes
  * Display the link for the currently displayed feed in a XSS safe way.
  *
  * Generate a correct link for the atom:self element.
@@ -680,7 +687,10 @@ function fetch_feed( $url ) {
 	 */
 	do_action_ref_array( 'wp_feed_options', array( &$feed, $url ) );
 	$feed->init();
+<<<<<<< Updated upstream
 	$feed->set_output_encoding( get_option( 'blog_charset' ) );
+=======
+>>>>>>> Stashed changes
 	$feed->handle_content_type();
 
 	if ( $feed->error() )

@@ -389,6 +389,10 @@
 
 				if ( response.nonces_expired ) {
 					$document.trigger( 'heartbeat-nonces-expired' );
+<<<<<<< Updated upstream
+=======
+					return;
+>>>>>>> Stashed changes
 				}
 
 				// Change the interval from PHP

@@ -111,9 +111,12 @@ class Translations {
 		return 1 == $count? 0 : 1;
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @return int
 	 */
+=======
+>>>>>>> Stashed changes
 	function get_plural_forms_count() {
 		return 2;
 	}
@@ -149,9 +152,12 @@ class Translations {
 		}
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @param object $other
 	 */
+=======
+>>>>>>> Stashed changes
 	function merge_originals_with(&$other) {
 		foreach( $other->entries as $entry ) {
 			if ( !isset( $this->entries[$entry->key()] ) )
@@ -284,6 +290,7 @@ class NOOP_Translations {
 		return true;
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 *
 	 * @param string $header
@@ -303,14 +310,25 @@ class NOOP_Translations {
 	 * @param string $header
 	 * @return false
 	 */
+=======
+	function set_header($header, $value) {
+	}
+
+	function set_headers($headers) {
+	}
+
+>>>>>>> Stashed changes
 	function get_header($header) {
 		return false;
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @param Translation_Entry $entry
 	 * @return false
 	 */
+=======
+>>>>>>> Stashed changes
 	function translate_entry(&$entry) {
 		return false;
 	}
@@ -323,18 +341,24 @@ class NOOP_Translations {
 		return $singular;
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 *
 	 * @param int $count
 	 * @return bool
 	 */
+=======
+>>>>>>> Stashed changes
 	function select_plural_form($count) {
 		return 1 == $count? 0 : 1;
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @return int
 	 */
+=======
+>>>>>>> Stashed changes
 	function get_plural_forms_count() {
 		return 2;
 	}
@@ -349,9 +373,12 @@ class NOOP_Translations {
 			return 1 == $count? $singular : $plural;
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @param object $other
 	 */
+=======
+>>>>>>> Stashed changes
 	function merge_with(&$other) {
 	}
 }

@@ -70,6 +70,7 @@
 								node = node.parentNode;
 							}
 
+<<<<<<< Updated upstream
 							if ( ! node || node.nodeType !== 1 ||
 								( node.className && typeof node.className === 'string' && node.className.indexOf( 'wp-exclude-emoji' ) !== -1 ) ) {
 
@@ -79,6 +80,15 @@
 							if ( test( node.textContent ) ) {
 								parse( node );
 							}
+=======
+							if ( ! node || node.nodeType !== 1 || ( 'ownerSVGElement' in node ) ||
+								( node.className && typeof node.className === 'string' && node.className.indexOf( 'wp-exclude-emoji' ) !== -1 ) ) {
+
+ 								continue;
+ 							}
+
+							parse( node );
+>>>>>>> Stashed changes
 						}
 					}
 				} ).observe( document.body, {
@@ -91,6 +101,7 @@
 		}
 
 		/**
+<<<<<<< Updated upstream
 		 * Test if a text string contains emoji characters.
 		 *
 		 * @since 4.3.0
@@ -113,6 +124,8 @@
 		}
 
 		/**
+=======
+>>>>>>> Stashed changes
 		 * Given an element or string, parse any emoji characters into Twemoji images.
 		 *
 		 * @since 4.2.0
@@ -121,19 +134,32 @@
 		 * @param {Object} args Additional options for Twemoji.
 		 */
 		function parse( object, args ) {
+<<<<<<< Updated upstream
 			var params;
 
 			if ( ! replaceEmoji || ! twemoji || ! object ||
 				( 'string' !== typeof object && ( ! object.childNodes || ! object.childNodes.length ) ) ) {
 
+=======
+			if ( ! replaceEmoji || ! twemoji ) {
+>>>>>>> Stashed changes
 				return object;
 			}
 
 			args = args || {};
+<<<<<<< Updated upstream
 			params = {
 				base: settings.baseUrl,
 				ext: settings.ext,
 				className: args.className || 'emoji',
+=======
+
+			return twemoji.parse( object, {
+				base: settings.baseUrl,
+				ext: settings.ext,
+				className: args.className || 'emoji',
+				imgAttr: args.imgAttr,
+>>>>>>> Stashed changes
 				callback: function( icon, options ) {
 					// Ignore some standard characters that TinyMCE recommends in its character map.
 					switch ( icon ) {
@@ -156,6 +182,7 @@
 
 					return ''.concat( options.base, icon, options.ext );
 				}
+<<<<<<< Updated upstream
 			};
 
 			if ( typeof args.imgAttr === 'object' ) {
@@ -165,6 +192,9 @@
 			}
 
 			return twemoji.parse( object, params );
+=======
+			} );
+>>>>>>> Stashed changes
 		}
 
 		/**
@@ -182,8 +212,12 @@
 
 		return {
 			replaceEmoji: replaceEmoji,
+<<<<<<< Updated upstream
 			parse: parse,
 			test: test
+=======
+			parse: parse
+>>>>>>> Stashed changes
 		};
 	}
 

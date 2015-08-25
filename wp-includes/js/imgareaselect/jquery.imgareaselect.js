@@ -1,6 +1,10 @@
 /*
  * imgAreaSelect jQuery plugin
+<<<<<<< Updated upstream
  * version 0.9.10-monkey
+=======
+ * version 0.9.10
+>>>>>>> Stashed changes
  *
  * Copyright (c) 2008-2013 Michal Wojciechowski (odyniec.net)
  *
@@ -189,7 +193,11 @@ $.imgAreaSelect = function (img, options) {
      * @return Viewport X
      */
     function evX(event) {
+<<<<<<< Updated upstream
         return max(event.pageX || 0, touchCoords(event).x) - parOfs.left;
+=======
+        return event.pageX - parOfs.left;
+>>>>>>> Stashed changes
     }
 
     /**
@@ -200,6 +208,7 @@ $.imgAreaSelect = function (img, options) {
      * @return Viewport Y
      */
     function evY(event) {
+<<<<<<< Updated upstream
         return max(event.pageY || 0, touchCoords(event).y) - parOfs.top;
     }
 
@@ -217,6 +226,9 @@ $.imgAreaSelect = function (img, options) {
             return { x: oev.touches[0].pageX, y: oev.touches[0].pageY };
         else
             return { x: 0, y: 0 };
+=======
+        return event.pageY - parOfs.top;
+>>>>>>> Stashed changes
     }
 
     /**
@@ -502,8 +514,13 @@ $.imgAreaSelect = function (img, options) {
         if (options.autoHide || selection.width * selection.height == 0)
             hide($box.add($outer), function () { $(this).hide(); });
 
+<<<<<<< Updated upstream
         $(document).off('mousemove touchmove', selectingMouseMove);
         $box.on('mousemove touchmove', areaMouseMove);
+=======
+        $(document).unbind('mousemove', selectingMouseMove);
+        $box.mousemove(areaMouseMove);
+>>>>>>> Stashed changes
 
         options.onSelectEnd(img, getSelection());
     }
@@ -516,6 +533,7 @@ $.imgAreaSelect = function (img, options) {
      * @return false
      */
     function areaMouseDown(event) {
+<<<<<<< Updated upstream
         if (event.type == 'mousedown' && event.which != 1) return false;
 
     	/*
@@ -524,6 +542,9 @@ $.imgAreaSelect = function (img, options) {
     	 * mousedown/touchstart.
     	 */
     	areaMouseMove(event);
+=======
+        if (event.which != 1) return false;
+>>>>>>> Stashed changes
 
         adjust();
 
@@ -534,14 +555,21 @@ $.imgAreaSelect = function (img, options) {
             x1 = viewX(selection[/w/.test(resize) ? 'x2' : 'x1']);
             y1 = viewY(selection[/n/.test(resize) ? 'y2' : 'y1']);
 
+<<<<<<< Updated upstream
             $(document).on('mousemove touchmove', selectingMouseMove)
                 .one('mouseup touchend', docMouseUp);
             $box.off('mousemove touchmove', areaMouseMove);
+=======
+            $(document).mousemove(selectingMouseMove)
+                .one('mouseup', docMouseUp);
+            $box.unbind('mousemove', areaMouseMove);
+>>>>>>> Stashed changes
         }
         else if (options.movable) {
             startX = left + selection.x1 - evX(event);
             startY = top + selection.y1 - evY(event);
 
+<<<<<<< Updated upstream
             $box.off('mousemove touchmove', areaMouseMove);
 
             $(document).on('mousemove touchmove', movingMouseMove)
@@ -550,6 +578,16 @@ $.imgAreaSelect = function (img, options) {
 
                     $(document).off('mousemove touchmove', movingMouseMove);
                     $box.on('mousemove touchmove', areaMouseMove);
+=======
+            $box.unbind('mousemove', areaMouseMove);
+
+            $(document).mousemove(movingMouseMove)
+                .one('mouseup', function () {
+                    options.onSelectEnd(img, getSelection());
+
+                    $(document).unbind('mousemove', movingMouseMove);
+                    $box.mousemove(areaMouseMove);
+>>>>>>> Stashed changes
                 });
         }
         else
@@ -699,7 +737,11 @@ $.imgAreaSelect = function (img, options) {
      * Start selection
      */
     function startSelection() {
+<<<<<<< Updated upstream
         $(document).off('mousemove touchmove', startSelection);
+=======
+        $(document).unbind('mousemove', startSelection);
+>>>>>>> Stashed changes
         adjust();
 
         x2 = x1;
@@ -714,10 +756,16 @@ $.imgAreaSelect = function (img, options) {
 
         shown = true;
 
+<<<<<<< Updated upstream
         $(document).off('mouseup touchend', cancelSelection)
             .on('mousemove touchmove', selectingMouseMove)
             .one('mouseup touchend', docMouseUp);
         $box.off('mousemove touchmove', areaMouseMove);
+=======
+        $(document).unbind('mouseup', cancelSelection)
+            .mousemove(selectingMouseMove).one('mouseup', docMouseUp);
+        $box.unbind('mousemove', areaMouseMove);
+>>>>>>> Stashed changes
 
         options.onSelectStart(img, getSelection());
     }
@@ -726,8 +774,13 @@ $.imgAreaSelect = function (img, options) {
      * Cancel selection
      */
     function cancelSelection() {
+<<<<<<< Updated upstream
         $(document).off('mousemove touchmove', startSelection)
             .off('mouseup touchend', cancelSelection);
+=======
+        $(document).unbind('mousemove', startSelection)
+            .unbind('mouseup', cancelSelection);
+>>>>>>> Stashed changes
         hide($box.add($outer));
 
         setSelection(selX(x1), selY(y1), selX(x1), selY(y1));
@@ -755,8 +808,12 @@ $.imgAreaSelect = function (img, options) {
         startY = y1 = evY(event);
 
         /* Selection will start when the mouse is moved */
+<<<<<<< Updated upstream
         $(document).on({ 'mousemove touchmove': startSelection,
             'mouseup touchend': cancelSelection });
+=======
+        $(document).mousemove(startSelection).mouseup(cancelSelection);
+>>>>>>> Stashed changes
 
         return false;
     }
@@ -1014,22 +1071,35 @@ $.imgAreaSelect = function (img, options) {
 
         if (options.disable || options.enable === false) {
             /* Disable the plugin */
+<<<<<<< Updated upstream
             $box.off({ 'mousemove touchmove': areaMouseMove,
                 'mousedown touchstart': areaMouseDown });
             $(window).off('resize', windowResize);
+=======
+            $box.unbind('mousemove', areaMouseMove).unbind('mousedown', areaMouseDown);
+            $(window).unbind('resize', windowResize);
+>>>>>>> Stashed changes
         }
         else {
             if (options.enable || options.disable === false) {
                 /* Enable the plugin */
                 if (options.resizable || options.movable)
+<<<<<<< Updated upstream
                     $box.on({ 'mousemove touchmove': areaMouseMove,
                         'mousedown touchstart': areaMouseDown });
+=======
+                    $box.mousemove(areaMouseMove).mousedown(areaMouseDown);
+>>>>>>> Stashed changes
 
                 $(window).resize(windowResize);
             }
 
             if (!options.persistent)
+<<<<<<< Updated upstream
                 $img.add($outer).on('mousedown touchstart', imgMouseDown);
+=======
+                $img.add($outer).mousedown(imgMouseDown);
+>>>>>>> Stashed changes
         }
 
         options.enable = options.disable = undefined;

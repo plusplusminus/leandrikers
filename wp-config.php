@@ -21,15 +21,15 @@ define('DB_NAME', 'leandrikers');
 
 /** MySQL database username */
 // define('DB_USER', 'clienfvwyf_53');
-define('DB_USER', 'root');
+define('DB_USER', 'root_2');
 
 /** MySQL database password */
 // define('DB_PASSWORD', 'HepSU6i8');
-define('DB_PASSWORD', 'root');
+define('DB_PASSWORD', 'root_2');
 
 /** MySQL hostname */
 // define('DB_HOST', 'dedi95.flk1.host-h.net');
-define('DB_HOST', 'localhost');
+define('DB_HOST', '192.168.2.174');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8');

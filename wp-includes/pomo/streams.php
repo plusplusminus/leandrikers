@@ -14,15 +14,20 @@ class POMO_Reader {
 	var $endian = 'little';
 	var $_post = '';
 
+<<<<<<< Updated upstream
 	/**
 	 * PHP5 constructor.
 	 */
 	function __construct() {
+=======
+	function POMO_Reader() {
+>>>>>>> Stashed changes
 		$this->is_overloaded = ((ini_get("mbstring.func_overload") & 2) != 0) && function_exists('mb_substr');
 		$this->_pos = 0;
 	}
 
 	/**
+<<<<<<< Updated upstream
 	 * PHP4 constructor.
 	 */
 	public function POMO_Reader() {
@@ -30,6 +35,8 @@ class POMO_Reader {
 	}
 
 	/**
+=======
+>>>>>>> Stashed changes
 	 * Sets the endianness of the file.
 	 *
 	 * @param $endian string 'big' or 'little'
@@ -111,23 +118,33 @@ class POMO_Reader {
 		}
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @return int
 	 */
+=======
+
+>>>>>>> Stashed changes
 	function pos() {
 		return $this->_pos;
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @return true
 	 */
+=======
+>>>>>>> Stashed changes
 	function is_resource() {
 		return true;
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @return true
 	 */
+=======
+>>>>>>> Stashed changes
 	function close() {
 		return true;
 	}
@@ -140,12 +157,17 @@ class POMO_FileReader extends POMO_Reader {
 	/**
 	 * @param string $filename
 	 */
+<<<<<<< Updated upstream
 	function __construct( $filename ) {
+=======
+	function POMO_FileReader($filename) {
+>>>>>>> Stashed changes
 		parent::POMO_Reader();
 		$this->_f = fopen($filename, 'rb');
 	}
 
 	/**
+<<<<<<< Updated upstream
 	 * PHP4 constructor.
 	 */
 	public function POMO_FileReader( $filename ) {
@@ -153,6 +175,8 @@ class POMO_FileReader extends POMO_Reader {
 	}
 
 	/**
+=======
+>>>>>>> Stashed changes
 	 * @param int $bytes
 	 */
 	function read($bytes) {
@@ -171,30 +195,42 @@ class POMO_FileReader extends POMO_Reader {
 		return true;
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @return bool
 	 */
+=======
+>>>>>>> Stashed changes
 	function is_resource() {
 		return is_resource($this->_f);
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @return bool
 	 */
+=======
+>>>>>>> Stashed changes
 	function feof() {
 		return feof($this->_f);
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @return bool
 	 */
+=======
+>>>>>>> Stashed changes
 	function close() {
 		return fclose($this->_f);
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @return string
 	 */
+=======
+>>>>>>> Stashed changes
 	function read_all() {
 		$all = '';
 		while ( !$this->feof() )
@@ -213,16 +249,21 @@ class POMO_StringReader extends POMO_Reader {
 
 	var $_str = '';
 
+<<<<<<< Updated upstream
 	/**
 	 * PHP5 constructor.
 	 */
 	function __construct( $str = '' ) {
+=======
+	function POMO_StringReader($str = '') {
+>>>>>>> Stashed changes
 		parent::POMO_Reader();
 		$this->_str = $str;
 		$this->_pos = 0;
 	}
 
 	/**
+<<<<<<< Updated upstream
 	 * PHP4 constructor.
 	 */
 	public function POMO_StringReader( $str = '' ) {
@@ -230,6 +271,8 @@ class POMO_StringReader extends POMO_Reader {
 	}
 
 	/**
+=======
+>>>>>>> Stashed changes
 	 * @param string $bytes
 	 * @return string
 	 */
@@ -250,16 +293,22 @@ class POMO_StringReader extends POMO_Reader {
 		return $this->_pos;
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @return int
 	 */
+=======
+>>>>>>> Stashed changes
 	function length() {
 		return $this->strlen($this->_str);
 	}
 
+<<<<<<< Updated upstream
 	/**
 	 * @return string
 	 */
+=======
+>>>>>>> Stashed changes
 	function read_all() {
 		return $this->substr($this->_str, $this->_pos, $this->strlen($this->_str));
 	}
@@ -272,16 +321,21 @@ if ( !class_exists( 'POMO_CachedFileReader' ) ):
  * Reads the contents of the file in the beginning.
  */
 class POMO_CachedFileReader extends POMO_StringReader {
+<<<<<<< Updated upstream
 	/**
 	 * PHP5 constructor.
 	 */
 	function __construct( $filename ) {
+=======
+	function POMO_CachedFileReader($filename) {
+>>>>>>> Stashed changes
 		parent::POMO_StringReader();
 		$this->_str = file_get_contents($filename);
 		if (false === $this->_str)
 			return false;
 		$this->_pos = 0;
 	}
+<<<<<<< Updated upstream
 
 	/**
 	 * PHP4 constructor.
@@ -289,6 +343,8 @@ class POMO_CachedFileReader extends POMO_StringReader {
 	public function POMO_CachedFileReader( $filename ) {
 		self::__construct( $filename );
 	}
+=======
+>>>>>>> Stashed changes
 }
 endif;
 
@@ -297,6 +353,7 @@ if ( !class_exists( 'POMO_CachedIntFileReader' ) ):
  * Reads the contents of the file in the beginning.
  */
 class POMO_CachedIntFileReader extends POMO_CachedFileReader {
+<<<<<<< Updated upstream
 	/**
 	 * PHP5 constructor.
 	 */
@@ -313,3 +370,10 @@ class POMO_CachedIntFileReader extends POMO_CachedFileReader {
 }
 endif;
 
+=======
+	function POMO_CachedIntFileReader($filename) {
+		parent::POMO_CachedFileReader($filename);
+	}
+}
+endif;
+>>>>>>> Stashed changes

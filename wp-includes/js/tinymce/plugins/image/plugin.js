@@ -1,8 +1,13 @@
 /**
  * plugin.js
  *
+<<<<<<< Updated upstream
  * Released under LGPL License.
  * Copyright (c) 1999-2015 Ephox Corp. All rights reserved
+=======
+ * Copyright, Moxiecode Systems AB
+ * Released under LGPL License.
+>>>>>>> Stashed changes
  *
  * License: http://www.tinymce.com/license
  * Contributing: http://www.tinymce.com/contributing
@@ -23,7 +28,11 @@ tinymce.PluginManager.add('image', function(editor) {
 		}
 
 		img.onload = function() {
+<<<<<<< Updated upstream
 			done(Math.max(img.width, img.clientWidth), Math.max(img.height, img.clientHeight));
+=======
+			done(img.clientWidth, img.clientHeight);
+>>>>>>> Stashed changes
 		};
 
 		img.onerror = function() {
@@ -308,7 +317,10 @@ tinymce.PluginManager.add('image', function(editor) {
 					win.find('#src').value(e.control.value()).fire('change');
 				},
 				onPostRender: function() {
+<<<<<<< Updated upstream
 					/*eslint consistent-this: 0*/
+=======
+>>>>>>> Stashed changes
 					imageListCtrl = this;
 				}
 			};
