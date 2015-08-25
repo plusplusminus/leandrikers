@@ -1,11 +1,11 @@
 // Image Feed
-.image_feed{
+.section_instagram{
 	.text-center();
 }
 
-.section_title{
+.section_instagram--heading{
 	padding-bottom: 60px;
-	.section_title--text{
+	.section_instagram--title{
 		font-family: @font-family-serif;
 		text-transform: uppercase;
 		.letter-spacing();
@@ -17,17 +17,15 @@
 	}
 }
 
-.image_feed-images{
+.instgram_feed{
 	.make-row();
 }
 
-.image_feed-content{
-	.make-xs-column-offset(1);
-	.make-xs-column(12);
-}
-
-.image_feed-image{
+.feed_image{
 	.make-xs-column(2);
+	&:first-child{
+		.make-xs-column-offset(1);	
+	}
 	img{
 		box-shadow: 0px 0px 15px rgba(87, 87, 87, 0.08);
 		.img-responsive();

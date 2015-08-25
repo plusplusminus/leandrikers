@@ -1,3 +1,4 @@
+
 <section class="section_instagram">
 	<div class="container">
 		<div class="section_instagram--heading">
@@ -39,4 +40,5 @@
 
 		</div>
 	</div>
+
 </section>

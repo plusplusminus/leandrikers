@@ -1,13 +1,13 @@
 // Nav Blocks
-.nav_blocks{
+.portfolio_blocks{
 	.text-center();
 }
 
-.nav_block{
+.blocks_block{
 	.make-sm-column(4);
 }
 
-.nav_block-content{
+.block_content{
 	display: inline-block;
 	box-shadow: 0px 0px 0px transparent;
 	width: 100%;
@@ -17,33 +17,29 @@
 	}
 }
 
-.nav_block-link{
-	text-decoration: none;
-	&:hover{
-		text-decoration: none;
-	}	
+.block_content--link{
+	.absolute-link();
 }
-.nav_block-image{
+
+.block_content--image{
 	text-align: center;
 	img{
 		.img-responsive();
-		max-width: 100%;
-		height: auto !important;
 	}
 }
 
-.nav_block-title{
+.block_content--heading{
 	padding: 27px 10px;
 	background-color: #fff;
 	font-family: @font-family-serif;
 	font-size: @font-size-large;
 	.transition(0.5s);
-	.nav_block-title--text{
+	.block_content--title{
 		text-align: center;
 		text-transform: uppercase;
 		.letter-spacing();
 	}
-	.nav_block-link:hover &{
+	.block_content:hover &{
 		background-color: @brand-primary;
 		color: #fff;
 	}
