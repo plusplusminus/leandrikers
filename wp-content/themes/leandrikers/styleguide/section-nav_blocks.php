@@ -1,46 +1,40 @@
-<div class="nav_blocks">
-	<div class="nav_block">
-		<div class="nav_block-content">
-			<a href="#" class="nav_block-link">
-				<div class="nav_blocks-block">	
-					<div class="nav_block-image">
-						<img src="holder.js/940x1200">
-					</div>
-					<div class="nav_block-title">
-						<h4 class="nav_block-title--text">Weddings</h4>
-					</div>
-				</div>
-			</a>
-		</div>
-	</div>
+<div class="section_portfolio">
+	<div class="container">
 
-	<div class="nav_block">
-		<div class="nav_block-content">
-			<a href="#" class="nav_block-link">
-				<div class="nav_blocks-block">	
-					<div class="nav_block-image">
-						<img src="holder.js/940x1200">
-					</div>
-					<div class="nav_block-title">
-						<h4 class="nav_block-title--text">Portraits</h4>
-					</div>
-				</div>
-			</a>
-		</div>
-	</div>
-
-	<div class="nav_block">
-		<div class="nav_block-content">
-			<a href="#" class="nav_block-link">
-				<div class="nav_blocks-block">	
-					<div class="nav_block-image">
-						<img src="holder.js/940x1200">
-					</div>
-					<div class="nav_block-title">
-						<h4 class="nav_block-title--text">Editorial</h4>
-					</div>
-				</div>
-			</a>
-		</div>
+		<div class="portfolio_blocks">
+			<div class="blocks_block">
+	            <div class="block_content">
+	                <figure class="block_content--image">
+	                    <img width="301" height="453" src="http://localhost/leandrikers/wp-content/uploads/2015/08/Screen-Shot-2015-08-25-at-5.32.43-PM.png" class="attachment-full wp-post-image" alt="Screen Shot 2015-08-25 at 5.32.43 PM">
+	                </figure>
+	                <div class="block_content--heading">
+	                    <h4 class="block_content--title">Weddings</h4>
+	                </div>
+	                <a href="http://localhost/leandrikers/weddings/" class="block_content--link"></a>
+	            </div>
+	        </div>
+	        <div class="blocks_block">
+	            <div class="block_content">
+	                <figure class="block_content--image">
+	                    
+	                </figure>
+	                <div class="block_content--heading">
+	                    <h4 class="block_content--title">Portraits</h4>
+	                </div>
+	                <a href="http://localhost/leandrikers/portraits/" class="block_content--link"></a>
+	            </div>
+	        </div>
+	        <div class="blocks_block">
+	            <div class="block_content">
+	                <figure class="block_content--image">
+	                    
+	                </figure>
+	                <div class="block_content--heading">
+	                    <h4 class="block_content--title">Editorial</h4>
+	                </div>
+	                <a href="http://localhost/leandrikers/editorial/" class="block_content--link"></a>
+	            </div>
+	        </div>
+        </div>
 	</div>
 </div>
