@@ -67,6 +67,7 @@
 
 			<h2>Forms</h2>
 			<p>Description</p>
+				<?php get_template_part('styleguide/section','forms'); ?>
 			<hr>
 
 		</div>

@@ -4,521 +4,233 @@
 		"selected_items":
 		[
 			[
-				"pad",
-				"padding"
-			],
-			[
-				"ma",
-				"margin-top"
-			],
-			[
-				"ba",
-				"background"
-			],
-			[
-				"te",
-				"text-transform"
-			],
-			[
-				"font",
-				"font-weight"
-			],
-			[
-				"text",
-				"text-decoration"
-			],
-			[
-				"border",
-				"border-color"
-			],
-			[
-				"bac",
-				"background-color"
-			],
-			[
-				"font-s",
-				"font-style"
-			],
-			[
-				"mar",
-				"margin-left"
-			],
-			[
-				"pa",
-				"padding"
-			],
-			[
-				"bor",
-				"border-width"
-			],
-			[
-				"font-f",
-				"font-family-hand"
-			],
-			[
-				"font-",
-				"font-family"
-			],
-			[
-				"min",
-				"min-height"
-			],
-			[
-				"le",
-				"left"
-			],
-			[
-				"bo",
-				"bottom"
-			],
-			[
-				"img",
-				"img	Tag"
-			],
-			[
-				"margi",
-				"margin-top"
-			],
-			[
-				"back",
-				"background-position"
-			],
-			[
-				"background-",
-				"background-attachment"
-			],
-			[
-				"tex",
-				"text-align"
-			],
-			[
-				"r",
-				"rgba(r,g,b,a)"
-			],
-			[
-				"bna",
-				"background-image"
-			],
-			[
-				"margin",
-				"margin-left"
-			],
-			[
-				"get_st",
-				"get_stylesheet_directory_uri"
-			],
-			[
-				"style",
-				"stylesheet_uri"
-			],
-			[
-				"inlie",
-				"inline-block"
-			],
-			[
-				"inli",
-				"inline-table"
-			],
-			[
-				"tran",
-				"transition"
-			],
-			[
-				"rgb",
-				"rgba(r,g,b,a)"
-			],
-			[
-				"fon",
-				"font-family"
-			],
-			[
-				"pull",
-				"pull-left"
-			],
-			[
-				"options_item",
-				"options_item--btn"
-			],
-			[
-				"padd",
-				"padding-top"
-			],
-			[
-				"lis",
-				"list-style"
-			],
-			[
-				"font-fam",
-				"font-family-serif"
-			],
-			[
-				"borde",
-				"border-left"
-			],
-			[
-				"font-fa",
-				"font-family-serif"
-			],
-			[
-				"in",
-				"inline-block"
-			],
-			[
-				"gray-li",
-				"gray-lighter"
-			],
-			[
-				"gray",
-				"gray-darker"
-			],
-			[
-				"gray-l",
-				"gray-lighter"
-			],
-			[
-				"chos",
-				"chosen-drop"
-			],
-			[
-				"border-t",
-				"border-right"
-			],
-			[
-				"gray-ligh",
-				"gray-light"
-			],
-			[
-				"m",
-				"margin-bottom"
-			],
-			[
-				"cho",
-				"chosen-drop"
-			],
-			[
-				"font-se",
-				"font-size-small"
-			],
-			[
-				"brand",
-				"brand-success"
-			],
-			[
-				"icon",
-				"icon-wrap"
-			],
-			[
-				"btn",
-				"btn-success"
-			],
-			[
-				"trans",
-				"transparent"
-			],
-			[
-				"bn",
-				"background-color"
-			],
-			[
-				"cont",
-				"contentOverlay"
-			],
-			[
-				"con",
-				"contentOverlay"
-			],
-			[
-				"panel",
-				"panel-heading"
-			],
-			[
-				"list",
-				"list-style-position"
-			],
-			[
-				"co",
-				"color"
-			],
-			[
-				"p",
-				"padding-top"
-			],
-			[
-				"c",
-				"cursor"
-			],
-			[
-				"lin",
-				"line-height"
-			],
-			[
-				"s",
-				"super"
-			],
-			[
-				"border-r",
-				"border-radius"
-			],
-			[
-				"gray-da",
-				"gray-dark"
-			],
-			[
-				"navba",
-				"navbar-nav"
-			],
-			[
-				"t",
-				"target	Attr"
-			],
-			[
-				"ta",
-				"target	Attr"
-			],
-			[
-				"margin-",
-				"margin-top"
-			],
-			[
-				"bord",
-				"border-color"
-			],
-			[
-				"blog",
-				"bloginfo"
-			],
-			[
-				"inl",
-				"inline"
-			],
-			[
-				"brand-",
-				"brand-primary"
-			],
-			[
-				"font-size",
-				"font-size-base"
-			],
-			[
-				"w",
-				"nowrap"
-			],
-			[
-				"fonts-",
-				"font-size"
-			],
-			[
 				"max",
 				"max-width"
 			],
 			[
-				"ad",
+				"inl",
+				"inline-block"
+			],
+			[
+				"te",
+				"text-decoration"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"ba",
+				"background-color"
+			],
+			[
+				"bs3mo",
+				"bs3-modal	bs3-modal"
+			],
+			[
+				"bs3lis",
+				"bs3-list-group:linked	bs3-list-group-linked"
+			],
+			[
+				"bs3thu",
+				"bs3-thumbnail:content	bs3-thumbnail-content"
+			],
+			[
+				"bor",
+				"border-radius"
+			],
+			[
+				"ma",
+				"margin-left"
+			],
+			[
+				"pad",
 				"padding"
 			],
 			[
-				"di",
-				"display"
+				"font-s",
+				"font-size-large"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"font-f",
+				"font-family-base"
+			],
+			[
+				"backgr",
+				"background-repeat"
+			],
+			[
+				"rg",
+				"rgba(r,g,b,a)"
 			],
 			[
 				"i",
 				"italic"
 			],
 			[
-				"font-si",
-				"font-size-small"
-			],
-			[
-				"woocommerce",
-				"woocommerce-validated"
-			],
-			[
-				"tet",
-				"text-align"
-			],
-			[
-				"li",
-				"line-height"
-			],
-			[
-				"navbar-in",
-				"navbar-inverse-border"
-			],
-			[
-				"Font-s",
-				"font-style"
-			],
-			[
-				"gray-dark",
-				"gray-darker"
-			],
-			[
-				"singl",
-				"single-social"
-			],
-			[
-				"split-",
-				"split-border-top"
-			],
-			[
-				"site",
-				"site_description"
-			],
-			[
-				"site_",
-				"site_url"
-			],
-			[
-				"prin",
-				"print_r"
-			],
-			[
-				"ar",
-				"article	Tag"
-			],
-			[
-				"border-col",
+				"bo",
 				"border-color"
 			],
 			[
-				"re",
-				"repeat"
+				"end",
+				"endif"
 			],
 			[
-				"video",
-				"video_link"
+				"box",
+				"box-shadow"
 			],
 			[
-				"h",
-				"href	Attr"
+				"in",
+				"inline-block"
 			],
 			[
-				"b",
-				"bottom"
+				"font-",
+				"font-family"
 			],
 			[
-				"widt",
-				"width"
+				"make",
+				"make-md-column-offset"
 			],
 			[
-				"im",
-				"important"
+				"trans",
+				"transparent"
 			],
 			[
-				"hi",
-				"highlight-color"
+				"bord",
+				"border"
 			],
 			[
-				"pri",
-				"primary-color"
+				"body",
+				"body-text"
 			],
 			[
-				"font-famil",
-				"font-family-base"
+				"border",
+				"border-bottom"
 			],
 			[
-				"link",
-				"link-hover-color"
+				"tr",
+				"transition"
 			],
 			[
-				"padd-lar",
-				"padding-large-horizontal"
+				"font-fa",
+				"font-famliy-script"
 			],
 			[
-				"padding-la",
-				"padding-large-vertical"
+				"border-r",
+				"border-radius"
 			],
 			[
-				"font-fal",
-				"font-family-bold"
-			],
-			[
-				"pd",
+				"pa",
 				"padding"
 			],
 			[
-				"gfor",
-				"gform_footer"
+				"make-md-",
+				"make-md-column"
 			],
 			[
-				"gform_b",
-				"gform_body"
+				"back",
+				"background-color"
 			],
 			[
-				"gfo",
-				"gform_wrapper"
+				"mak",
+				"make-md-column"
 			],
 			[
-				"wid",
-				"widget_policies"
+				"bod",
+				"body-text"
 			],
 			[
-				"paddin",
-				"padding-right"
-			],
-			[
-				"sty",
-				"stylesheet_directory"
-			],
-			[
-				"the_t",
-				"the_title"
-			],
-			[
-				"import",
-				"important"
-			],
-			[
-				"list-g",
-				"list-group-item"
-			],
-			[
-				"gray-light",
-				"gray-lighter"
-			],
-			[
-				"border-left",
-				"border-left-color"
-			],
-			[
-				"min-",
-				"min-width"
-			],
-			[
-				"font-size-",
-				"font-size-large"
-			],
-			[
-				"att",
-				"attachments"
-			],
-			[
-				"the_pos",
-				"the_post_thumbnail"
-			],
-			[
-				"to",
-				"today"
-			],
-			[
-				"exp",
-				"explode"
-			],
-			[
-				"un",
-				"unserialize"
-			],
-			[
-				"strto",
-				"strtoupper"
-			],
-			[
-				"loc",
-				"locations_html"
+				"make-md",
+				"make-md-column-offset"
 			]
 		]
 	},
 	"buffers":
 	[
+		{
+			"file": "public/less/theme.less",
+			"settings":
+			{
+				"buffer_size": 625,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/includes/image_feed.liquid",
+			"settings":
+			{
+				"buffer_size": 9,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "<!doctype html>\n<html lang=\"en\">\n    <head>\n        <meta charset=\"utf-8\">\n        <title>{% block title %}Mixture + Bootstrap{% endblock %}</title>\n        <meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\n        {{ \"bootstrap.css\" | asset_url | stylesheet_tag }}\n        {{ \"theme.css\" | asset_url | stylesheet_tag }}\n        {{ \"fonts-leandrikers.css\" | asset_url | stylesheet_tag }}\n        \n        <!-- Typekit -->\n        <script src=\"//use.typekit.net/chb1ynt.js\"></script>\n        <script>try{Typekit.load({ async: true });}catch(e){}</script>\n        \n        <!-- Google fonts -->\n        <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400italic' rel='stylesheet' type='text/css'>\n        <style>\n            body {\n                padding-top: 50px;\n            }\n            .starter-template {\n                padding: 40px 15px;\n            }\n        </style>\n        <!-- TODO: Complete this project :) -->\n    </head>\n    <body>\n        {% include \"navigation\" %}\n        <div class=\"container\">\n            {% block content %}{% endblock %}\n        </div>\n        <script src=\"//code.jquery.com/jquery.min.js\"></script>\n        {{ \"bootstrap.js\" | asset_url | script_tag }}\n        {{ \"holder.js\" | asset_url | script_tag }}\n    </body>\n</html>",
+			"file": "templates/layouts/layout.liquid",
+			"file_size": 1301,
+			"file_write_time": 130848859240000000,
+			"settings":
+			{
+				"buffer_size": 1301,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "{% block content %}\n	<div class=\"starter-template home\">\n	\n		<h1 class=\"page-header\">Style Guide</h1>\n		<p class=\"lead\">Description</p>\n		\n		<hr>\n\n		<h2 class=\"page-header\">Fonts</h2>\n		<p>Description</p>\n		<h3 style=\"font-family: futura-pt,sans-serif;\">Futura PT <small>Medium</small></h3>\n\n		<h3 style=\"font-family: NaiveBold;\">Naive Bold</h3>\n\n		<h3 style=\"font-family: Salt_and_Spices_Pro_SmallCaps;\">Salt &amp; Spices Pro SC</h3>\n\n		<h3 style=\"font-family: 'Crimson Text', serif;\">Crimson Text <small>Normal 400 Italic</small></h3>\n\n		<h3>Body Text</h3>\n		\n		<hr>\n\n		<h2>Buttons &amp; Links</h2>\n		<p>Description</p>\n		<hr>\n\n		<h2>Slider</h2>\n			<p>Description</p>\n			{% include \"carousel\" %}\n\n		<hr>\n\n		<h2>Image Navigation</h2>\n			<p>Description</p>\n			<div class=\"row\">\n				<div class=\"col-md-12\">\n					{% include \"nav_blocks\" %}\n				</div>\n			</div>\n		\n		<hr>\n\n		<h2>Image Feed</h2>\n			<p>Description</p>\n			{% include \"image_feed\" %}\n		\n		<hr>\n\n		<h2>Profile</h2>\n			<p>Description</p>\n			{% include \"profile\" %}\n		\n		<hr>\n\n		<h2>Article Blocks</h2>\n		<p>Description</p>\n		<hr>\n\n		<h2>Forms</h2>\n		<p>Description</p>\n		<hr>\n\n	\n	</div>\n{% endblock %}",
+			"file": "templates/index.liquid",
+			"file_size": 1159,
+			"file_write_time": 130849026720000000,
+			"settings":
+			{
+				"buffer_size": 1159,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/includes/profile.liquid",
+			"settings":
+			{
+				"buffer_size": 7,
+				"line_ending": "Unix",
+				"name": "Profile"
+			}
+		},
+		{
+			"file": "templates/includes/nav_blocks.liquid",
+			"settings":
+			{
+				"buffer_size": 941,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/includes/navigation.liquid",
+			"settings":
+			{
+				"buffer_size": 748,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "templates/includes/carousel.liquid",
+			"settings":
+			{
+				"buffer_size": 1771,
+				"line_ending": "Unix",
+				"name": "Slider"
+			}
+		}
 	],
 	"build_system": "",
 	"build_system_choices":
@@ -527,26 +239,27 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 63.0,
-		"last_filter": "",
+		"height": 87.0,
+		"last_filter": "Package Control: rem",
 		"selected_items":
 		[
 			[
-				"",
-				"Set Syntax: PHP"
+				"Package Control: rem",
+				"Package Control: Remove Package"
 			],
 			[
-				"pack ",
-				"Preferences: Browse Packages"
+				"Package Control: install",
+				"Package Control: Install Package"
 			]
 		],
-		"width": 457.0
+		"width": 575.0
 	},
 	"console":
 	{
-		"height": 0.0,
+		"height": 126.0,
 		"history":
 		[
+			"cd sites"
 		]
 	},
 	"distraction_free":
@@ -560,284 +273,141 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/iaanvn/Sites/aevitas",
-		"/Users/iaanvn/Sites/aevitas/wp-content",
-		"/Users/iaanvn/Sites/aevitas/wp-content/themes",
-		"/Users/iaanvn/Sites/aevitas/wp-content/themes/aevitas",
-		"/Users/iaanvn/Sites/aevitas/wp-content/themes/aevitas/library",
-		"/Users/iaanvn/Sites/aevitas/wp-content/themes/aevitas/library/less/home",
-		"/Users/iaanvn/Sites/aevitas/wp-content/themes/aevitas/templates",
-		"/Users/iaanvn/Sites/aevitas/wp-content/themes/aevitas/templates/portfolio",
-		"/Users/iaanvn/Sites/aevitas/wp-content/themes/plussed/library"
+		"/Users/iaanvn/Sites/leandrikers"
 	],
 	"file_history":
 	[
-		"/Users/iaanvn/Sites/aevitas/wp-content/themes/aevitas/library/less/custom-variables.less",
-		"/Users/iaanvn/Sites/aevitas/wp-content/themes/aevitas/templates/section-about.php",
-		"/Users/iaanvn/Sites/aevitas/wp-content/themes/aevitas/functions.php",
-		"/Users/iaanvn/Sites/aevitas/wp-content/themes/aevitas/library/less/theme.less",
-		"/Users/iaanvn/Sites/aevitas/wp-content/themes/aevitas/templates/template-portfolio.php",
-		"/Users/iaanvn/Sites/aevitas/wp-content/themes/aevitas/templates/section-review.php",
-		"/Users/iaanvn/Sites/aevitas/wp-content/themes/aevitas/templates/section-work.php",
-		"/Users/iaanvn/Sites/aevitas/wp-config.php",
-		"/Users/iaanvn/Desktop/braingear_temp/library/less/custom-variables.less",
-		"/Users/iaanvn/Desktop/braingear_temp/library/less/brew/content.less",
-		"/Users/iaanvn/Desktop/braingear_temp/library/less/theme.less",
-		"/Users/iaanvn/Desktop/braingear_temp/library/less/brew/components.less",
-		"/Users/iaanvn/Desktop/braingear_temp/library/less/style.less",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/FE6EE346-1D91-44E1-999D-0AF33E662186/page-home.php",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/128571EE-1DA1-4658-9938-58042E36BA3C/flexslider.css",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/48E5B6EA-9645-458F-84F4-5CECBA8DCDE8/wp-config.php",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/92DDB102-0243-4699-B820-52CAA80B4197/header.php",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/01DC9CDB-6A06-436E-89D5-F1549CDF3C21/wp-config.php",
-		"/Users/iaanvn/Sites/launchlab/wp-content/themes/bodega-child/style.css",
-		"/Users/iaanvn/Desktop/logo-full.svg",
-		"/Users/iaanvn/Sites/launchlab_demo/wp-config.php",
-		"/Users/iaanvn/Sites/launchlab/wp-config.php",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/functions.php",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/templates/section-header.php",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/library/less/theme.less",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/template-home.php",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/library/less/global/gravity.less",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/library/less/global/hoshi.less",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/library/js/ppm.js",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/library/less/bootstrap/variables.less",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/library/less/custom-variables.less",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/header.php",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/library/less/bootstrap/mixins/buttons.less",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/library/less/style.less",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/footer.php",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/library/less/global/buttons.less",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/356A038F-8592-4EBC-B8B2-EFC3BB4117DB/section-header.php",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/3A340E1F-EBAD-432B-A657-1619963141BE/template-home.php",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/7668544F-2310-4814-B8FA-E5F2B6A35BF2/section-header.php",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/A533C335-E70F-46D0-97C6-ACB0B5A28196/template-home.php",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/3D960897-03DC-4AB6-B5AB-A80A12E44D01/index.html",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/84C6F8BA-EE87-44D8-8D15-4EBB2C2C12FD/custom.css",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/boutique.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/includes/navigation.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/layouts/layout.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/shop.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/includes/navigation-shop.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/includes/navigation-nosub.liquid",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/7F7D5D9C-CE2A-490A-B7B7-397DAB6B5BB6/index.html",
-		"/Users/iaanvn/Sites/gew/gruntfile.js",
-		"/Users/iaanvn/Downloads/-.sql",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/templates/section-feed.php",
-		"/Users/iaanvn/Sites/gew/bower.json",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/classes/theme-cpt.php",
-		"/Users/iaanvn/Sites/gew/wp-content/themes/gew/style.css",
-		"/Users/iaanvn/Sites/gew/wp-config.php",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/includes/post-holder-vert-quote.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/index.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/includes/footer.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/includes/post-holder-vert.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/includes/post-holder-land.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/post-single.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/includes/art.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/gallery.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/category.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/about.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/advertise.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/templates/contact.liquid",
-		"/Users/iaanvn/Sites/htwe/prototype/public/less/theme.less",
-		"/Users/iaanvn/Sites/htwe/prototype/mixture.json",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/tabs_stockists.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/about.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/footer.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/public/less/theme.less",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/full_slider.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/product_single.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/navigation.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/contact.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/story.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/index.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/instagram_slider.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/main_slider.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/widget_slider.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/country_modal.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/product_slider.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/handbags.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/garments.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/public/js/theme.js",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/cart_modal.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/layouts/layout.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/product_single.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/tab-1.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/tab-2.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/tab-3.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/tab-4.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/accessories.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/collections_single.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/collections.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/templates/press.liquid",
-		"/Users/iaanvn/Sites/KVD/Prototype/public/less/steps.less",
-		"/Users/iaanvn/Sites/KVD/Prototype/public/less/bootstrap.less",
-		"/Users/iaanvn/Sites/KVD/Prototype/mixture.json",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/2532822A-F6C8-4271-8F1A-734A8FE1968B/style.css",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/4620AEC2-DB1A-462C-BB9A-479C8B9F2056/style.css",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/0404D6F6-E269-4BFA-83CC-5CC5F17E8AAC/wp-config.php",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/747AECFB-D96B-46F5-BA35-6B7958EFEF51/.htaccess",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/3B68CB56-209D-48C1-977B-6E903C81EF30/wp-config.php",
-		"/Users/iaanvn/Sites/llamabar/prototype/templates/includes/footer.liquid",
-		"/Users/iaanvn/Sites/llamabar/prototype/templates/index.liquid",
-		"/Users/iaanvn/Sites/llamabar/prototype/templates/about.liquid",
-		"/Users/iaanvn/Sites/llamabar/prototype/templates/products.liquid",
-		"/Users/iaanvn/Sites/llamabar/prototype/templates/products-original.liquid",
-		"/Users/iaanvn/Sites/llamabar/prototype/templates/products-peanut.liquid",
-		"/Users/iaanvn/Sites/llamabar/prototype/templates/layouts/layout.liquid",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/9548AD10-08A0-4BFB-B587-8389CC63ECCC/wp-config.php",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/2A69579E-21ED-4EDA-9F2C-57CA717C7BE2/wp-config.php",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/526CFBD6-3E82-42B5-87BA-DCA2AF78CF59/wp-config.php",
-		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/FAB96987-2DD0-4059-A6E4-47FE8B9EBBAC/main.class.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/internal-widgets.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/header.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/header.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/badges.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/directory/archive.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/archive-vendors.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/footer.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/style.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/mpt.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/includes/tpb-widgets.php"
+		"/Users/iaanvn/Sites/leandrikers/templates/includes/image_feed.liquid",
+		"/Users/iaanvn/Sites/leandrikers/public/less/fonts-leandrikers.css",
+		"/Users/iaanvn/Sites/MTO/templates/enduse.liquid",
+		"/Users/iaanvn/Sites/MTO/templates/sustainability.liquid",
+		"/Users/iaanvn/Sites/MTO/templates/company.liquid",
+		"/Users/iaanvn/Sites/MTO/templates/index.liquid",
+		"/Users/iaanvn/Sites/MTO/bower_components/bootstrap/less/variables.less",
+		"/Users/iaanvn/Sites/MTO/templates/includes/navigation.liquid",
+		"/Users/iaanvn/Sites/MTO/templates/contact.liquid",
+		"/Users/iaanvn/Sites/MTO/templates/responsibility.liquid",
+		"/Users/iaanvn/Sites/MTO/templates/about.liquid",
+		"/Users/iaanvn/Sites/MTO/models/company.json",
+		"/Users/iaanvn/Sites/MTO/models/enduse.json",
+		"/Users/iaanvn/Sites/MTO/models/index.json",
+		"/Users/iaanvn/Sites/MTO/templates/includes/press-menu.liquid",
+		"/Users/iaanvn/Sites/MTO/templates/press.liquid",
+		"/Users/iaanvn/Sites/MTO/templates/includes/sustainability-menu.liquid",
+		"/Users/iaanvn/Sites/MTO/templates/includes/responsibility-menu.liquid",
+		"/Users/iaanvn/Sites/MTO/sustainability/society.liquid",
+		"/Users/iaanvn/Sites/MTO/templates/includes/about-menu.liquid",
+		"/Users/iaanvn/Sites/MTO/templates/sustainability/society.liquid",
+		"/Users/iaanvn/Sites/MTO/templates/sustainability/governanve",
+		"/Users/iaanvn/Sites/MTO/templates/sustainability/governance.liquid",
+		"/Users/iaanvn/Sites/MTO/enduse.liquid",
+		"/Users/iaanvn/Sites/MTO/templates/about/ceo.liquid",
+		"/Users/iaanvn/Sites/MTO/templates/about/history.liquid",
+		"/Users/iaanvn/Sites/MTO/templates/about/governance.liquid",
+		"/Users/iaanvn/Sites/MTO/templates/about-history.liquid",
+		"/Users/iaanvn/Sites/MTO/public/js/holder.js",
+		"/Users/iaanvn/Sites/MTO/public/less/style.less.less.liquid",
+		"/Users/iaanvn/Sites/MTO/public/js/ppm.js",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/classes/theme-cpt.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/less/theme.less",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/less/ppm.less",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/contact/page-content.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-config.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/less/fonts.less",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/rooms/gallery-content.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/lifestyle/features-content.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/campuses/gallery-content.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/functions.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/buildings/gallery-content.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/single-rooms.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/blog/page-content.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/buildings/header.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/less/responsive.less",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/campuses/buildings.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/js/ppm.js",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/footer.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/less/style.less",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/js/fancybox.js",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/less/fancybox.less",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/uploads/PDF_EXTENDED_TEMPLATES/configuration.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/less/custom-variables.less",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/section-feature.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/template-home.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/campuses/rooms.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/docs/page-content.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/section-header.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/header.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/campuses/archive.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/rooms/archive.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/campuses/header.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/section-campuses.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/rooms/grid.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/rooms/header.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/single-buildings.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/section-news.php",
+		"/Users/iaanvn/Sites/CampusKey/terminal.glue",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/about/terminal.glue",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/template-book.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/book/page-content.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/template-faq.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/faq/page-content.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/template-docs.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/about/page-content.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/page.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/sidebar.php",
+		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/template-rooms.php",
+		"/Users/iaanvn/Desktop/googleec1bd01f518582dc.html",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/campuses.json",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/campuses.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/lifestyle.json",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/news.json",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/contact.json",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/rooms.json",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/index.json",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/includes/navigation.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/about-green.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/about-team.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/news-single.json",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/news-single.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/news.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/contact.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/about.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/includes/footer.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/includes/carousel.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/campus-single.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/building-single.json",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/campus-single.json",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/room-single.json",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/includes/jumbotron.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/building-single.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/room-single.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/book.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/rooms.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/lifestyle.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/layouts/layout.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/index.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/includes/vision.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/jumbotron.json",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/test.liquid",
+		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/includes/feature-item.liquid"
 	],
 	"find":
 	{
-		"height": 38.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
-		"height": 203.0,
+		"height": 93.0,
 		"where_history":
 		[
-			"/Users/iaanvn/Sites/gew/wp-content/themes/gew/template-home.php",
-			"/Users/iaanvn/Sites/KVD/Prototype/templates",
-			"/Users/iaanvn/Sites/KVD/Prototype/templates/press.liquid",
-			"",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library",
-			"/Users/iaanvn/Sites/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/directory",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global",
-			"/Users/iaanvn/Sites/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/bootstrap",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/gravityforms.less",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/bootstrap",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/bootstrap/mixins",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/bootstrap",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/bootstrap",
-			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes",
-			"/Users/iaanvn/Sites/alanameyer/wp-content/themes/alanameyer",
-			"/Users/iaanvn/Sites/alanameyer/wp-content/themes",
-			"/Users/iaanvn/Sites/alanameyer/wp-content/themes/alanameyer/library/less",
-			"/Users/iaanvn/Sites/aimeejones/wp-content/themes/plussed",
-			"/Users/iaanvn/Sites/nadiameliblog/wp-content/themes/nadiameli",
-			"/Users/iaanvn/Sites/nadiameliblog/wp-content",
-			"/Users/iaanvn/Sites/nadiameliblog/wp-content/themes",
-			"/Users/iaanvn/Sites/nadiameliblog/wp-content/themes/nadiameli/templates",
-			"/Users/iaanvn/Sites/nadiameliblog/wp-content/themes/nadiameli/library/less",
-			"/Users/iaanvn/Sites/formaphoto/converted-html",
-			"/Users/iaanvn/Sites/devlabel",
-			"",
-			"/Users/iaanvn/Sites/netcms/wp-content/themes/netcms/library/less/bootstrap",
-			"",
-			"/Users/iaanvn/Sites/louisevoster/wp-content/themes/canvas",
-			"/Users/iaanvn/Sites/louisevoster/wp-content/themes/lousievoster",
-			"/Users/iaanvn/Sites/louisevoster/wp-content/themes/canvas",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap/woocommerce",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/retutpro",
-			"/Users/iaanvn/Sites/retutpro/",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
-			"/Users/iaanvn/Sites/retutpro/wp-content/plugins/woocommerce",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
-			"",
-			"/Users/iaanvn/Sites/retutpro/wp-content",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap/woocommerce",
-			"/Users/iaanvn/Sites/retutpro/wp-content/plugins",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap/woocommerce",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
-			"/Users/iaanvn/Sites/retutpro/wp-content",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/canvas",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
-			"/Users/iaanvn/Sites/retutpro/wp-content",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
-			"/Users/iaanvn/Sites/retutpro/wp-content",
-			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
-			"/Users/iaanvn/Sites/marinas/wp-content/themes",
-			"/Users/iaanvn/Sites/marinas/wp-content/themes/marinas",
-			"",
-			"/Users/iaanvn/Sites/marinas/wp-content",
-			"/Users/iaanvn/Sites/marinas/wp-content/themes",
-			"/Users/iaanvn/Sites/marinas/wp-content/themes/marinas/library/less/brew",
-			"/Users/iaanvn/Sites/marinas/wp-content/themes/marinas",
-			"/Users/iaanvn/Sites/marinas/wp-content/themes/plussed",
-			"/Users/iaanvn/Sites/marinas/wp-content/themes/marinas/library/less/brew",
-			"/Users/iaanvn/Sites/marinas/wp-content/themes/marinas",
-			"/Users/iaanvn/Sites/marinas/wp-content/themes/plussed",
-			"",
-			"/Users/iaanvn/Sites/visiononfire/wp-content/plugins/woodojo",
-			"",
-			"<open files>",
-			"/Users/iaanvn/Sites/dev/retutpro/wp-content/themes/bootstrap",
-			"/Users/iaanvn/Sites/dev/retutpro/wp-content/themes/",
-			"/Users/iaanvn/Sites/dev/retutpro/wp-content/themes/bootstrap",
-			"",
-			"/Users/admin/Documents/Sites/ppmv3/wp-content/themes/canvas",
-			"/Users/admin/Documents/Sites/dev/tpb/wp-content/plugins/woocommerce-gateway-payfast",
-			"/Users/admin/Documents/Sites/dev/tpb/wp-content/plugins/woocommerce",
-			"/Users/admin/Documents/Sites/dev/nadiab/wp-content/themes/nadiab"
+			"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey",
+			"/Users/iaanvn/Sites/CampusKey/wp-content/themes",
+			"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey",
+			"/Users/iaanvn/Sites/CampusKey/wp-content",
+			"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey",
+			"/Users/iaanvn/Sites/CampusKey/wp-content/themes",
+			"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates",
+			"/Users/iaanvn/Sites/CampusKey"
 		]
 	},
 	"find_state":
@@ -845,134 +415,127 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"testimoni",
-			"drop",
-			"filter",
-			"testimon",
-			"content_inner",
-			"section_",
-			"section_gallery",
-			"make",
-			"--title",
-			".section_title",
-			"content-title",
-			"inner-title",
-			".heading-typo",
-			"content_inner",
-			"section_heading",
-			"section-heading",
-			"--heading",
-			".section_title",
-			"header",
-			"post-header",
-			"post-header_image",
-			"@gray",
-			".meta-typo",
-			"meta-typo",
-			".meta-typo",
-			"@gray-light",
-			"gray-light",
-			"@gray-light",
-			"#d9d9d9",
-			"bett",
-			"fa",
-			"content",
-			"60em",
-			"calc",
-			"color",
-			"footer",
-			"descrip",
-			"h4",
-			"padding-large-vertical",
-			"buttons",
-			"h3",
-			"text-color",
-			"text-c",
-			"make a ",
-			"radius",
-			"modal",
-			"hr",
-			"			<a href=\"product_single\">\n				<div class=\"product_single\">\n					<button class=\"btn btn-default buy_now\" data-toggle=\"modal\" data-target=\"#cartModal\">Buy Now</button>\n					<img src=\"http://placehold.it/450x450&text=Product\" class=\"img-responsive\">\n					<div class=\"product-info\">\n						<h5 class=\"text-center\">Product Name</h5>\n						<div class=\"price text-center\">$750.00</div>\n					</div>\n				</div>\n			</a>",
-			"<a href=\"product_single\">\n	<div class=\"product_single\">\n		<button class=\"btn btn-default buy_now\" data-toggle=\"modal\" data-target=\"#cartModal\">Buy Now</button>\n		<img src=\"http://placehold.it/450x450&text=Product\" class=\"img-responsive\">\n		<div class=\"product-info\">\n			<h5 class=\"text-center\">Product Name</h5>\n			<div class=\"price text-center\">$750.00</div>\n		</div>\n	</div>\n</a>",
-			"<button class=\"btn btn-default buy_now\">Buy Now</button>",
-			"buy Now",
-			"total",
-			"myModal",
-			"Buy Now",
-			".png",
-			"center",
-			"http://www.newsiteurl.com",
-			"modal",
-			"popover",
-			"button",
-			"refine search",
-			"css-style",
-			"quick_search",
-			"icon",
-			"newsletter.",
-			"header",
+			"home",
+			"webfonts/",
+			"fonts//",
+			"../fonts",
+			"webfonts/",
+			"products",
+			"logo",
+			".article_blog",
+			"<a class=\"fancybox\"",
+			"equal",
+			"$key",
+			"$krykey",
+			"$kry",
+			"documents",
+			"$key",
+			"999",
+			"slider-container",
+			".slider-text",
+			"z-inde",
+			".slider-text-main",
+			"slider-btn",
+			"brand-red",
+			"campus",
 			"ul",
-			"primary",
-			"download",
-			"day",
-			".opacity(0);",
-			"hover",
-			"content",
-			"contetn",
-			"get_avatar",
-			"meta",
-			"container_single",
-			".sidebar_listing",
-			"VIEW BY",
-			".directory_box",
-			"search",
-			"Select Category",
-			"directoryLocation",
-			"nav_pri",
-			"{\n",
-			"btn",
-			"angle-down",
-			"angle",
+			"header",
+			".bx-controls-direction",
+			"ppm",
+			"ppm.js",
+			"btn-cta",
+			"row-optio",
+			"footer",
+			"header-subtitle",
+			"section_widget--title",
+			".list-group ",
+			"section_widget--title",
+			"widget",
+			"subti",
+			"btn-cta",
+			"ribbon",
+			"header-titl",
+			"40px",
+			"ribbon",
+			".choose-campus",
+			"check",
+			"eet a students’ needs.",
+			"getElementById",
+			"center: {lat",
+			"lat",
+			"map",
+			"slide",
+			".header-right-top",
+			"body",
+			"weigh",
+			"'ProximaNova-Regular'",
+			"'Pacifico', cursive",
+			"'ProximaNova-Regular'",
+			"ProximaNova-Regular",
+			"min-he",
+			"header-ti",
+			"border-room",
+			"lifes",
+			"lifestyle",
+			"border-campus",
+			"owl",
+			"logo",
+			"also included",
+			"row-op",
+			"45",
+			"slide",
+			".header-content-area",
+			"booknow_image",
+			"room",
+			"This is the image caption",
+			"pager",
+			"slide",
+			"news",
+			"templates/section",
+			"news",
+			"faq",
+			"cta",
+			"gravity",
+			"script",
+			"famliy",
+			"blue",
+			"contact",
 			"icon",
-			"content",
-			"btn",
-			"submit",
-			"hover",
-			"long",
-			"border-color: transparent",
-			"border-c",
-			".btn-link",
-			"background-color: transparent",
-			".excerpt--link",
-			"header--link",
-			"border-color: transparent",
-			"links",
-			"dropdown-toggle",
-			"hover",
-			".widget_form--btn",
-			"subm",
-			"hover",
-			"button",
-			"media",
-			"search_form--input",
-			"image--share",
-			".watermark_image--share",
-			"span",
-			"padding",
-			"title",
-			"options_item",
-			"options_item ",
-			".save-btn",
-			"right",
-			"action",
-			"listing_action",
-			"@tpb-weddings:",
-			"@tpb-weddings",
-			"color",
-			"content",
-			".links_item--btn",
-			"grid_header--title",
-			"slide-image"
+			"descript",
+			"contact",
+			"room",
+			".lifestyle-area",
+			"feature_",
+			"ffd800",
+			"#FFD800",
+			"display-table-cell",
+			"descrip",
+			"slider-text",
+			"find out more",
+			".vertical-ribbon",
+			"room-grid-main",
+			"sidebar",
+			"about-1",
+			"dynamic_sidebar",
+			"font-fa",
+			"enumenu",
+			"transitions",
+			"header-title",
+			"body-te",
+			"bg-solid",
+			"header-room",
+			"header-title",
+			".border-bottom-left",
+			"family",
+			"css-orange",
+			"brand-yellow",
+			"slider",
+			"slider-title",
+			"300x240",
+			"book",
+			"part",
+			"description",
+			"people"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -980,85 +543,20 @@
 		"regex": false,
 		"replace_history":
 		[
-			"h2",
-			"{% include \"product_single\" %}",
-			"<button class=\"btn btn-default buy_now\" data-toggle=\"modal\" data-target=\"#cartModal\">Buy Now</button>",
-			"pressModal",
-			"Details",
-			"http://clients.plusplusminus.co.za/karens",
-			"@brand-danger",
-			"jQuery",
-			"Jquery",
-			"alanameyer",
-			"",
-			"public/",
-			"						<img src=\"holder.js/100%x150/auto/text:image/#ccc:#fff\">\n",
-			"						<img src=\"holder.js/100%x150/auto/text:image/#ccc:#000\">\n",
-			"400",
-			"800",
-			"636467",
-			"Braingear",
-			".transition(0.2s);",
-			"transition(0.2s)",
-			" ",
-			"",
-			"<ul class=\"nav nav-pills nav-pills-small\"><li class=\"active\"><a href=\"#\">Article Category</a></li></ul>",
-			"text-center",
-			"p",
-			"http://clients.plusplusminus.co.za/",
-			"collaborator",
-			"cccccc",
-			"http://testing.da.org.za",
-			"http://localhost/da/development",
-			"",
-			"</h3>",
-			"<h3>",
-			"",
-			"span",
-			"client",
-			"marketplace",
-			".woocommerce .woo-cart",
-			"",
-			"jQuery",
-			"Branch",
-			"jQuery",
-			"<?php bloginfo('template_url');?>/images/",
-			"<?php bloginfo('template_url');?>/images",
-			"images/",
-			"Lead",
-			"Market",
-			"Marekting",
-			"255, 255, 255,",
-			"http://www.plusplusminus.co.za/mmusi",
-			"http://localhost/dev/mmusi",
-			"Supplier",
-			"Suppliers",
-			"jQuery",
-			"images",
-			"font",
-			"Documents",
-			"Document",
-			"Documents",
-			"",
-			"www.theprettyblog.com",
-			"http://new/theprettyblog.com",
-			"http://localhost",
-			"col-6 col-sm-3 col-lg-3",
-			"col-6 col-sm-6 col-lg-3",
-			"col-12 col-sm-6 col-lg-3",
-			"col-12 col-lg-3",
-			"col-3",
-			"col-lg-3",
-			"ads",
-			"Ads",
-			"$setting_id",
-			"$style_id",
-			"$category_id",
-			"Wedding Dress",
-			".share-post.hover .share-counter"
+			"../fonts/",
+			"fonts/",
+			"../fonts/",
+			"Product Name",
+			"@font-family-base",
+			"@font-family-script",
+			"@font-family-base",
+			"family",
+			"@brand-yellow",
+			"300x250",
+			"icon"
 		],
 		"reverse": false,
-		"show_context": false,
+		"show_context": true,
 		"use_buffer2": true,
 		"whole_word": false,
 		"wrap": true
@@ -1066,8 +564,252 @@
 	"groups":
 	[
 		{
+			"selected": 2,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "public/less/theme.less",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 625,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								546,
+								546
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/LESS/LESS.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "templates/includes/image_feed.liquid",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 9,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9,
+								9
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 7,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "templates/layouts/layout.liquid",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1301,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								973,
+								973
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "templates/index.liquid",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1159,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1059,
+								1059
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 181.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "templates/includes/profile.liquid",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 7,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								7,
+								7
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Profile",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "templates/includes/nav_blocks.liquid",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 941,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								622,
+								622
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "templates/includes/navigation.liquid",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 748,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								748,
+								748
+							]
+						],
+						"settings":
+						{
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 5,
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "templates/includes/carousel.liquid",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1771,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1771,
+								1771
+							]
+						],
+						"settings":
+						{
+							"auto_name": "Slider",
+							"color_scheme": "Packages/User/Color Highlighter/themes/Monokai.tmTheme",
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 6,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1107,10 +849,10 @@
 		"height": 0.0
 	},
 	"pinned_build_system": "",
-	"project": "aevitas.sublime-project",
+	"project": "leandrikers.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -1119,50 +861,6 @@
 		"last_filter": "",
 		"selected_items":
 		[
-			[
-				"theme.",
-				"wp-includes/theme.php"
-			],
-			[
-				"single",
-				"wp-content/themes/marinas/single.php"
-			],
-			[
-				"footer",
-				"wp-content/themes/bootstrap/footer.php"
-			],
-			[
-				"theme-fun",
-				"wp-content/themes/canvas/includes/theme-functions.php"
-			],
-			[
-				"theme-pp",
-				"wp-content/themes/bootstrap/includes/theme-ppm.php"
-			],
-			[
-				"th",
-				"css/less/theme.less"
-			],
-			[
-				"theme",
-				"includes/theme-ppm.php"
-			],
-			[
-				"theem",
-				"css/less/theme.less"
-			],
-			[
-				"he",
-				"header.php"
-			],
-			[
-				"head",
-				"header.php"
-			],
-			[
-				"theme-ppm",
-				"includes/theme-ppm.php"
-			]
 		],
 		"width": 0.0
 	},
@@ -1192,7 +890,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 337.0,
+	"side_bar_width": 355.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{
