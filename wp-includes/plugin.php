@@ -76,11 +76,7 @@ if ( ! isset( $wp_current_filter ) )
  *                                  and functions with the same priority are executed
  *                                  in the order in which they were added to the action.
  * @param int      $accepted_args   Optional. The number of arguments the function accepts. Default 1.
-<<<<<<< Updated upstream
  * @return true
-=======
- * @return boolean true
->>>>>>> Stashed changes
  */
 function add_filter( $tag, $function_to_add, $priority = 10, $accepted_args = 1 ) {
 	global $wp_filter, $merged_filters;
@@ -100,21 +96,12 @@ function add_filter( $tag, $function_to_add, $priority = 10, $accepted_args = 1 
  *
  * @param string        $tag               The name of the filter hook.
  * @param callback|bool $function_to_check Optional. The callback to check for. Default false.
-<<<<<<< Updated upstream
  * @return false|int If $function_to_check is omitted, returns boolean for whether the hook has
  *                   anything registered. When checking a specific function, the priority of that
  *                   hook is returned, or false if the function is not attached. When using the
  *                   $function_to_check argument, this function may return a non-boolean value
  *                   that evaluates to false (e.g.) 0, so use the === operator for testing the
  *                   return value.
-=======
- * @return bool|int If $function_to_check is omitted, returns boolean for whether the hook has
- *                  anything registered. When checking a specific function, the priority of that
- *                  hook is returned, or false if the function is not attached. When using the
- *                  $function_to_check argument, this function may return a non-boolean value
- *                  that evaluates to false (e.g.) 0, so use the === operator for testing the
- *                  return value.
->>>>>>> Stashed changes
  */
 function has_filter($tag, $function_to_check = false) {
 	// Don't reset the internal array pointer
@@ -137,11 +124,7 @@ function has_filter($tag, $function_to_check = false) {
 		}
 	}
 
-<<<<<<< Updated upstream
 	if ( false === $function_to_check || false === $has )
-=======
-	if ( false === $function_to_check || false == $has )
->>>>>>> Stashed changes
 		return $has;
 
 	if ( !$idx = _wp_filter_build_unique_id($tag, $function_to_check, false) )
@@ -305,7 +288,6 @@ function apply_filters_ref_array($tag, $args) {
  *
  * @since 1.2.0
  *
-<<<<<<< Updated upstream
  * @global array $wp_filter         Stores all of the filters
  * @global array $merged_filters    Merges the filter hooks using this function.
  *
@@ -313,12 +295,6 @@ function apply_filters_ref_array($tag, $args) {
  * @param callback $function_to_remove The name of the function which should be removed.
  * @param int      $priority           Optional. The priority of the function. Default 10.
  * @return bool    Whether the function existed before it was removed.
-=======
- * @param string   $tag                The filter hook to which the function to be removed is hooked.
- * @param callback $function_to_remove The name of the function which should be removed.
- * @param int      $priority           Optional. The priority of the function. Default 10.
- * @return boolean Whether the function existed before it was removed.
->>>>>>> Stashed changes
  */
 function remove_filter( $tag, $function_to_remove, $priority = 10 ) {
 	$function_to_remove = _wp_filter_build_unique_id( $tag, $function_to_remove, $priority );
@@ -344,18 +320,12 @@ function remove_filter( $tag, $function_to_remove, $priority = 10 ) {
  *
  * @since 2.7.0
  *
-<<<<<<< Updated upstream
  * @global array $wp_filter         Stores all of the filters
  * @global array $merged_filters    Merges the filter hooks using this function.
  *
  * @param string   $tag      The filter to remove hooks from.
  * @param int|bool $priority Optional. The priority number to remove. Default false.
  * @return true True when finished.
-=======
- * @param string   $tag      The filter to remove hooks from.
- * @param int|bool $priority Optional. The priority number to remove. Default false.
- * @return bool True when finished.
->>>>>>> Stashed changes
  */
 function remove_all_filters( $tag, $priority = false ) {
 	global $wp_filter, $merged_filters;
@@ -368,13 +338,7 @@ function remove_all_filters( $tag, $priority = false ) {
 		}
 	}
 
-<<<<<<< Updated upstream
 	unset( $merged_filters[ $tag ] );
-=======
-	if ( isset( $merged_filters[ $tag ] ) ) {
-		unset( $merged_filters[ $tag ] );
-	}
->>>>>>> Stashed changes
 
 	return true;
 }
@@ -384,11 +348,8 @@ function remove_all_filters( $tag, $priority = false ) {
  *
  * @since 2.5.0
  *
-<<<<<<< Updated upstream
  * @global array $wp_current_filter Stores the list of current filters with the current one last
  *
-=======
->>>>>>> Stashed changes
  * @return string Hook name of the current filter or action.
  */
 function current_filter() {
@@ -468,13 +429,8 @@ function doing_action( $action = null ) {
  *                                  Lower numbers correspond with earlier execution,
  *                                  and functions with the same priority are executed
  *                                  in the order in which they were added to the action.
-<<<<<<< Updated upstream
  * @param int      $accepted_args   Optional. The number of arguments the function accepts. Default 1.
  * @return true Will always return true.
-=======
- * @param int      $accepted_args   Optional. The number of arguments the function accept. Default 1.
- * @return bool Will always return true.
->>>>>>> Stashed changes
  */
 function add_action($tag, $function_to_add, $priority = 10, $accepted_args = 1) {
 	return add_filter($tag, $function_to_add, $priority, $accepted_args);
@@ -492,23 +448,14 @@ function add_action($tag, $function_to_add, $priority = 10, $accepted_args = 1) 
  *
  * @since 1.2.0
  *
-<<<<<<< Updated upstream
  * @global array $wp_filter         Stores all of the filters
  * @global array $wp_actions        Increments the amount of times action was triggered.
  * @global array $merged_filters    Merges the filter hooks using this function.
  * @global array $wp_current_filter Stores the list of current filters with the current one last
-=======
- * @global array $wp_filter  Stores all of the filters
- * @global array $wp_actions Increments the amount of times action was triggered.
->>>>>>> Stashed changes
  *
  * @param string $tag The name of the action to be executed.
  * @param mixed  $arg Optional. Additional arguments which are passed on to the
  *                    functions hooked to the action. Default empty.
-<<<<<<< Updated upstream
-=======
- * @return null Will return null if $tag does not exist in $wp_filter array.
->>>>>>> Stashed changes
  */
 function do_action($tag, $arg = '') {
 	global $wp_filter, $wp_actions, $merged_filters, $wp_current_filter;
@@ -586,7 +533,6 @@ function did_action($tag) {
  *
  * @see do_action() This function is identical, but the arguments passed to the
  *                  functions hooked to $tag< are supplied using an array.
-<<<<<<< Updated upstream
  * @global array $wp_filter         Stores all of the filters
  * @global array $wp_actions        Increments the amount of times action was triggered.
  * @global array $merged_filters    Merges the filter hooks using this function.
@@ -594,14 +540,6 @@ function did_action($tag) {
  *
  * @param string $tag  The name of the action to be executed.
  * @param array  $args The arguments supplied to the functions hooked to `$tag`.
-=======
- * @global array $wp_filter  Stores all of the filters
- * @global array $wp_actions Increments the amount of times action was triggered.
- *
- * @param string $tag  The name of the action to be executed.
- * @param array  $args The arguments supplied to the functions hooked to `$tag`.
- * @return null Will return null if `$tag` does not exist in `$wp_filter` array.
->>>>>>> Stashed changes
  */
 function do_action_ref_array($tag, $args) {
 	global $wp_filter, $wp_actions, $merged_filters, $wp_current_filter;
@@ -677,11 +615,7 @@ function has_action($tag, $function_to_check = false) {
  * @param string   $tag                The action hook to which the function to be removed is hooked.
  * @param callback $function_to_remove The name of the function which should be removed.
  * @param int      $priority           Optional. The priority of the function. Default 10.
-<<<<<<< Updated upstream
  * @return bool Whether the function is removed.
-=======
- * @return boolean Whether the function is removed.
->>>>>>> Stashed changes
  */
 function remove_action( $tag, $function_to_remove, $priority = 10 ) {
 	return remove_filter( $tag, $function_to_remove, $priority );
@@ -694,11 +628,7 @@ function remove_action( $tag, $function_to_remove, $priority = 10 ) {
  *
  * @param string   $tag      The action to remove hooks from.
  * @param int|bool $priority The priority number to remove them from. Default false.
-<<<<<<< Updated upstream
  * @return true True when finished.
-=======
- * @return bool True when finished.
->>>>>>> Stashed changes
  */
 function remove_all_actions($tag, $priority = false) {
 	return remove_all_filters($tag, $priority);
@@ -715,11 +645,8 @@ function remove_all_actions($tag, $priority = false) {
  *
  * @since 1.5.0
  *
-<<<<<<< Updated upstream
  * @global array $wp_plugin_paths
  *
-=======
->>>>>>> Stashed changes
  * @param string $file The filename of plugin.
  * @return string The name of a plugin.
  */
@@ -750,14 +677,11 @@ function plugin_basename( $file ) {
  *
  * @see plugin_basename()
  *
-<<<<<<< Updated upstream
  * @global array $wp_plugin_paths
  *
  * @staticvar string $wp_plugin_path
  * @staticvar string $wpmu_plugin_path
  *
-=======
->>>>>>> Stashed changes
  * @param string $file Known path to the file.
  * @return bool Whether the path was able to be registered.
  */
@@ -765,11 +689,7 @@ function wp_register_plugin_realpath( $file ) {
 	global $wp_plugin_paths;
 
 	// Normalize, but store as static to avoid recalculation of a constant value
-<<<<<<< Updated upstream
 	static $wp_plugin_path = null, $wpmu_plugin_path = null;
-=======
-	static $wp_plugin_path, $wpmu_plugin_path;
->>>>>>> Stashed changes
 	if ( ! isset( $wp_plugin_path ) ) {
 		$wp_plugin_path   = wp_normalize_path( WP_PLUGIN_DIR   );
 		$wpmu_plugin_path = wp_normalize_path( WPMU_PLUGIN_DIR );
@@ -916,11 +836,8 @@ function register_uninstall_hook( $file, $callback ) {
  * @since 2.5.0
  * @access private
  *
-<<<<<<< Updated upstream
  * @global array $wp_filter  Stores all of the filters
  *
-=======
->>>>>>> Stashed changes
  * @param array $args The collected parameters from the hook that was called.
  */
 function _wp_call_all_hook($args) {
@@ -958,25 +875,16 @@ function _wp_call_all_hook($args) {
  * @access private
  *
  * @global array $wp_filter Storage for all of the filters and actions.
-<<<<<<< Updated upstream
  * @staticvar int $filter_id_count
-=======
->>>>>>> Stashed changes
  *
  * @param string   $tag      Used in counting how many hooks were applied
  * @param callback $function Used for creating unique id
  * @param int|bool $priority Used in counting how many hooks were applied. If === false
  *                           and $function is an object reference, we return the unique
  *                           id only if it already has one, false otherwise.
-<<<<<<< Updated upstream
  * @return string|false Unique ID for usage as array key or false if $priority === false
  *                      and $function is an object reference, and it does not already have
  *                      a unique id.
-=======
- * @return string|bool Unique ID for usage as array key or false if $priority === false
- *                     and $function is an object reference, and it does not already have
- *                     a unique id.
->>>>>>> Stashed changes
  */
 function _wp_filter_build_unique_id($tag, $function, $priority) {
 	global $wp_filter;

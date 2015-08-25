@@ -3,10 +3,6 @@
 	if ( ! wp || ! wp.customize ) { return; }
 	var api = wp.customize;
 
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 	/**
 	 * wp.customize.HeaderTool.CurrentView
 	 *

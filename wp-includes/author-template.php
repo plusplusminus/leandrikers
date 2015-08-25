@@ -15,17 +15,10 @@
  *
  * @since 1.5.0
  *
-<<<<<<< Updated upstream
  * @global object $authordata The current author's DB object.
  *
  * @param string $deprecated Deprecated.
  * @return string|null The author's display name.
-=======
- * @uses $authordata The current author's DB object.
- *
- * @param string $deprecated Deprecated.
- * @return string The author's display name.
->>>>>>> Stashed changes
  */
 function get_the_author($deprecated = '') {
 	global $authordata;
@@ -60,11 +53,7 @@ function get_the_author($deprecated = '') {
  *
  * @param string $deprecated Deprecated.
  * @param string $deprecated_echo Deprecated. Use get_the_author(). Echo the string or return it.
-<<<<<<< Updated upstream
  * @return string|null The author's display name, from get_the_author().
-=======
- * @return string The author's display name, from get_the_author().
->>>>>>> Stashed changes
  */
 function the_author( $deprecated = '', $deprecated_echo = true ) {
 	if ( !empty( $deprecated ) )
@@ -81,11 +70,7 @@ function the_author( $deprecated = '', $deprecated_echo = true ) {
  *
  * @since 2.8.0
  *
-<<<<<<< Updated upstream
  * @return string|void The author's display name.
-=======
- * @return string The author's display name.
->>>>>>> Stashed changes
  */
 function get_the_modified_author() {
 	if ( $last_id = get_post_meta( get_post()->ID, '_edit_last', true) ) {
@@ -103,20 +88,12 @@ function get_the_modified_author() {
 }
 
 /**
-<<<<<<< Updated upstream
  * Display the name of the author who last edited the current post,
  * if the author's ID is available.
-=======
- * Display the name of the author who last edited the current post.
->>>>>>> Stashed changes
  *
  * @since 2.8.0
  *
  * @see get_the_author()
-<<<<<<< Updated upstream
-=======
- * @return string The author's display name, from get_the_modified_author().
->>>>>>> Stashed changes
  */
 function the_modified_author() {
 	echo get_the_modified_author();
@@ -126,22 +103,16 @@ function the_modified_author() {
  * Retrieve the requested data of the author of the current post.
  * @link https://codex.wordpress.org/Template_Tags/the_author_meta
  * @since 2.8.0
-<<<<<<< Updated upstream
  *
  * @global object $authordata The current author's DB object.
  *
-=======
->>>>>>> Stashed changes
  * @param string $field selects the field of the users record.
  * @param int $user_id Optional. User ID.
  * @return string The author's field from the current author's DB object.
  */
 function get_the_author_meta( $field = '', $user_id = false ) {
-<<<<<<< Updated upstream
 	$original_user_id = $user_id;
 
-=======
->>>>>>> Stashed changes
 	if ( ! $user_id ) {
 		global $authordata;
 		$user_id = isset( $authordata->ID ) ? $authordata->ID : 0;
@@ -160,7 +131,6 @@ function get_the_author_meta( $field = '', $user_id = false ) {
 	 * The filter name is dynamic and depends on the $field parameter of the function.
 	 *
 	 * @since 2.8.0
-<<<<<<< Updated upstream
 	 * @since 4.3.0 The `$original_user_id` parameter was added.
 	 *
 	 * @param string   $value            The value of the metadata.
@@ -179,22 +149,6 @@ function get_the_author_meta( $field = '', $user_id = false ) {
  *
  * @param string $field selects the field of the users record.
  * @param int $user_id Optional. User ID.
-=======
-	 *
-	 * @param string $value   The value of the metadata.
-	 * @param int    $user_id The user ID.
-	 */
-	return apply_filters( 'get_the_author_' . $field, $value, $user_id );
-}
-
-/**
- * Retrieve the requested data of the author of the current post.
- * @link https://codex.wordpress.org/Template_Tags/the_author_meta
- * @since 2.8.0
- * @param string $field selects the field of the users record.
- * @param int $user_id Optional. User ID.
- * @echo string The author's field from the current author's DB object.
->>>>>>> Stashed changes
  */
 function the_author_meta( $field = '', $user_id = false ) {
 	$author_meta = get_the_author_meta( $field, $user_id );
@@ -217,12 +171,9 @@ function the_author_meta( $field = '', $user_id = false ) {
  *
  * If the author has a home page set, return an HTML link, otherwise just return the
  * author's name.
-<<<<<<< Updated upstream
  *
  * @return string|null An HTML link if the author's url exist in user meta,
  *                     else the result of get_the_author().
-=======
->>>>>>> Stashed changes
  */
 function get_the_author_link() {
 	if ( get_the_author_meta('url') ) {
@@ -280,12 +231,9 @@ function the_author_posts() {
  *
  * @link https://codex.wordpress.org/Template_Tags/the_author_posts_link
  * @since 1.2.0
-<<<<<<< Updated upstream
  *
  * @global object $authordata The current author's DB object.
  *
-=======
->>>>>>> Stashed changes
  * @param string $deprecated Deprecated.
  */
 function the_author_posts_link($deprecated = '') {
@@ -293,15 +241,10 @@ function the_author_posts_link($deprecated = '') {
 		_deprecated_argument( __FUNCTION__, '2.1' );
 
 	global $authordata;
-<<<<<<< Updated upstream
 	if ( ! is_object( $authordata ) ) {
 		return;
 	}
 
-=======
-	if ( !is_object( $authordata ) )
-		return false;
->>>>>>> Stashed changes
 	$link = sprintf(
 		'<a href="%1$s" title="%2$s" rel="author">%3$s</a>',
 		esc_url( get_author_posts_url( $authordata->ID, $authordata->user_nicename ) ),
@@ -323,13 +266,9 @@ function the_author_posts_link($deprecated = '') {
  * Retrieve the URL to the author page for the user with the ID provided.
  *
  * @since 2.1.0
-<<<<<<< Updated upstream
  *
  * @global WP_Rewrite $wp_rewrite
  *
-=======
- * @uses $wp_rewrite WP_Rewrite
->>>>>>> Stashed changes
  * @return string The URL to the author's page.
  */
 function get_author_posts_url($author_id, $author_nicename = '') {
@@ -371,11 +310,8 @@ function get_author_posts_url($author_id, $author_nicename = '') {
  *
  * @since 1.2.0
  *
-<<<<<<< Updated upstream
  * @global wpdb $wpdb
  *
-=======
->>>>>>> Stashed changes
  * @param string|array $args {
  *     Optional. Array or string of default arguments.
  *
@@ -400,11 +336,7 @@ function get_author_posts_url($author_id, $author_nicename = '') {
  *     @type string $exclude       An array, comma-, or space-separated list of author IDs to exclude. Default empty.
  *     @type string $exclude       An array, comma-, or space-separated list of author IDs to include. Default empty.
  * }
-<<<<<<< Updated upstream
  * @return string|void The output, if echo is set to false.
-=======
- * @return null|string The output, if echo is set to false. Otherwise null.
->>>>>>> Stashed changes
  */
 function wp_list_authors( $args = '' ) {
 	global $wpdb;
@@ -511,12 +443,9 @@ function wp_list_authors( $args = '' ) {
  * Checks to see if more than one author has published posts.
  *
  * @since 3.2.0
-<<<<<<< Updated upstream
  *
  * @global wpdb $wpdb
  *
-=======
->>>>>>> Stashed changes
  * @return bool Whether or not we have more than one author
  */
 function is_multi_author() {

@@ -471,8 +471,4 @@ class getid3_ac3 extends getid3_handler
 	}
 
 
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes

@@ -31,11 +31,7 @@ function the_permalink() {
  * blog is not set to have them.
  *
  * @since 2.2.0
-<<<<<<< Updated upstream
  * @global WP_Rewrite $wp_rewrite
-=======
- * @uses $wp_rewrite
->>>>>>> Stashed changes
  *
  * @param string $string URL with or without a trailing slash.
  * @param string $type_of_url The type of URL being considered (e.g. single, category, etc) for use in the filter.
@@ -59,12 +55,7 @@ function user_trailingslashit($string, $type_of_url = '') {
 	 *                            'single_feed', 'single_paged', 'feed', 'category', 'page', 'year',
 	 *                            'month', 'day', 'paged', 'post_type_archive'.
 	 */
-<<<<<<< Updated upstream
 	return apply_filters( 'user_trailingslashit', $string, $type_of_url );
-=======
-	$string = apply_filters( 'user_trailingslashit', $string, $type_of_url );
-	return $string;
->>>>>>> Stashed changes
 }
 
 /**
@@ -102,11 +93,7 @@ function permalink_anchor( $mode = 'id' ) {
  *
  * @param int|WP_Post $id        Optional. Post ID or post object. Default is the current post.
  * @param bool        $leavename Optional. Whether to keep post name or page name. Default false.
-<<<<<<< Updated upstream
  * @return string|false The permalink URL or false if post does not exist.
-=======
- * @return string|bool The permalink URL or false if post does not exist.
->>>>>>> Stashed changes
  */
 function get_the_permalink( $id = 0, $leavename = false ) {
 	return get_permalink( $id, $leavename );
@@ -119,11 +106,7 @@ function get_the_permalink( $id = 0, $leavename = false ) {
  *
  * @param int|WP_Post $id        Optional. Post ID or post object. Default current post.
  * @param bool        $leavename Optional. Whether to keep post name or page name. Default false.
-<<<<<<< Updated upstream
  * @return string|false The permalink URL or false if post does not exist.
-=======
- * @return string|bool The permalink URL or false if post does not exist.
->>>>>>> Stashed changes
  */
 function get_permalink( $id = 0, $leavename = false ) {
 	$rewritecode = array(
@@ -252,19 +235,12 @@ function get_permalink( $id = 0, $leavename = false ) {
  *
  * @since 3.0.0
  *
-<<<<<<< Updated upstream
  * @global WP_Rewrite $wp_rewrite
  *
  * @param int $id         Optional. Post ID.
  * @param bool $leavename Optional, defaults to false. Whether to keep post name.
  * @param bool $sample    Optional, defaults to false. Is it a sample permalink.
  * @return string|WP_Error The post permalink.
-=======
- * @param int $id Optional. Post ID.
- * @param bool $leavename Optional, defaults to false. Whether to keep post name.
- * @param bool $sample Optional, defaults to false. Is it a sample permalink.
- * @return string The post permalink.
->>>>>>> Stashed changes
  */
 function get_post_permalink( $id = 0, $leavename = false, $sample = false ) {
 	global $wp_rewrite;
@@ -317,15 +293,9 @@ function get_post_permalink( $id = 0, $leavename = false, $sample = false ) {
  *
  * @since 1.0.0
  *
-<<<<<<< Updated upstream
  * @param int|WP_Post $post_id    Optional. Post ID or WP_Post object. Default is global $post.
  * @param mixed       $deprecated Not used.
  * @return string|false
-=======
- * @param int|WP_Post $post_id Optional. Post ID or WP_Post object. Default is global $post.
- * @param mixed $deprecated Not used.
- * @return string
->>>>>>> Stashed changes
  */
 function post_permalink( $post_id = 0, $deprecated = '' ) {
 	if ( !empty( $deprecated ) )
@@ -341,15 +311,9 @@ function post_permalink( $post_id = 0, $deprecated = '' ) {
  *
  * @since 1.5.0
  *
-<<<<<<< Updated upstream
  * @param int|object $post      Optional. Post ID or object.
  * @param bool       $leavename Optional, defaults to false. Whether to keep page name.
  * @param bool       $sample    Optional, defaults to false. Is it a sample permalink.
-=======
- * @param int|object $post Optional. Post ID or object.
- * @param bool $leavename Optional, defaults to false. Whether to keep page name.
- * @param bool $sample Optional, defaults to false. Is it a sample permalink.
->>>>>>> Stashed changes
  * @return string The page permalink.
  */
 function get_page_link( $post = false, $leavename = false, $sample = false ) {
@@ -380,17 +344,11 @@ function get_page_link( $post = false, $leavename = false, $sample = false ) {
  * @since 2.1.0
  * @access private
  *
-<<<<<<< Updated upstream
  * @global WP_Rewrite $wp_rewrite
  *
  * @param int|object $post      Optional. Post ID or object.
  * @param bool       $leavename Optional. Leave name.
  * @param bool       $sample    Optional. Sample permalink.
-=======
- * @param int|object $post Optional. Post ID or object.
- * @param bool $leavename Optional. Leave name.
- * @param bool $sample Optional. Sample permalink.
->>>>>>> Stashed changes
  * @return string The page permalink.
  */
 function _get_page_link( $post = false, $leavename = false, $sample = false ) {
@@ -431,15 +389,10 @@ function _get_page_link( $post = false, $leavename = false, $sample = false ) {
  *
  * @since 2.0.0
  *
-<<<<<<< Updated upstream
  * @global WP_Rewrite $wp_rewrite
  *
  * @param int|object $post      Optional. Post ID or object.
  * @param bool       $leavename Optional. Leave name.
-=======
- * @param int|object $post Optional. Post ID or object.
- * @param bool $leavename Optional. Leave name.
->>>>>>> Stashed changes
  * @return string The attachment permalink.
  */
 function get_attachment_link( $post = null, $leavename = false ) {
@@ -487,11 +440,8 @@ function get_attachment_link( $post = null, $leavename = false ) {
  *
  * @since 1.5.0
  *
-<<<<<<< Updated upstream
  * @global WP_Rewrite $wp_rewrite
  *
-=======
->>>>>>> Stashed changes
  * @param int|bool $year False for current year or year for permalink.
  * @return string The permalink for the specified year archive.
  */
@@ -523,13 +473,9 @@ function get_year_link($year) {
  *
  * @since 1.0.0
  *
-<<<<<<< Updated upstream
  * @global WP_Rewrite $wp_rewrite
  *
  * @param bool|int $year  False for current year. Integer of year.
-=======
- * @param bool|int $year False for current year. Integer of year.
->>>>>>> Stashed changes
  * @param bool|int $month False for current month. Integer of month.
  * @return string The permalink for the specified month and year archive.
  */
@@ -565,17 +511,11 @@ function get_month_link($year, $month) {
  *
  * @since 1.0.0
  *
-<<<<<<< Updated upstream
  * @global WP_Rewrite $wp_rewrite
  *
  * @param bool|int $year  False for current year. Integer of year.
  * @param bool|int $month False for current month. Integer of month.
  * @param bool|int $day   False for current day. Integer of day.
-=======
- * @param bool|int $year False for current year. Integer of year.
- * @param bool|int $month False for current month. Integer of month.
- * @param bool|int $day False for current day. Integer of day.
->>>>>>> Stashed changes
  * @return string The permalink for the specified day, month, and year archive.
  */
 function get_day_link($year, $month, $day) {
@@ -616,11 +556,7 @@ function get_day_link($year, $month, $day) {
  * @since 3.0.0
  *
  * @param string $anchor The link's anchor text.
-<<<<<<< Updated upstream
  * @param string $feed   Optional, defaults to default feed. Feed type.
-=======
- * @param string $feed Optional, defaults to default feed. Feed type.
->>>>>>> Stashed changes
  */
 function the_feed_link( $anchor, $feed = '' ) {
 	$link = '<a href="' . esc_url( get_feed_link( $feed ) ) . '">' . $anchor . '</a>';
@@ -642,11 +578,8 @@ function the_feed_link( $anchor, $feed = '' ) {
  *
  * @since 1.5.0
  *
-<<<<<<< Updated upstream
  * @global WP_Rewrite $wp_rewrite
  *
-=======
->>>>>>> Stashed changes
  * @param string $feed Optional, defaults to default feed. Feed type.
  * @return string The feed permalink.
  */
@@ -692,13 +625,8 @@ function get_feed_link($feed = '') {
  *
  * @since 2.2.0
  *
-<<<<<<< Updated upstream
  * @param int    $post_id Optional. Post ID.
  * @param string $feed    Optional. Feed type.
-=======
- * @param int $post_id Optional. Post ID.
- * @param string $feed Optional. Feed type.
->>>>>>> Stashed changes
  * @return string The permalink for the comments feed for the given post.
  */
 function get_post_comments_feed_link($post_id = 0, $feed = '') {
@@ -748,14 +676,8 @@ function get_post_comments_feed_link($post_id = 0, $feed = '') {
  * @since 2.5.0
  *
  * @param string $link_text Descriptive text.
-<<<<<<< Updated upstream
  * @param int    $post_id   Optional post ID. Default to current post.
  * @param string $feed      Optional. Feed format.
-=======
- * @param int $post_id Optional post ID. Default to current post.
- * @param string $feed Optional. Feed format.
- * @return string Link to the comment feed for the current post.
->>>>>>> Stashed changes
 */
 function post_comments_feed_link( $link_text = '', $post_id = '', $feed = '' ) {
 	$url = esc_url( get_post_comments_feed_link( $post_id, $feed ) );
@@ -782,13 +704,8 @@ function post_comments_feed_link( $link_text = '', $post_id = '', $feed = '' ) {
  *
  * @since 2.5.0
  *
-<<<<<<< Updated upstream
  * @param int    $author_id ID of an author.
  * @param string $feed      Optional. Feed type.
-=======
- * @param int $author_id ID of an author.
- * @param string $feed Optional. Feed type.
->>>>>>> Stashed changes
  * @return string Link to the feed for the author specified by $author_id.
 */
 function get_author_feed_link( $author_id, $feed = '' ) {
@@ -831,21 +748,12 @@ function get_author_feed_link( $author_id, $feed = '' ) {
  *
  * @since 2.5.0
  *
-<<<<<<< Updated upstream
  * @param int    $cat_id ID of a category.
  * @param string $feed   Optional. Feed type.
  * @return string Link to the feed for the category specified by $cat_id.
 */
 function get_category_feed_link( $cat_id, $feed = '' ) {
 	return get_term_feed_link( $cat_id, 'category', $feed );
-=======
- * @param int $cat_id ID of a category.
- * @param string $feed Optional. Feed type.
- * @return string Link to the feed for the category specified by $cat_id.
-*/
-function get_category_feed_link($cat_id, $feed = '') {
-	return get_term_feed_link($cat_id, 'category', $feed);
->>>>>>> Stashed changes
 }
 
 /**
@@ -856,17 +764,10 @@ function get_category_feed_link($cat_id, $feed = '') {
  *
  * @since 3.0.0
  *
-<<<<<<< Updated upstream
  * @param int    $term_id  ID of a category.
  * @param string $taxonomy Optional. Taxonomy of $term_id
  * @param string $feed     Optional. Feed type.
  * @return string|false Link to the feed for the term specified by $term_id and $taxonomy.
-=======
- * @param int $term_id ID of a category.
- * @param string $taxonomy Optional. Taxonomy of $term_id
- * @param string $feed Optional. Feed type.
- * @return string Link to the feed for the term specified by $term_id and $taxonomy.
->>>>>>> Stashed changes
 */
 function get_term_feed_link( $term_id, $taxonomy = 'category', $feed = '' ) {
 	$term_id = ( int ) $term_id;
@@ -942,21 +843,12 @@ function get_term_feed_link( $term_id, $taxonomy = 'category', $feed = '' ) {
  *
  * @since 2.3.0
  *
-<<<<<<< Updated upstream
  * @param int    $tag_id Tag ID.
  * @param string $feed   Optional. Feed type.
  * @return string The feed permalink for the given tag.
  */
 function get_tag_feed_link( $tag_id, $feed = '' ) {
 	return get_term_feed_link( $tag_id, 'post_tag', $feed );
-=======
- * @param int $tag_id Tag ID.
- * @param string $feed Optional. Feed type.
- * @return string The feed permalink for the given tag.
- */
-function get_tag_feed_link($tag_id, $feed = '') {
-	return get_term_feed_link($tag_id, 'post_tag', $feed);
->>>>>>> Stashed changes
 }
 
 /**
@@ -964,11 +856,7 @@ function get_tag_feed_link($tag_id, $feed = '') {
  *
  * @since 2.7.0
  *
-<<<<<<< Updated upstream
  * @param int    $tag_id   Tag ID
-=======
- * @param int $tag_id Tag ID
->>>>>>> Stashed changes
  * @param string $taxonomy Taxonomy
  * @return string The edit tag link URL for the given tag.
  */
@@ -988,18 +876,10 @@ function get_edit_tag_link( $tag_id, $taxonomy = 'post_tag' ) {
  *
  * @since 2.7.0
  *
-<<<<<<< Updated upstream
  * @param string $link   Optional. Anchor text.
  * @param string $before Optional. Display before edit link.
  * @param string $after  Optional. Display after edit link.
  * @param object $tag    Tag object.
-=======
- * @param string $link Optional. Anchor text.
- * @param string $before Optional. Display before edit link.
- * @param string $after Optional. Display after edit link.
- * @param object $tag Tag object.
- * @return string HTML content.
->>>>>>> Stashed changes
  */
 function edit_tag_link( $link = '', $before = '', $after = '', $tag = null ) {
 	$link = edit_term_link( $link, '', '', $tag, false );
@@ -1023,7 +903,6 @@ function edit_tag_link( $link = '', $before = '', $after = '', $tag = null ) {
  * @param string $taxonomy    Taxonomy.
  * @param string $object_type The object type. Used to highlight the proper post type menu on the linked page.
  *                            Defaults to the first object_type associated with the taxonomy.
-<<<<<<< Updated upstream
  * @return string|null The edit term link URL for the given term, or null on failure.
  */
 function get_edit_term_link( $term_id, $taxonomy, $object_type = '' ) {
@@ -1036,16 +915,6 @@ function get_edit_term_link( $term_id, $taxonomy, $object_type = '' ) {
 	if ( ! $term || is_wp_error( $term ) ) {
 		return;
 	}
-=======
- * @return string The edit term link URL for the given term.
- */
-function get_edit_term_link( $term_id, $taxonomy, $object_type = '' ) {
-	$tax = get_taxonomy( $taxonomy );
-	if ( !current_user_can( $tax->cap->edit_terms ) )
-		return;
-
-	$term = get_term( $term_id, $taxonomy );
->>>>>>> Stashed changes
 
 	$args = array(
 		'action' => 'edit',
@@ -1055,11 +924,7 @@ function get_edit_term_link( $term_id, $taxonomy, $object_type = '' ) {
 
 	if ( $object_type ) {
 		$args['post_type'] = $object_type;
-<<<<<<< Updated upstream
 	} elseif ( ! empty( $tax->object_type ) ) {
-=======
-	} else if ( ! empty( $tax->object_type ) ) {
->>>>>>> Stashed changes
 		$args['post_type'] = reset( $tax->object_type );
 	}
 
@@ -1083,20 +948,12 @@ function get_edit_term_link( $term_id, $taxonomy, $object_type = '' ) {
  *
  * @since 3.1.0
  *
-<<<<<<< Updated upstream
  * @param string $link   Optional. Anchor text. Default empty.
  * @param string $before Optional. Display before edit link. Default empty.
  * @param string $after  Optional. Display after edit link. Default empty.
  * @param object $term   Optional. Term object. If null, the queried object will be inspected. Default null.
  * @param bool   $echo   Optional. Whether or not to echo the return. Default true.
  * @return string|void HTML content.
-=======
- * @param string $link Optional. Anchor text.
- * @param string $before Optional. Display before edit link.
- * @param string $after Optional. Display after edit link.
- * @param object $term Term object.
- * @return string HTML content.
->>>>>>> Stashed changes
  */
 function edit_term_link( $link = '', $before = '', $after = '', $term = null, $echo = true ) {
 	if ( is_null( $term ) )
@@ -1135,11 +992,8 @@ function edit_term_link( $link = '', $before = '', $after = '', $term = null, $e
  *
  * @since  3.0.0
  *
-<<<<<<< Updated upstream
  * @global WP_Rewrite $wp_rewrite
  *
-=======
->>>>>>> Stashed changes
  * @param string $query Optional. The query string to use. If empty the current query is used.
  * @return string The search permalink.
  */
@@ -1178,15 +1032,10 @@ function get_search_link( $query = '' ) {
  *
  * @since 2.5.0
  *
-<<<<<<< Updated upstream
  * @global WP_Rewrite $wp_rewrite
  *
  * @param string $search_query Optional. Search query.
  * @param string $feed         Optional. Feed type.
-=======
- * @param string $search_query Optional. Search query.
- * @param string $feed Optional. Feed type.
->>>>>>> Stashed changes
  * @return string The search results feed permalink.
  */
 function get_search_feed_link($search_query = '', $feed = '') {
@@ -1214,13 +1063,7 @@ function get_search_feed_link($search_query = '', $feed = '') {
 	 * @param string $feed Feed type.
 	 * @param string $type The search type. One of 'posts' or 'comments'.
 	 */
-<<<<<<< Updated upstream
 	return apply_filters( 'search_feed_link', $link, $feed, 'posts' );
-=======
-	$link = apply_filters( 'search_feed_link', $link, $feed, 'posts' );
-
-	return $link;
->>>>>>> Stashed changes
 }
 
 /**
@@ -1228,15 +1071,10 @@ function get_search_feed_link($search_query = '', $feed = '') {
  *
  * @since 2.5.0
  *
-<<<<<<< Updated upstream
  * @global WP_Rewrite $wp_rewrite
  *
  * @param string $search_query Optional. Search query.
  * @param string $feed         Optional. Feed type.
-=======
- * @param string $search_query Optional. Search query.
- * @param string $feed Optional. Feed type.
->>>>>>> Stashed changes
  * @return string The comments feed search results permalink.
  */
 function get_search_comments_feed_link($search_query = '', $feed = '') {
@@ -1255,13 +1093,7 @@ function get_search_comments_feed_link($search_query = '', $feed = '') {
 		$link = add_query_arg('withcomments', 1, $link);
 
 	/** This filter is documented in wp-includes/link-template.php */
-<<<<<<< Updated upstream
 	return apply_filters( 'search_feed_link', $link, $feed, 'comments' );
-=======
-	$link = apply_filters('search_feed_link', $link, $feed, 'comments');
-
-	return $link;
->>>>>>> Stashed changes
 }
 
 /**
@@ -1269,15 +1101,10 @@ function get_search_comments_feed_link($search_query = '', $feed = '') {
  *
  * @since 3.1.0
  *
-<<<<<<< Updated upstream
  * @global WP_Rewrite $wp_rewrite
  *
  * @param string $post_type Post type
  * @return string|false The post type archive permalink.
-=======
- * @param string $post_type Post type
- * @return string The post type archive permalink.
->>>>>>> Stashed changes
  */
 function get_post_type_archive_link( $post_type ) {
 	global $wp_rewrite;
@@ -1315,13 +1142,8 @@ function get_post_type_archive_link( $post_type ) {
  * @since 3.1.0
  *
  * @param string $post_type Post type
-<<<<<<< Updated upstream
  * @param string $feed      Optional. Feed type
  * @return string|false The post type feed permalink.
-=======
- * @param string $feed Optional. Feed type
- * @return string The post type feed permalink.
->>>>>>> Stashed changes
  */
 function get_post_type_archive_feed_link( $post_type, $feed = '' ) {
 	$default_feed = get_default_feed();
@@ -1360,15 +1182,9 @@ function get_post_type_archive_feed_link( $post_type, $feed = '' ) {
  *
  * @since 2.3.0
  *
-<<<<<<< Updated upstream
  * @param int    $id      Optional. Post ID.
  * @param string $context Optional, defaults to display. How to write the '&', defaults to '&amp;'.
  * @return string|void The edit post link for the given post.
-=======
- * @param int $id Optional. Post ID.
- * @param string $context Optional, defaults to display. How to write the '&', defaults to '&amp;'.
- * @return string The edit post link for the given post.
->>>>>>> Stashed changes
  */
 function get_edit_post_link( $id = 0, $context = 'display' ) {
 	if ( ! $post = get_post( $id ) )
@@ -1406,17 +1222,10 @@ function get_edit_post_link( $id = 0, $context = 'display' ) {
  *
  * @since 1.0.0
  *
-<<<<<<< Updated upstream
  * @param string $text   Optional. Anchor text.
  * @param string $before Optional. Display before edit link.
  * @param string $after  Optional. Display after edit link.
  * @param int    $id     Optional. Post ID.
-=======
- * @param string $text Optional. Anchor text.
- * @param string $before Optional. Display before edit link.
- * @param string $after Optional. Display after edit link.
- * @param int $id Optional. Post ID.
->>>>>>> Stashed changes
  */
 function edit_post_link( $text = null, $before = '', $after = '', $id = 0 ) {
 	if ( ! $post = get_post( $id ) ) {
@@ -1452,17 +1261,10 @@ function edit_post_link( $text = null, $before = '', $after = '', $id = 0 ) {
  *
  * @since 2.9.0
  *
-<<<<<<< Updated upstream
  * @param int    $id           Optional. Post ID.
  * @param string $deprecated   Not used.
  * @param bool   $force_delete Whether to bypass trash and force deletion. Default is false.
  * @return string|void The delete post link URL for the given post.
-=======
- * @param int $id Optional. Post ID.
- * @param string $deprecated Not used.
- * @param bool $force_delete Whether to bypass trash and force deletion. Default is false.
- * @return string The delete post link URL for the given post.
->>>>>>> Stashed changes
  */
 function get_delete_post_link( $id = 0, $deprecated = '', $force_delete = false ) {
 	if ( ! empty( $deprecated ) )
@@ -1500,11 +1302,7 @@ function get_delete_post_link( $id = 0, $deprecated = '', $force_delete = false 
  * @since 2.3.0
  *
  * @param int $comment_id Optional. Comment ID.
-<<<<<<< Updated upstream
  * @return string|void The edit comment link URL for the given comment.
-=======
- * @return string The edit comment link URL for the given comment.
->>>>>>> Stashed changes
  */
 function get_edit_comment_link( $comment_id = 0 ) {
 	$comment = get_comment( $comment_id );
@@ -1529,17 +1327,11 @@ function get_edit_comment_link( $comment_id = 0 ) {
  *
  * @since 1.0.0
  *
-<<<<<<< Updated upstream
  * @global object $comment
  *
  * @param string $text   Optional. Anchor text.
  * @param string $before Optional. Display before edit link.
  * @param string $after  Optional. Display after edit link.
-=======
- * @param string $text Optional. Anchor text.
- * @param string $before Optional. Display before edit link.
- * @param string $after Optional. Display after edit link.
->>>>>>> Stashed changes
  */
 function edit_comment_link( $text = null, $before = '', $after = '' ) {
 	global $comment;
@@ -1572,11 +1364,7 @@ function edit_comment_link( $text = null, $before = '', $after = '' ) {
  * @since 2.7.0
  *
  * @param int|stdClass $link Optional. Bookmark ID.
-<<<<<<< Updated upstream
  * @return string|void The edit bookmark link URL.
-=======
- * @return string The edit bookmark link URL.
->>>>>>> Stashed changes
  */
 function get_edit_bookmark_link( $link = 0 ) {
 	$link = get_bookmark( $link );
@@ -1602,17 +1390,10 @@ function get_edit_bookmark_link( $link = 0 ) {
  *
  * @since 2.7.0
  *
-<<<<<<< Updated upstream
  * @param string $link     Optional. Anchor text.
  * @param string $before   Optional. Display before edit link.
  * @param string $after    Optional. Display after edit link.
  * @param int    $bookmark Optional. Bookmark ID.
-=======
- * @param string $link Optional. Anchor text.
- * @param string $before Optional. Display before edit link.
- * @param string $after Optional. Display after edit link.
- * @param int $bookmark Optional. Bookmark ID.
->>>>>>> Stashed changes
  */
 function edit_bookmark_link( $link = '', $before = '', $after = '', $bookmark = null ) {
 	$bookmark = get_bookmark($bookmark);
@@ -1682,11 +1463,7 @@ function get_edit_user_link( $user_id = null ) {
  * @param bool         $in_same_term   Optional. Whether post should be in a same taxonomy term.
  * @param array|string $excluded_terms Optional. Array or comma-separated list of excluded term IDs.
  * @param string       $taxonomy       Optional. Taxonomy, if $in_same_term is true. Default 'category'.
-<<<<<<< Updated upstream
  * @return null|string|WP_Post Post object if successful. Null if global $post is not set. Empty string if no corresponding post exists.
-=======
- * @return mixed       Post object if successful. Null if global $post is not set. Empty string if no corresponding post exists.
->>>>>>> Stashed changes
  */
 function get_previous_post( $in_same_term = false, $excluded_terms = '', $taxonomy = 'category' ) {
 	return get_adjacent_post( $in_same_term, $excluded_terms, true, $taxonomy );
@@ -1700,11 +1477,7 @@ function get_previous_post( $in_same_term = false, $excluded_terms = '', $taxono
  * @param bool         $in_same_term   Optional. Whether post should be in a same taxonomy term.
  * @param array|string $excluded_terms Optional. Array or comma-separated list of excluded term IDs.
  * @param string       $taxonomy       Optional. Taxonomy, if $in_same_term is true. Default 'category'.
-<<<<<<< Updated upstream
  * @return null|string|WP_Post Post object if successful. Null if global $post is not set. Empty string if no corresponding post exists.
-=======
- * @return mixed       Post object if successful. Null if global $post is not set. Empty string if no corresponding post exists.
->>>>>>> Stashed changes
  */
 function get_next_post( $in_same_term = false, $excluded_terms = '', $taxonomy = 'category' ) {
 	return get_adjacent_post( $in_same_term, $excluded_terms, false, $taxonomy );
@@ -1717,20 +1490,13 @@ function get_next_post( $in_same_term = false, $excluded_terms = '', $taxonomy =
  *
  * @since 2.5.0
  *
-<<<<<<< Updated upstream
  * @global wpdb $wpdb
  *
-=======
->>>>>>> Stashed changes
  * @param bool         $in_same_term   Optional. Whether post should be in a same taxonomy term.
  * @param array|string $excluded_terms Optional. Array or comma-separated list of excluded term IDs.
  * @param bool         $previous       Optional. Whether to retrieve previous post.
  * @param string       $taxonomy       Optional. Taxonomy, if $in_same_term is true. Default 'category'.
-<<<<<<< Updated upstream
  * @return null|string|WP_Post Post object if successful. Null if global $post is not set. Empty string if no corresponding post exists.
-=======
- * @return mixed       Post object if successful. Null if global $post is not set. Empty string if no corresponding post exists.
->>>>>>> Stashed changes
  */
 function get_adjacent_post( $in_same_term = false, $excluded_terms = '', $previous = true, $taxonomy = 'category' ) {
 	global $wpdb;
@@ -1886,11 +1652,7 @@ function get_adjacent_post( $in_same_term = false, $excluded_terms = '', $previo
  * @param array|string $excluded_terms Optional. Array or comma-separated list of excluded term IDs.
  * @param bool         $previous       Optional. Whether to display link to previous or next post. Default true.
  * @param string       $taxonomy       Optional. Taxonomy, if $in_same_term is true. Default 'category'.
-<<<<<<< Updated upstream
  * @return string|void The adjacent post relational link URL.
-=======
- * @return string The adjacent post relational link URL.
->>>>>>> Stashed changes
  */
 function get_adjacent_post_rel_link( $title = '%title', $in_same_term = false, $excluded_terms = '', $previous = true, $taxonomy = 'category' ) {
 	if ( $previous && is_attachment() && $post = get_post() )
@@ -1999,11 +1761,7 @@ function prev_post_rel_link( $title = '%title', $in_same_term = false, $excluded
  * @param array|string $excluded_terms Optional. Array or comma-separated list of excluded term IDs.
  * @param bool         $start          Optional. Whether to retrieve first or last post.
  * @param string       $taxonomy       Optional. Taxonomy, if $in_same_term is true. Default 'category'.
-<<<<<<< Updated upstream
  * @return null|array Array containing the boundary post object if successful, null otherwise.
-=======
- * @return mixed Array containing the boundary post object if successful, null otherwise.
->>>>>>> Stashed changes
  */
 function get_boundary_post( $in_same_term = false, $excluded_terms = '', $start = true, $taxonomy = 'category' ) {
 	$post = get_post();
@@ -2199,17 +1957,11 @@ function adjacent_post_link( $format, $link, $in_same_term = false, $excluded_te
  *
  * @since 1.5.0
  *
-<<<<<<< Updated upstream
  * @global WP_Rewrite $wp_rewrite
  *
  * @param int  $pagenum Optional. Page ID.
  * @param bool $escape  Optional. Whether to escape the URL for display, with esc_url(). Defaults to true.
 * 	                    Otherwise, prepares the URL with esc_url_raw().
-=======
- * @param int $pagenum Optional. Page ID.
- * @param bool $escape Optional. Whether to escape the URL for display, with esc_url(). Defaults to true.
-* 	Otherwise, prepares the URL with esc_url_raw().
->>>>>>> Stashed changes
  * @return string The link URL for the given page number.
  */
 function get_pagenum_link($pagenum = 1, $escape = true ) {
@@ -2283,15 +2035,10 @@ function get_pagenum_link($pagenum = 1, $escape = true ) {
  *
  * @since 2.0.10
  *
-<<<<<<< Updated upstream
  * @global int $paged
  *
  * @param int $max_page Optional. Max pages.
  * @return string|void The link URL for next posts page.
-=======
- * @param int $max_page Optional. Max pages.
- * @return string The link URL for next posts page.
->>>>>>> Stashed changes
  */
 function get_next_posts_page_link($max_page = 0) {
 	global $paged;
@@ -2310,15 +2057,9 @@ function get_next_posts_page_link($max_page = 0) {
  *
  * @since 0.71
  *
-<<<<<<< Updated upstream
  * @param int   $max_page Optional. Max pages.
  * @param bool  $echo     Optional. Echo or return;
  * @return string|void The link URL for next posts page if `$echo = false`.
-=======
- * @param int $max_page Optional. Max pages.
- * @param boolean $echo Optional. Echo or return;
- * @return string The link URL for next posts page if `$echo = false`.
->>>>>>> Stashed changes
  */
 function next_posts( $max_page = 0, $echo = true ) {
 	$output = esc_url( get_next_posts_page_link( $max_page ) );
@@ -2334,18 +2075,12 @@ function next_posts( $max_page = 0, $echo = true ) {
  *
  * @since 2.7.0
  *
-<<<<<<< Updated upstream
  * @global int      $paged
  * @global WP_Query $wp_query
  *
  * @param string $label    Content for link text.
  * @param int    $max_page Optional. Max pages.
  * @return string|void HTML-formatted next posts page link.
-=======
- * @param string $label Content for link text.
- * @param int $max_page Optional. Max pages.
- * @return string|null HTML-formatted next posts page link.
->>>>>>> Stashed changes
  */
 function get_next_posts_link( $label = null, $max_page = 0 ) {
 	global $paged, $wp_query;
@@ -2380,13 +2115,8 @@ function get_next_posts_link( $label = null, $max_page = 0 ) {
  *
  * @since 0.71
  *
-<<<<<<< Updated upstream
  * @param string $label    Content for link text.
  * @param int    $max_page Optional. Max pages.
-=======
- * @param string $label Content for link text.
- * @param int $max_page Optional. Max pages.
->>>>>>> Stashed changes
  */
 function next_posts_link( $label = null, $max_page = 0 ) {
 	echo get_next_posts_link( $label, $max_page );
@@ -2401,13 +2131,9 @@ function next_posts_link( $label = null, $max_page = 0 ) {
  *
  * @since 2.0.10
  *
-<<<<<<< Updated upstream
  * @global int $paged
  *
  * @return string|void The link for the previous posts page.
-=======
- * @return string|null The link for the previous posts page.
->>>>>>> Stashed changes
  */
 function get_previous_posts_page_link() {
 	global $paged;
@@ -2425,13 +2151,8 @@ function get_previous_posts_page_link() {
  *
  * @since 0.71
  *
-<<<<<<< Updated upstream
  * @param bool $echo Optional. Echo or return;
  * @return string|void The previous posts page link if `$echo = false`.
-=======
- * @param boolean $echo Optional. Echo or return;
- * @return string The previous posts page link if `$echo = false`.
->>>>>>> Stashed changes
  */
 function previous_posts( $echo = true ) {
 	$output = esc_url( get_previous_posts_page_link() );
@@ -2447,15 +2168,10 @@ function previous_posts( $echo = true ) {
  *
  * @since 2.7.0
  *
-<<<<<<< Updated upstream
  * @global int $paged
  *
  * @param string $label Optional. Previous page link text.
  * @return string|void HTML-formatted previous page link.
-=======
- * @param string $label Optional. Previous page link text.
- * @return string|null HTML-formatted previous page link.
->>>>>>> Stashed changes
  */
 function get_previous_posts_link( $label = null ) {
 	global $paged;
@@ -2492,11 +2208,8 @@ function previous_posts_link( $label = null ) {
  *
  * @since 2.8.0
  *
-<<<<<<< Updated upstream
  * @global WP_Query $wp_query
  *
-=======
->>>>>>> Stashed changes
  * @param string|array $args Optional args.
  * @return string The posts link navigation.
  */
@@ -2536,11 +2249,7 @@ function get_posts_nav_link( $args = array() ) {
  *
  * @since 0.71
  *
-<<<<<<< Updated upstream
  * @param string $sep      Optional. Separator for posts navigation links.
-=======
- * @param string $sep Optional. Separator for posts navigation links.
->>>>>>> Stashed changes
  * @param string $prelabel Optional. Label for previous pages.
  * @param string $nxtlabel Optional Label for next pages.
  */
@@ -2738,13 +2447,9 @@ function _navigation_markup( $links, $class = 'posts-navigation', $screen_reader
  *
  * @since 2.7.0
  *
-<<<<<<< Updated upstream
  * @global WP_Rewrite $wp_rewrite
  *
  * @param int $pagenum  Optional. Page number.
-=======
- * @param int $pagenum Optional. Page number.
->>>>>>> Stashed changes
  * @param int $max_page Optional. The maximum number of comment pages.
  * @return string The comments page number link URL.
  */
@@ -2778,13 +2483,7 @@ function get_comments_pagenum_link( $pagenum = 1, $max_page = 0 ) {
 	 *
 	 * @param string $result The comments page number link.
 	 */
-<<<<<<< Updated upstream
 	return apply_filters( 'get_comments_pagenum_link', $result );
-=======
-	$result = apply_filters( 'get_comments_pagenum_link', $result );
-
-	return $result;
->>>>>>> Stashed changes
 }
 
 /**
@@ -2792,17 +2491,11 @@ function get_comments_pagenum_link( $pagenum = 1, $max_page = 0 ) {
  *
  * @since 2.7.1
  *
-<<<<<<< Updated upstream
  * @global WP_Query $wp_query
  *
  * @param string $label    Optional. Label for link text.
  * @param int    $max_page Optional. Max page.
  * @return string|void HTML-formatted link for the next page of comments.
-=======
- * @param string $label Optional. Label for link text.
- * @param int $max_page Optional. Max page.
- * @return string|null HTML-formatted link for the next page of comments.
->>>>>>> Stashed changes
  */
 function get_next_comments_link( $label = '', $max_page = 0 ) {
 	global $wp_query;
@@ -2845,13 +2538,8 @@ function get_next_comments_link( $label = '', $max_page = 0 ) {
  *
  * @since 2.7.0
  *
-<<<<<<< Updated upstream
  * @param string $label    Optional. Label for link text.
  * @param int    $max_page Optional. Max page.
-=======
- * @param string $label Optional. Label for link text.
- * @param int $max_page Optional. Max page.
->>>>>>> Stashed changes
  */
 function next_comments_link( $label = '', $max_page = 0 ) {
 	echo get_next_comments_link( $label, $max_page );
@@ -2863,11 +2551,7 @@ function next_comments_link( $label = '', $max_page = 0 ) {
  * @since 2.7.1
  *
  * @param string $label Optional. Label for comments link text.
-<<<<<<< Updated upstream
  * @return string|void HTML-formatted link for the previous page of comments.
-=======
- * @return string|null HTML-formatted link for the previous page of comments.
->>>>>>> Stashed changes
  */
 function get_previous_comments_link( $label = '' ) {
 	if ( !is_singular() || !get_option('page_comments') )
@@ -2910,15 +2594,10 @@ function previous_comments_link( $label = '' ) {
  * @see paginate_links()
  * @since 2.7.0
  *
-<<<<<<< Updated upstream
  * @global WP_Rewrite $wp_rewrite
  *
  * @param string|array $args Optional args. See paginate_links().
  * @return string|void Markup for pagination links.
-=======
- * @param string|array $args Optional args. See paginate_links().
- * @return string Markup for pagination links.
->>>>>>> Stashed changes
 */
 function paginate_comments_links($args = array()) {
 	global $wp_rewrite;
@@ -2957,13 +2636,10 @@ function paginate_comments_links($args = array()) {
  *
  * @since 2.6.0
  *
-<<<<<<< Updated upstream
  * @global bool          $is_IE
  * @global string        $wp_version
  * @global WP_Press_This $wp_press_this
  *
-=======
->>>>>>> Stashed changes
  * @return string The Press This bookmarklet link URL.
  */
 function get_shortcut_link() {
@@ -3043,11 +2719,8 @@ function home_url( $path = '', $scheme = null ) {
  *
  * @since 3.0.0
  *
-<<<<<<< Updated upstream
  * @global string $pagenow
  *
-=======
->>>>>>> Stashed changes
  * @param  int         $blog_id     Optional. Blog ID. Default null (current blog).
  * @param  string      $path        Optional. Path relative to the home URL. Default empty.
  * @param  string|null $orig_scheme Optional. Scheme to give the home URL context. Accepts
@@ -3099,11 +2772,7 @@ function get_home_url( $blog_id = null, $path = '', $scheme = null ) {
  *
  * @since 3.0.0
  *
-<<<<<<< Updated upstream
  * @param string $path   Optional. Path relative to the site url.
-=======
- * @param string $path Optional. Path relative to the site url.
->>>>>>> Stashed changes
  * @param string $scheme Optional. Scheme to give the site url context. See set_url_scheme().
  * @return string Site url link with optional path appended.
 */
@@ -3160,11 +2829,7 @@ function get_site_url( $blog_id = null, $path = '', $scheme = null ) {
  *
  * @since 2.6.0
  *
-<<<<<<< Updated upstream
  * @param string $path   Optional path relative to the admin url.
-=======
- * @param string $path Optional path relative to the admin url.
->>>>>>> Stashed changes
  * @param string $scheme The scheme to use. Default is 'admin', which obeys force_ssl_admin() and is_ssl(). 'http' or 'https' can be passed to force those schemes.
  * @return string Admin url link with optional path appended.
 */
@@ -3207,11 +2872,7 @@ function get_admin_url( $blog_id = null, $path = '', $scheme = 'admin' ) {
  *
  * @since 2.6.0
  *
-<<<<<<< Updated upstream
  * @param string $path   Optional. Path relative to the includes url.
-=======
- * @param string $path Optional. Path relative to the includes url.
->>>>>>> Stashed changes
  * @param string $scheme Optional. Scheme to give the includes url context.
  * @return string Includes url link with optional path appended.
 */
@@ -3319,11 +2980,7 @@ function plugins_url( $path = '', $plugin = '' ) {
  *
  * @since 3.0.0
  *
-<<<<<<< Updated upstream
  * @param string $path   Optional. Path relative to the site url.
-=======
- * @param string $path Optional. Path relative to the site url.
->>>>>>> Stashed changes
  * @param string $scheme Optional. Scheme to give the site url context. See set_url_scheme().
  * @return string Site url link with optional path appended.
 */
@@ -3406,11 +3063,7 @@ function network_home_url( $path = '', $scheme = null ) {
  *
  * @since 3.0.0
  *
-<<<<<<< Updated upstream
  * @param string $path   Optional path relative to the admin url.
-=======
- * @param string $path Optional path relative to the admin url.
->>>>>>> Stashed changes
  * @param string $scheme The scheme to use. Default is 'admin', which obeys force_ssl_admin() and is_ssl(). 'http' or 'https' can be passed to force those schemes.
  * @return string Admin url link with optional path appended.
 */
@@ -3440,11 +3093,7 @@ function network_admin_url( $path = '', $scheme = 'admin' ) {
  *
  * @since 3.0.0
  *
-<<<<<<< Updated upstream
  * @param string $path   Optional path relative to the admin url.
-=======
- * @param string $path Optional path relative to the admin url.
->>>>>>> Stashed changes
  * @param string $scheme The scheme to use. Default is 'admin', which obeys force_ssl_admin() and is_ssl(). 'http' or 'https' can be passed to force those schemes.
  * @return string Admin url link with optional path appended.
 */
@@ -3471,11 +3120,7 @@ function user_admin_url( $path = '', $scheme = 'admin' ) {
  *
  * @since 3.1.0
  *
-<<<<<<< Updated upstream
  * @param string $path   Optional path relative to the admin url.
-=======
- * @param string $path Optional path relative to the admin url.
->>>>>>> Stashed changes
  * @param string $scheme The scheme to use. Default is 'admin', which obeys force_ssl_admin() and is_ssl(). 'http' or 'https' can be passed to force those schemes.
  * @return string Admin url link with optional path appended.
 */
@@ -3493,11 +3138,7 @@ function self_admin_url($path = '', $scheme = 'admin') {
  *
  * @since 3.4.0
  *
-<<<<<<< Updated upstream
  * @param string $url    Absolute url that includes a scheme
-=======
- * @param string $url Absolute url that includes a scheme
->>>>>>> Stashed changes
  * @param string $scheme Optional. Scheme to give $url. Currently 'http', 'https', 'login', 'login_post', 'admin', or 'relative'.
  * @return string $url URL with chosen scheme.
  */
@@ -3546,15 +3187,9 @@ function set_url_scheme( $url, $scheme = null ) {
  *
  * @since 3.1.0
  *
-<<<<<<< Updated upstream
  * @param int    $user_id Optional. User ID. Defaults to current user.
  * @param string $path    Optional path relative to the dashboard. Use only paths known to both blog and user admins.
  * @param string $scheme  The scheme to use. Default is 'admin', which obeys force_ssl_admin() and is_ssl(). 'http' or 'https' can be passed to force those schemes.
-=======
- * @param int $user_id Optional. User ID. Defaults to current user.
- * @param string $path Optional path relative to the dashboard. Use only paths known to both blog and user admins.
- * @param string $scheme The scheme to use. Default is 'admin', which obeys force_ssl_admin() and is_ssl(). 'http' or 'https' can be passed to force those schemes.
->>>>>>> Stashed changes
  * @return string Dashboard url link with optional path appended.
  */
 function get_dashboard_url( $user_id = 0, $path = '', $scheme = 'admin' ) {
@@ -3629,11 +3264,8 @@ function get_edit_profile_url( $user_id = 0, $scheme = 'admin' ) {
  * Output rel=canonical for singular queries.
  *
  * @since 2.9.0
-<<<<<<< Updated upstream
  *
  * @global WP_Query $wp_the_query
-=======
->>>>>>> Stashed changes
 */
 function rel_canonical() {
 	if ( !is_singular() )
@@ -3661,7 +3293,6 @@ function rel_canonical() {
  *
  * @since 3.0.0.
  *
-<<<<<<< Updated upstream
  * @global WP_Query $wp_query
  *
  * @param int    $id          A post or blog id. Default is 0, which means the current post or blog.
@@ -3670,11 +3301,6 @@ function rel_canonical() {
  *                            If 'query', the current query is consulted to determine the id and context.
  *                            Default is 'post'.
  * @param bool   $allow_slugs Whether to allow post slugs in the shortlink. It is up to the plugin how and whether to honor this.
-=======
- * @param int $id A post or blog id. Default is 0, which means the current post or blog.
- * @param string $context Whether the id is a 'blog' id, 'post' id, or 'media' id. If 'post', the post_type of the post is consulted. If 'query', the current query is consulted to determine the id and context. Default is 'post'.
- * @param bool $allow_slugs Whether to allow post slugs in the shortlink. It is up to the plugin how and whether to honor this.
->>>>>>> Stashed changes
  * @return string A shortlink or an empty string if no shortlink exists for the requested resource or if shortlinks are not enabled.
  */
 function wp_get_shortlink($id = 0, $context = 'post', $allow_slugs = true) {
@@ -3777,17 +3403,10 @@ function wp_shortlink_header() {
  *
  * @since 3.0.0
  *
-<<<<<<< Updated upstream
  * @param string $text   Optional The link text or HTML to be displayed. Defaults to 'This is the short link.'
  * @param string $title  Optional The tooltip for the link. Must be sanitized. Defaults to the sanitized post title.
  * @param string $before Optional HTML to display before the link.
  * @param string $after  Optional HTML to display after the link.
-=======
- * @param string $text Optional The link text or HTML to be displayed. Defaults to 'This is the short link.'
- * @param string $title Optional The tooltip for the link. Must be sanitized. Defaults to the sanitized post title.
- * @param string $before Optional HTML to display before the link.
- * @param string $after Optional HTML to display after the link.
->>>>>>> Stashed changes
  */
 function the_shortlink( $text = '', $title = '', $before = '', $after = '' ) {
 	$post = get_post();
@@ -4036,15 +3655,11 @@ function get_avatar_data( $id_or_email, $args = null ) {
 		'r' => $args['rating'],
 	);
 
-<<<<<<< Updated upstream
 	if ( is_ssl() ) {
 		$url = 'https://secure.gravatar.com/avatar/' . $email_hash;
 	} else {
 		$url = sprintf( 'http://%d.gravatar.com/avatar/%s', $gravatar_server, $email_hash );
 	}
-=======
-	$url = sprintf( 'http://%d.gravatar.com/avatar/%s', $gravatar_server, $email_hash );
->>>>>>> Stashed changes
 
 	$url = add_query_arg(
 		rawurlencode_deep( array_filter( $url_args ) ),

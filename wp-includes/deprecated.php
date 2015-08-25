@@ -2445,11 +2445,7 @@ function get_users_of_blog( $id = '' ) {
  * @deprecated 3.0.0
  * @deprecated Use add_theme_support( 'automatic-feed-links' )
  *
-<<<<<<< Updated upstream
  * @param bool $add Optional, default is true. Add or remove links. Defaults to true.
-=======
- * @param boolean $add Optional, default is true. Add or remove links. Defaults to true.
->>>>>>> Stashed changes
  */
 function automatic_feed_links( $add = true ) {
 	_deprecated_function( __FUNCTION__, '3.0', "add_theme_support( 'automatic-feed-links' )" );
@@ -3495,7 +3491,6 @@ function url_is_accessable_via_ssl( $url ) {
 
 	return false;
 }
-<<<<<<< Updated upstream
 
 /**
  * Start preview theme output buffer.
@@ -3641,5 +3636,3 @@ function wp_htmledit_pre($output) {
 	return apply_filters( 'htmledit_pre', $output );
 }
 
-=======
->>>>>>> Stashed changes

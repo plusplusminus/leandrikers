@@ -16,11 +16,7 @@
  * @param int|stdClass $bookmark
  * @param string $output Optional. Either OBJECT, ARRAY_N, or ARRAY_A constant
  * @param string $filter Optional, default is 'raw'.
-<<<<<<< Updated upstream
  * @return array|object|null Type returned depends on $output value.
-=======
- * @return array|object Type returned depends on $output value.
->>>>>>> Stashed changes
  */
 function get_bookmark($bookmark, $output = OBJECT, $filter = 'raw') {
 	global $wpdb;
@@ -69,11 +65,7 @@ function get_bookmark($bookmark, $output = OBJECT, $filter = 'raw') {
  * @param string $field The name of the data field to return
  * @param int $bookmark The bookmark ID to get field
  * @param string $context Optional. The context of how the field will be used.
-<<<<<<< Updated upstream
  * @return string|WP_Error
-=======
- * @return string
->>>>>>> Stashed changes
  */
 function get_bookmark_field( $field, $bookmark, $context = 'display' ) {
 	$bookmark = (int) $bookmark;

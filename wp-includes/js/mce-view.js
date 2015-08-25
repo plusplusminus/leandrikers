@@ -1,10 +1,5 @@
 /* global tinymce */
 
-<<<<<<< Updated upstream
-=======
-window.wp = window.wp || {};
-
->>>>>>> Stashed changes
 /*
  * The TinyMCE view API.
  *
@@ -27,11 +22,7 @@ window.wp = window.wp || {};
  * |- registered view
  * |  |- ...
  */
-<<<<<<< Updated upstream
 ( function( window, wp, shortcode, $ ) {
-=======
-( function( window, wp, $ ) {
->>>>>>> Stashed changes
 	'use strict';
 
 	var views = {},
@@ -152,7 +143,6 @@ window.wp = window.wp || {};
 		/**
 		 * Create a view instance.
 		 *
-<<<<<<< Updated upstream
 		 * @param {String}  type    The view type.
 		 * @param {String}  text    The textual representation of the view.
 		 * @param {Object}  options Options.
@@ -161,21 +151,11 @@ window.wp = window.wp || {};
 		 * @return {wp.mce.View} The view instance.
 		 */
 		createInstance: function( type, text, options, force ) {
-=======
-		 * @param {String} type    The view type.
-		 * @param {String} text    The textual representation of the view.
-		 * @param {Object} options Options.
-		 *
-		 * @return {wp.mce.View} The view instance.
-		 */
-		createInstance: function( type, text, options ) {
->>>>>>> Stashed changes
 			var View = this.get( type ),
 				encodedText,
 				instance;
 
 			text = tinymce.DOM.decode( text );
-<<<<<<< Updated upstream
 
 			if ( ! force ) {
 				instance = this.getInstance( text );
@@ -183,12 +163,6 @@ window.wp = window.wp || {};
 				if ( instance ) {
 					return instance;
 				}
-=======
-			instance = this.getInstance( text );
-
-			if ( instance ) {
-				return instance;
->>>>>>> Stashed changes
 			}
 
 			encodedText = encodeURIComponent( text );
@@ -244,7 +218,6 @@ window.wp = window.wp || {};
 		 * @param {String}         text   The new text.
 		 * @param {tinymce.Editor} editor The TinyMCE editor instance the view node is in.
 		 * @param {HTMLElement}    node   The view node to update.
-<<<<<<< Updated upstream
 		 * @param {Boolean}        force  Recreate the instance. Optional.
 		 */
 		update: function( text, editor, node, force ) {
@@ -252,14 +225,6 @@ window.wp = window.wp || {};
 
 			if ( instance ) {
 				instance.update( text, editor, node, force );
-=======
-		 */
-		update: function( text, editor, node ) {
-			var instance = this.getInstance( node );
-
-			if ( instance ) {
-				instance.update( text, editor, node );
->>>>>>> Stashed changes
 			}
 		},
 
@@ -273,13 +238,8 @@ window.wp = window.wp || {};
 			var instance = this.getInstance( node );
 
 			if ( instance && instance.edit ) {
-<<<<<<< Updated upstream
 				instance.edit( instance.text, function( text, force ) {
 					instance.update( text, editor, node, force );
-=======
-				instance.edit( instance.text, function( text ) {
-					instance.update( text, editor, node );
->>>>>>> Stashed changes
 				} );
 			}
 		},
@@ -345,13 +305,8 @@ window.wp = window.wp || {};
 		/**
 		 * Renders all view nodes tied to this view instance that are not yet rendered.
 		 *
-<<<<<<< Updated upstream
 		 * @param {String}  content The content to render. Optional.
 		 * @param {Boolean} force   Rerender all view nodes tied to this view instance. Optional.
-=======
-		 * @param {String} content The content to render. Optional.
-		 * @param {Boolean} force Rerender all view nodes tied to this view instance.
->>>>>>> Stashed changes
 		 */
 		render: function( content, force ) {
 			if ( content != null ) {
@@ -466,18 +421,14 @@ window.wp = window.wp || {};
 		 */
 		replaceMarkers: function() {
 			this.getMarkers( function( editor, node ) {
-<<<<<<< Updated upstream
 				var selected = node === editor.selection.getNode(),
 					$viewNode;
 
-=======
->>>>>>> Stashed changes
 				if ( ! this.loader && $( node ).text() !== this.text ) {
 					editor.dom.setAttrib( node, 'data-wpview-marker', null );
 					return;
 				}
 
-<<<<<<< Updated upstream
 				$viewNode = editor.$(
 					'<div class="wpview-wrap" data-wpview-text="' + this.encodedText + '" data-wpview-type="' + this.type + '">' +
 						'<p class="wpview-selection-before">\u00a0</p>' +
@@ -493,20 +444,6 @@ window.wp = window.wp || {};
 				if ( selected ) {
 					editor.wp.setViewCursor( false, $viewNode[0] );
 				}
-=======
-				editor.dom.replace(
-					editor.dom.createFragment(
-						'<div class="wpview-wrap" data-wpview-text="' + this.encodedText + '" data-wpview-type="' + this.type + '">' +
-							'<p class="wpview-selection-before">\u00a0</p>' +
-							'<div class="wpview-body" contenteditable="false">' +
-								'<div class="wpview-content wpview-type-' + this.type + '"></div>' +
-							'</div>' +
-							'<p class="wpview-selection-after">\u00a0</p>' +
-						'</div>'
-					),
-					node
-				);
->>>>>>> Stashed changes
 			} );
 		},
 
@@ -573,7 +510,6 @@ window.wp = window.wp || {};
 					}
 				} );
 
-<<<<<<< Updated upstream
 				if ( self.iframeHeight ) {
 					dom.add( contentNode, 'div', { style: {
 						width: '100%',
@@ -585,12 +521,6 @@ window.wp = window.wp || {};
 				// or the iframe will fail especially when switching Text => Visual.
 				setTimeout( function() {
 					var iframe, iframeDoc, observer, i, block;
-=======
-				// Seems the browsers need a bit of time to insert/set the view nodes,
-				// or the iframe will fail especially when switching Text => Visual.
-				setTimeout( function() {
-					var iframe, iframeDoc, observer, i;
->>>>>>> Stashed changes
 
 					contentNode.innerHTML = '';
 
@@ -604,12 +534,8 @@ window.wp = window.wp || {};
 						style: {
 							width: '100%',
 							display: 'block'
-<<<<<<< Updated upstream
 						},
 						height: self.iframeHeight
-=======
-						}
->>>>>>> Stashed changes
 					} );
 
 					dom.add( contentNode, 'div', { 'class': 'wpview-overlay' } );
@@ -652,36 +578,24 @@ window.wp = window.wp || {};
 					iframeDoc.close();
 
 					function resize() {
-<<<<<<< Updated upstream
 						var $iframe;
 
 						if ( block ) {
 							return;
 						}
-=======
-						var $iframe, iframeDocHeight;
->>>>>>> Stashed changes
 
 						// Make sure the iframe still exists.
 						if ( iframe.contentWindow ) {
 							$iframe = $( iframe );
-<<<<<<< Updated upstream
 							self.iframeHeight = $( iframeDoc.body ).height();
 
 							if ( $iframe.height() !== self.iframeHeight ) {
 								$iframe.height( self.iframeHeight );
-=======
-							iframeDocHeight = $( iframeDoc.body ).height();
-
-							if ( $iframe.height() !== iframeDocHeight ) {
-								$iframe.height( iframeDocHeight );
->>>>>>> Stashed changes
 								editor.nodeChanged();
 							}
 						}
 					}
 
-<<<<<<< Updated upstream
 					if ( self.iframeHeight ) {
 						block = true;
 
@@ -691,8 +605,6 @@ window.wp = window.wp || {};
 						}, 3000 );
 					}
 
-=======
->>>>>>> Stashed changes
 					$( iframe.contentWindow ).on( 'load', resize );
 
 					if ( MutationObserver ) {
@@ -744,11 +656,7 @@ window.wp = window.wp || {};
 		 * Sets an error for all view nodes tied to this view instance.
 		 *
 		 * @param {String} message  The error message to set.
-<<<<<<< Updated upstream
 		 * @param {String} dashicon A dashicon ID. Optional. {@link https://developer.wordpress.org/resource/dashicons/}
-=======
-		 * @param {String} dashicon A dashicon ID (optional). {@link https://developer.wordpress.org/resource/dashicons/}
->>>>>>> Stashed changes
 		 */
 		setError: function( message, dashicon ) {
 			this.setContent(
@@ -767,11 +675,7 @@ window.wp = window.wp || {};
 		 * @return {Object}
 		 */
 		match: function( content ) {
-<<<<<<< Updated upstream
 			var match = shortcode.next( this.type, content );
-=======
-			var match = wp.shortcode.next( this.type, content );
->>>>>>> Stashed changes
 
 			if ( match ) {
 				return {
@@ -790,25 +694,16 @@ window.wp = window.wp || {};
 		 * @param {String}         text   The new text.
 		 * @param {tinymce.Editor} editor The TinyMCE editor instance the view node is in.
 		 * @param {HTMLElement}    node   The view node to update.
-<<<<<<< Updated upstream
 		 * @param {Boolean}        force  Recreate the instance. Optional.
 		 */
 		update: function( text, editor, node, force ) {
-=======
-		 */
-		update: function( text, editor, node ) {
->>>>>>> Stashed changes
 			_.find( views, function( view, type ) {
 				var match = view.prototype.match( text );
 
 				if ( match ) {
 					$( node ).data( 'rendered', false );
 					editor.dom.setAttrib( node, 'data-wpview-text', encodeURIComponent( text ) );
-<<<<<<< Updated upstream
 					wp.mce.views.createInstance( type, text, match.options, force ).render();
-=======
-					wp.mce.views.createInstance( type, text, match.options ).render();
->>>>>>> Stashed changes
 					editor.focus();
 
 					return true;
@@ -829,18 +724,13 @@ window.wp = window.wp || {};
 			editor.focus();
 		}
 	} );
-<<<<<<< Updated upstream
 } )( window, window.wp, window.wp.shortcode, window.jQuery );
-=======
-} )( window, window.wp, window.jQuery );
->>>>>>> Stashed changes
 
 /*
  * The WordPress core TinyMCE views.
  * Views for the gallery, audio, video, playlist and embed shortcodes,
  * and a view for embeddable URLs.
  */
-<<<<<<< Updated upstream
 ( function( window, views, media, $ ) {
 	var base, gallery, av, embed;
 
@@ -850,28 +740,12 @@ window.wp = window.wp || {};
 		edit: function( text, update ) {
 			var type = this.type,
 				frame = media[ type ].edit( text );
-=======
-( function( window, views, $ ) {
-	var postID = $( '#post_ID' ).val() || 0,
-		media, gallery, av, embed;
-
-	media = {
-		state: [],
-
-		edit: function( text, update ) {
-			var media = wp.media[ this.type ],
-				frame = media.edit( text );
->>>>>>> Stashed changes
 
 			this.pausePlayers && this.pausePlayers();
 
 			_.each( this.state, function( state ) {
 				frame.state( state ).on( 'update', function( selection ) {
-<<<<<<< Updated upstream
 					update( media[ type ].shortcode( selection ).string(), type === 'gallery' );
-=======
-					update( media.shortcode( selection ).string() );
->>>>>>> Stashed changes
 				} );
 			} );
 
@@ -883,21 +757,12 @@ window.wp = window.wp || {};
 		}
 	};
 
-<<<<<<< Updated upstream
 	gallery = _.extend( {}, base, {
 		state: [ 'gallery-edit' ],
 		template: media.template( 'editor-gallery' ),
 
 		initialize: function() {
 			var attachments = media.gallery.attachments( this.shortcode, media.view.settings.post.id ),
-=======
-	gallery = _.extend( {}, media, {
-		state: [ 'gallery-edit' ],
-		template: wp.media.template( 'editor-gallery' ),
-
-		initialize: function() {
-			var attachments = wp.media.gallery.attachments( this.shortcode, postID ),
->>>>>>> Stashed changes
 				attrs = this.shortcode.attrs.named,
 				self = this;
 
@@ -919,11 +784,7 @@ window.wp = window.wp || {};
 
 				self.render( self.template( {
 					attachments: attachments,
-<<<<<<< Updated upstream
 					columns: attrs.columns ? parseInt( attrs.columns, 10 ) : media.galleryDefaults.columns
-=======
-					columns: attrs.columns ? parseInt( attrs.columns, 10 ) : wp.media.galleryDefaults.columns
->>>>>>> Stashed changes
 				} ) );
 			} )
 			.fail( function( jqXHR, textStatus ) {
@@ -932,11 +793,7 @@ window.wp = window.wp || {};
 		}
 	} );
 
-<<<<<<< Updated upstream
 	av = _.extend( {}, base, {
-=======
-	av = _.extend( {}, media, {
->>>>>>> Stashed changes
 		action: 'parse-media-shortcode',
 
 		initialize: function() {
@@ -944,21 +801,13 @@ window.wp = window.wp || {};
 
 			if ( this.url ) {
 				this.loader = false;
-<<<<<<< Updated upstream
 				this.shortcode = media.embed.shortcode( {
-=======
-				this.shortcode = wp.media.embed.shortcode( {
->>>>>>> Stashed changes
 					url: this.text
 				} );
 			}
 
 			wp.ajax.post( this.action, {
-<<<<<<< Updated upstream
 				post_ID: media.view.settings.post.id,
-=======
-				post_ID: postID,
->>>>>>> Stashed changes
 				type: this.shortcode.tag,
 				shortcode: this.shortcode.string()
 			} )
@@ -999,12 +848,7 @@ window.wp = window.wp || {};
 		action: 'parse-embed',
 
 		edit: function( text, update ) {
-<<<<<<< Updated upstream
 			var frame = media.embed.edit( text, this.url ),
-=======
-			var media = wp.media.embed,
-				frame = media.edit( text, this.url ),
->>>>>>> Stashed changes
 				self = this;
 
 			this.pausePlayers();
@@ -1021,11 +865,7 @@ window.wp = window.wp || {};
 				if ( self.url ) {
 					update( data.url );
 				} else {
-<<<<<<< Updated upstream
 					update( media.embed.shortcode( data ).string() );
-=======
-					update( media.shortcode( data ).string() );
->>>>>>> Stashed changes
 				}
 			} );
 
@@ -1069,8 +909,4 @@ window.wp = window.wp || {};
 			}
 		}
 	} ) );
-<<<<<<< Updated upstream
 } )( window, window.wp.mce.views, window.wp.media, window.jQuery );
-=======
-} )( window, window.wp.mce.views, window.jQuery );
->>>>>>> Stashed changes

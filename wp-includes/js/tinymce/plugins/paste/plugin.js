@@ -85,13 +85,8 @@
 /**
  * Utils.js
  *
-<<<<<<< Updated upstream
  * Released under LGPL License.
  * Copyright (c) 1999-2015 Ephox Corp. All rights reserved
-=======
- * Copyright, Moxiecode Systems AB
- * Released under LGPL License.
->>>>>>> Stashed changes
  *
  * License: http://www.tinymce.com/license
  * Contributing: http://www.tinymce.com/contributing
@@ -222,13 +217,8 @@ define("tinymce/pasteplugin/Utils", [
 /**
  * Clipboard.js
  *
-<<<<<<< Updated upstream
  * Released under LGPL License.
  * Copyright (c) 1999-2015 Ephox Corp. All rights reserved
-=======
- * Copyright, Moxiecode Systems AB
- * Released under LGPL License.
->>>>>>> Stashed changes
  *
  * License: http://www.tinymce.com/license
  * Contributing: http://www.tinymce.com/contributing
@@ -291,11 +281,7 @@ define("tinymce/pasteplugin/Clipboard", [
 				}
 
 				if (!args.isDefaultPrevented()) {
-<<<<<<< Updated upstream
 					editor.insertContent(html, {merge: editor.settings.paste_merge_formats !== false, data: {paste: true}});
-=======
-					editor.insertContent(html, {merge: editor.settings.paste_merge_formats !== false});
->>>>>>> Stashed changes
 				}
 			}
 		}
@@ -819,7 +805,6 @@ define("tinymce/pasteplugin/Clipboard", [
 
 			// Remove all data images from paste for example from Gecko
 			// except internal images like video elements
-<<<<<<< Updated upstream
 			editor.parser.addNodeFilter('img', function(nodes, name, args) {
 				function isPasteInsert(args) {
 					return args.data && args.data.paste === true;
@@ -840,16 +825,11 @@ define("tinymce/pasteplugin/Clipboard", [
 				}
 
 				if (!editor.settings.paste_data_images && isPasteInsert(args)) {
-=======
-			editor.parser.addNodeFilter('img', function(nodes) {
-				if (!editor.settings.paste_data_images) {
->>>>>>> Stashed changes
 					var i = nodes.length;
 
 					while (i--) {
 						var src = nodes[i].attributes.map.src;
 
-<<<<<<< Updated upstream
 						if (!src) {
 							continue;
 						}
@@ -859,14 +839,6 @@ define("tinymce/pasteplugin/Clipboard", [
 							remove(nodes[i]);
 						} else if (!editor.settings.allow_html_data_urls && isDataUri(src)) {
 							remove(nodes[i]);
-=======
-						// Some browsers automatically produce data uris on paste
-						// Safari on Mac produces webkit-fake-url see: https://bugs.webkit.org/show_bug.cgi?id=49141
-						if (src && /^(data:image|webkit\-fake\-url)/.test(src)) {
-							if (!nodes[i].attr('data-mce-object') && src !== Env.transparentSrc) {
-								nodes[i].remove();
-							}
->>>>>>> Stashed changes
 						}
 					}
 				}
@@ -880,13 +852,8 @@ define("tinymce/pasteplugin/Clipboard", [
 /**
  * WordFilter.js
  *
-<<<<<<< Updated upstream
  * Released under LGPL License.
  * Copyright (c) 1999-2015 Ephox Corp. All rights reserved
-=======
- * Copyright, Moxiecode Systems AB
- * Released under LGPL License.
->>>>>>> Stashed changes
  *
  * License: http://www.tinymce.com/license
  * Contributing: http://www.tinymce.com/contributing
@@ -1386,13 +1353,8 @@ define("tinymce/pasteplugin/WordFilter", [
 /**
  * Quirks.js
  *
-<<<<<<< Updated upstream
  * Released under LGPL License.
  * Copyright (c) 1999-2015 Ephox Corp. All rights reserved
-=======
- * Copyright, Moxiecode Systems AB
- * Released under LGPL License.
->>>>>>> Stashed changes
  *
  * License: http://www.tinymce.com/license
  * Contributing: http://www.tinymce.com/contributing
@@ -1553,13 +1515,8 @@ define("tinymce/pasteplugin/Quirks", [
 /**
  * Plugin.js
  *
-<<<<<<< Updated upstream
  * Released under LGPL License.
  * Copyright (c) 1999-2015 Ephox Corp. All rights reserved
-=======
- * Copyright, Moxiecode Systems AB
- * Released under LGPL License.
->>>>>>> Stashed changes
  *
  * License: http://www.tinymce.com/license
  * Contributing: http://www.tinymce.com/contributing

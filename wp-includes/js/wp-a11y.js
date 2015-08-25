@@ -3,19 +3,14 @@ window.wp = window.wp || {};
 ( function ( wp, $ ) {
 	'use strict';
 
-<<<<<<< Updated upstream
 	var $containerPolite,
 		$containerAssertive,
 		role;
-=======
-	var $container;
->>>>>>> Stashed changes
 
 	/**
 	 * Update the ARIA live notification area text node.
 	 *
 	 * @since 4.2.0
-<<<<<<< Updated upstream
 	 * @since 4.3.0 Introduced the 'ariaLive' argument.
 	 *
 	 * @param {String} message  The message to be announced by Assistive Technologies.
@@ -30,19 +25,10 @@ window.wp = window.wp || {};
 			$containerAssertive.text( message );
 		} else if ( $containerPolite ) {
 			$containerPolite.text( message );
-=======
-	 *
-	 * @param {String} message
-	 */
-	function speak( message ) {
-		if ( $container ) {
-			$container.text( message );
->>>>>>> Stashed changes
 		}
 	}
 
 	/**
-<<<<<<< Updated upstream
 	 * Build the live regions markup.
 	 *
 	 * @since 4.3.0
@@ -95,34 +81,8 @@ window.wp = window.wp || {};
 			$containerAssertive = addContainer( 'assertive' );
 		}
 	});
-=======
-	 * Initialize wp.a11y and define ARIA live notification area.
-	 *
-	 * @since 4.2.0
-	 */
-	$( document ).ready( function() {
-		$container = $( '#wp-a11y-speak' );
-
-		if ( ! $container.length ) {
-			$container = $( '<div>', {
-				id: 'wp-a11y-speak',
-				role: 'status',
-				'aria-live': 'polite',
-				'aria-relevant': 'all',
-				'aria-atomic': 'true',
-				'class': 'screen-reader-text'
-			} );
-
-			$( document.body ).append( $container );
-		}
-	} );
->>>>>>> Stashed changes
 
 	wp.a11y = wp.a11y || {};
 	wp.a11y.speak = speak;
 
-<<<<<<< Updated upstream
 }( window.wp, window.jQuery ));
-=======
-} )( window.wp, window.jQuery );
->>>>>>> Stashed changes

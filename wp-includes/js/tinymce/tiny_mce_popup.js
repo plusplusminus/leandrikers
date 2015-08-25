@@ -1,15 +1,8 @@
 /**
-<<<<<<< Updated upstream
  * tinymce_mce_popup.js
  *
  * Released under LGPL License.
  * Copyright (c) 1999-2015 Ephox Corp. All rights reserved
-=======
- * Popup.js
- *
- * Copyright, Moxiecode Systems AB
- * Released under LGPL License.
->>>>>>> Stashed changes
  *
  * License: http://www.tinymce.com/license
  * Contributing: http://www.tinymce.com/contributing

@@ -207,29 +207,17 @@ html:lang(he-il) .rtl #wpadminbar *  {
 	right: 100%;
 }
 
-<<<<<<< Updated upstream
 #wpadminbar:not(.mobile) .ab-top-menu > li > .ab-item:focus,
 #wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
 #wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item,
-=======
-#wpadminbar .ab-top-menu > li > .ab-item:focus,
-#wpadminbar.nojq .quicklinks .ab-top-menu > li > .ab-item:focus,
-#wpadminbar .ab-top-menu > li:hover > .ab-item,
->>>>>>> Stashed changes
 #wpadminbar .ab-top-menu > li.hover > .ab-item {
 	background: #32373c;
 	color: #00b9eb;
 }
 
-<<<<<<< Updated upstream
 #wpadminbar:not(.mobile) > #wp-toolbar li:hover span.ab-label,
 #wpadminbar > #wp-toolbar li.hover span.ab-label,
 #wpadminbar:not(.mobile) > #wp-toolbar a:focus span.ab-label {
-=======
-#wpadminbar > #wp-toolbar li:hover span.ab-label,
-#wpadminbar > #wp-toolbar li.hover span.ab-label,
-#wpadminbar > #wp-toolbar a:focus span.ab-label {
->>>>>>> Stashed changes
 	color: #00b9eb;
 }
 
@@ -299,7 +287,6 @@ html:lang(he-il) .rtl #wpadminbar *  {
 	color: #00b9eb;
 }
 
-<<<<<<< Updated upstream
 #wpadminbar.mobile .quicklinks .ab-icon:before,
 #wpadminbar.mobile .quicklinks .ab-item:before {
 	color: #b4b9be;
@@ -310,8 +297,6 @@ html:lang(he-il) .rtl #wpadminbar *  {
 	color: #00b9eb;
 }
 
-=======
->>>>>>> Stashed changes
 #wpadminbar .menupop .menupop > .ab-item:before,
 #wpadminbar .ab-top-secondary .menupop .menupop > .ab-item:before {
 	position: absolute;
@@ -536,15 +521,12 @@ html:lang(he-il) .rtl #wpadminbar *  {
 	top: 2px;
 }
 
-<<<<<<< Updated upstream
 #wpadminbar #wp-admin-bar-customize > .ab-item:before {
 	content: '\f540';
 	top: 2px;
 }
 
 
-=======
->>>>>>> Stashed changes
 #wpadminbar #wp-admin-bar-edit > .ab-item:before {
 	content: '\f464';
 	top: 2px;
@@ -906,10 +888,7 @@ html:lang(he-il) .rtl #wpadminbar *  {
 	/* My Sites and "Site Title" menu */
 	#wpadminbar #wp-admin-bar-my-sites > .ab-item,
 	#wpadminbar #wp-admin-bar-site-name > .ab-item,
-<<<<<<< Updated upstream
 	#wpadminbar #wp-admin-bar-customize > .ab-item,
-=======
->>>>>>> Stashed changes
 	#wpadminbar #wp-admin-bar-edit > .ab-item,
 	#wpadminbar #wp-admin-bar-my-account > .ab-item {
 		text-indent: 100%;
@@ -931,10 +910,7 @@ html:lang(he-il) .rtl #wpadminbar *  {
 	#wpadminbar #wp-admin-bar-edit > .ab-item:before,
 	#wpadminbar #wp-admin-bar-my-sites > .ab-item:before,
 	#wpadminbar #wp-admin-bar-site-name > .ab-item:before,
-<<<<<<< Updated upstream
 	#wpadminbar #wp-admin-bar-customize > .ab-item:before,
-=======
->>>>>>> Stashed changes
 	#wpadminbar #wp-admin-bar-my-account > .ab-item:before {
 		display: block;
 		text-indent: 0;
@@ -1048,17 +1024,10 @@ html:lang(he-il) .rtl #wpadminbar *  {
 	#wpadminbar li#wp-admin-bar-my-sites,
 	#wpadminbar li#wp-admin-bar-updates,
 	#wpadminbar li#wp-admin-bar-site-name,
-<<<<<<< Updated upstream
 	#wpadminbar li#wp-admin-bar-customize,
 	#wpadminbar li#wp-admin-bar-new-content,
 	#wpadminbar li#wp-admin-bar-edit,
 	#wpadminbar li#wp-admin-bar-comments,
-=======
-	#wpadminbar li#wp-admin-bar-new-content,
-	#wpadminbar li#wp-admin-bar-edit,
-	#wpadminbar li#wp-admin-bar-comments,
-	#wpadminbar li#wp-admin-bar-new-content,
->>>>>>> Stashed changes
 	#wpadminbar li#wp-admin-bar-my-account {
 		display: block;
 	}
@@ -1170,7 +1139,6 @@ html:lang(he-il) .rtl #wpadminbar *  {
 		box-shadow: none;
 	}
 }
-<<<<<<< Updated upstream
 
 /* Very narrow screens */
 @media screen and (max-width: 400px) {
@@ -1178,5 +1146,3 @@ html:lang(he-il) .rtl #wpadminbar *  {
 		display: none;
 	}
 }
-=======
->>>>>>> Stashed changes

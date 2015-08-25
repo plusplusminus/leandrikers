@@ -27,13 +27,10 @@ class MO extends Gettext_Translations {
 		return $this->import_from_reader($reader);
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @param string $filename
 	 * @return bool
 	 */
-=======
->>>>>>> Stashed changes
 	function export_to_file($filename) {
 		$fh = fopen($filename, 'wb');
 		if ( !$fh ) return false;
@@ -42,12 +39,9 @@ class MO extends Gettext_Translations {
 		return $res;
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @return string|false
 	 */
-=======
->>>>>>> Stashed changes
 	function export() {
 		$tmp_fh = fopen("php://temp", 'r+');
 		if ( !$tmp_fh ) return false;
@@ -56,13 +50,10 @@ class MO extends Gettext_Translations {
 		return stream_get_contents( $tmp_fh );
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @param Translation_Entry $entry
 	 * @return bool
 	 */
-=======
->>>>>>> Stashed changes
 	function is_entry_good_for_export( $entry ) {
 		if ( empty( $entry->translations ) ) {
 			return false;
@@ -75,13 +66,10 @@ class MO extends Gettext_Translations {
 		return true;
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @param resource $fh
 	 * @return true
 	 */
-=======
->>>>>>> Stashed changes
 	function export_to_file_handle($fh) {
 		$entries = array_filter( $this->entries, array( $this, 'is_entry_good_for_export' ) );
 		ksort($entries);
@@ -128,13 +116,10 @@ class MO extends Gettext_Translations {
 		return true;
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @param Translation_Entry $entry
 	 * @return string
 	 */
-=======
->>>>>>> Stashed changes
 	function export_original($entry) {
 		//TODO: warnings for control characters
 		$exported = $entry->singular;
@@ -143,24 +128,18 @@ class MO extends Gettext_Translations {
 		return $exported;
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @param Translation_Entry $entry
 	 * @return string
 	 */
-=======
->>>>>>> Stashed changes
 	function export_translations($entry) {
 		//TODO: warnings for control characters
 		return implode(chr(0), $entry->translations);
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @return string
 	 */
-=======
->>>>>>> Stashed changes
 	function export_headers() {
 		$exported = '';
 		foreach($this->headers as $header => $value) {
@@ -169,13 +148,10 @@ class MO extends Gettext_Translations {
 		return $exported;
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @param int $magic
 	 * @return string|false
 	 */
-=======
->>>>>>> Stashed changes
 	function get_byteorder($magic) {
 		// The magic is 0x950412de
 
@@ -308,23 +284,17 @@ class MO extends Gettext_Translations {
 		return $entry;
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @param int $count
 	 * @return string
 	 */
-=======
->>>>>>> Stashed changes
 	function select_plural_form($count) {
 		return $this->gettext_select_plural_form($count);
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @return int
 	 */
-=======
->>>>>>> Stashed changes
 	function get_plural_forms_count() {
 		return $this->_nplurals;
 	}

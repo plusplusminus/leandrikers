@@ -12,13 +12,10 @@ class WP_Admin_Bar {
 	private $bound = false;
 	public $user;
 
-<<<<<<< Updated upstream
 	/**
 	 * @param string $name
 	 * @return string|array|void
 	 */
-=======
->>>>>>> Stashed changes
 	public function __get( $name ) {
 		switch ( $name ) {
 			case 'proto' :
@@ -30,12 +27,9 @@ class WP_Admin_Bar {
 		}
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @access public
 	 */
-=======
->>>>>>> Stashed changes
 	public function initialize() {
 		$this->user = new stdClass;
 
@@ -82,22 +76,16 @@ class WP_Admin_Bar {
 		do_action( 'admin_bar_init' );
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @param array $node
 	 */
-=======
->>>>>>> Stashed changes
 	public function add_menu( $node ) {
 		$this->add_node( $node );
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @param string $id
 	 */
-=======
->>>>>>> Stashed changes
 	public function remove_menu( $id ) {
 		$this->remove_node( $id );
 	}
@@ -168,12 +156,9 @@ class WP_Admin_Bar {
 		$this->_set_node( $args );
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @param array $args
 	 */
-=======
->>>>>>> Stashed changes
 	final protected function _set_node( $args ) {
 		$this->nodes[ $args['id'] ] = (object) $args;
 	}
@@ -181,10 +166,7 @@ class WP_Admin_Bar {
 	/**
 	 * Gets a node.
 	 *
-<<<<<<< Updated upstream
 	 * @param string $id
-=======
->>>>>>> Stashed changes
 	 * @return object Node.
 	 */
 	final public function get_node( $id ) {
@@ -192,13 +174,10 @@ class WP_Admin_Bar {
 			return clone $node;
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @param string $id
 	 * @return object|void
 	 */
-=======
->>>>>>> Stashed changes
 	final protected function _get_node( $id ) {
 		if ( $this->bound )
 			return;
@@ -210,12 +189,9 @@ class WP_Admin_Bar {
 			return $this->nodes[ $id ];
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @return array|void
 	 */
-=======
->>>>>>> Stashed changes
 	final public function get_nodes() {
 		if ( ! $nodes = $this->_get_nodes() )
 			return;
@@ -226,12 +202,9 @@ class WP_Admin_Bar {
 		return $nodes;
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @return array|void
 	 */
-=======
->>>>>>> Stashed changes
 	final protected function _get_nodes() {
 		if ( $this->bound )
 			return;
@@ -262,44 +235,31 @@ class WP_Admin_Bar {
 	/**
 	 * Remove a node.
 	 *
-<<<<<<< Updated upstream
 	 * @param string $id The ID of the item.
-=======
-	 * @param string The ID of the item.
->>>>>>> Stashed changes
 	 */
 	public function remove_node( $id ) {
 		$this->_unset_node( $id );
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @param string $id
 	 */
-=======
->>>>>>> Stashed changes
 	final protected function _unset_node( $id ) {
 		unset( $this->nodes[ $id ] );
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @access public
 	 */
-=======
->>>>>>> Stashed changes
 	public function render() {
 		$root = $this->_bind();
 		if ( $root )
 			$this->_render( $root );
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @return object|void
 	 */
-=======
->>>>>>> Stashed changes
 	final protected function _bind() {
 		if ( $this->bound )
 			return;
@@ -421,14 +381,11 @@ class WP_Admin_Bar {
 		return $root;
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 *
 	 * @global bool $is_IE
 	 * @param object $root
 	 */
-=======
->>>>>>> Stashed changes
 	final protected function _render( $root ) {
 		global $is_IE;
 
@@ -464,12 +421,9 @@ class WP_Admin_Bar {
 		<?php
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @param object $node
 	 */
-=======
->>>>>>> Stashed changes
 	final protected function _render_container( $node ) {
 		if ( $node->type != 'container' || empty( $node->children ) )
 			return;
@@ -481,7 +435,6 @@ class WP_Admin_Bar {
 		?></div><?php
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @param object $node
 	 */
@@ -490,12 +443,6 @@ class WP_Admin_Bar {
 			$this->_render_container( $node );
 			return;
 		}
-=======
-	final protected function _render_group( $node ) {
-		if ( $node->type == 'container' )
-			return $this->_render_container( $node );
-
->>>>>>> Stashed changes
 		if ( $node->type != 'group' || empty( $node->children ) )
 			return;
 
@@ -511,12 +458,9 @@ class WP_Admin_Bar {
 		?></ul><?php
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @param object $node
 	 */
-=======
->>>>>>> Stashed changes
 	final protected function _render_item( $node ) {
 		if ( $node->type != 'item' )
 			return;
@@ -589,24 +533,18 @@ class WP_Admin_Bar {
 		</li><?php
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @param string $id    Unused.
 	 * @param object $node
 	 */
-=======
->>>>>>> Stashed changes
 	public function recursive_render( $id, $node ) {
 		_deprecated_function( __METHOD__, '3.3', 'WP_Admin_bar::render(), WP_Admin_Bar::_render_item()' );
 		$this->_render_item( $node );
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * @access public
 	 */
-=======
->>>>>>> Stashed changes
 	public function add_menus() {
 		// User related, aligned right.
 		add_action( 'admin_bar_menu', 'wp_admin_bar_my_account_menu', 0 );
@@ -618,12 +556,8 @@ class WP_Admin_Bar {
 		add_action( 'admin_bar_menu', 'wp_admin_bar_wp_menu', 10 );
 		add_action( 'admin_bar_menu', 'wp_admin_bar_my_sites_menu', 20 );
 		add_action( 'admin_bar_menu', 'wp_admin_bar_site_menu', 30 );
-<<<<<<< Updated upstream
 		add_action( 'admin_bar_menu', 'wp_admin_bar_customize_menu', 40 );
 		add_action( 'admin_bar_menu', 'wp_admin_bar_updates_menu', 50 );
-=======
-		add_action( 'admin_bar_menu', 'wp_admin_bar_updates_menu', 40 );
->>>>>>> Stashed changes
 
 		// Content related.
 		if ( ! is_network_admin() && ! is_user_admin() ) {

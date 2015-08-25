@@ -1,13 +1,8 @@
 /**
  * plugin.js
  *
-<<<<<<< Updated upstream
  * Released under LGPL License.
  * Copyright (c) 1999-2015 Ephox Corp. All rights reserved
-=======
- * Copyright, Moxiecode Systems AB
- * Released under LGPL License.
->>>>>>> Stashed changes
  *
  * License: http://www.tinymce.com/license
  * Contributing: http://www.tinymce.com/contributing
@@ -180,11 +175,7 @@ tinymce.PluginManager.add('media', function(editor, url) {
 
 				{
 					title: 'Embed',
-<<<<<<< Updated upstream
 					type: "container",
-=======
-					type: "panel",
->>>>>>> Stashed changes
 					layout: 'flex',
 					direction: 'column',
 					align: 'stretch',

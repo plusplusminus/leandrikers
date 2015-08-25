@@ -61,48 +61,7 @@ function child_sections($sections){
                         'desc'=> __('Select main logo from media gallery', 'ppm'),
                         'default'=>array('url'=>'http://s.wordpress.org/style/images/codeispoetry.png'),
                         ),
-                array(
-                        'id'=>'site_compact_logo',
-                        'type' => 'media', 
-                        'url'=> true,
-                        'title' => __('Site Logo - Compact', 'ppm'),
-                        'compiler' => 'true',
-                        //'mode' => false, // Can be set to false to allow any media type, or can also be set to any mime type.
-                        'desc'=> __('Select compact logo from media gallery', 'ppm'),
-                        'default'=>array('url'=>'http://s.wordpress.org/style/images/codeispoetry.png'),
-                        ),
-                array(
-                        'id'=>'footer_logo',
-                        'type' => 'media', 
-                        'url'=> true,
-                        'title' => __('Site Footer Logo', 'ppm'),
-                        'compiler' => 'true',
-                        //'mode' => false, // Can be set to false to allow any media type, or can also be set to any mime type.
-                        'desc'=> __('Select footer logo from media gallery', 'ppm'),
-                        'default'=>array('url'=>'http://s.wordpress.org/style/images/codeispoetry.png'),
-                        ),
-                array(
-                        'id'=>'work_image',
-                        'type' => 'media', 
-                        'url'=> true,
-                        'title' => __('Work Section Image', 'ppm'),
-                        'compiler' => 'true',
-                        //'mode' => false, // Can be set to false to allow any media type, or can also be set to any mime type.
-                        'desc'=> __('Select work section image from media gallery', 'ppm'),
-                        'default'=>array('url'=>'http://s.wordpress.org/style/images/codeispoetry.png'),
-                        ),
-                array(
-                        'id'=>'footer_legal',
-                        'type' => 'textarea',
-                        'title' => __('Legal Info', 'redux-framework-demo'),
-                        'desc' => __('Enter your legal information', 'redux-framework-demo'),
-                        ), 
-                array(
-                        'id'=>'products_extra',
-                        'type' => 'textarea',
-                        'title' => __('Products Extra Info', 'redux-framework-demo'),
-                        'desc' => __('Enter your the products extra information', 'redux-framework-demo'),
-                        ), 
+                
  
         )
     );
@@ -164,8 +123,7 @@ register_nav_menus(
     array(
         'secondary-nav' => __( 'Secondary Navigation', 'bonestheme' ),   // main nav in header
         'footer-nav' => __( 'Footer Nav', 'bonestheme' ),   // main nav in header
-        'products-nav' => __( 'Products Nav', 'bonestheme' ),   // main nav in header
-        'industry-nav' => __( 'Industry Nav', 'bonestheme' ),   // main nav in header
+        'portfolio-nav' => __( 'Portfolio Nav', 'bonestheme' ),   // main nav in header
     )
 );
 
@@ -193,6 +151,7 @@ function cc_mime_types($mimes) {
 }
 add_filter('upload_mimes', 'cc_mime_types');
 
+
 if ( ! function_exists( 'page_menu' ) ) {
     function page_menu ( $menu_name ) {
         if ( ( $locations = get_nav_menu_locations() ) && isset( $locations[ $menu_name ] ) ) {
@@ -200,14 +159,24 @@ if ( ! function_exists( 'page_menu' ) ) {
             $menu = wp_get_nav_menu_object( $locations[ $menu_name ] );
             $menu_items = wp_get_nav_menu_items($menu->term_id);
 
-            $menu_list = '<ul class="page_menu">';
+            $menu_list = '<div class="portfolio_blocks">';
             
             foreach ( (array) $menu_items as $key => $menu_item ) {
                 $count++;
-                $menu_list .= '<li class="page_menu--item"><a href="'.get_permalink($menu_item->object_id).'" class="img-menu-container">'.$menu_item->title.'</a></li>';
+                $menu_list .=   '<div class="blocks_block">
+                                    <div class="block_content">
+                                        <figure class="block_content--image">
+                                            '.get_the_post_thumbnail($menu_item->object_id,'full').'
+                                        </figure>
+                                        <div class="block_content--heading">
+                                            <h4 class="block_content--title">'.$menu_item->title.'</h4>
+                                        </div>
+                                        <a href="'.get_permalink($menu_item->object_id).'" class="block_content--link"></a>
+                                    </div>
+                                </div>';
             }
 
-            $menu_list .= '</ul>';
+            $menu_list .= '</div>';
         } else {
             $menu_list = '<ul><li>Menu "' . $menu_name . '" not defined.</li></ul>';
         }

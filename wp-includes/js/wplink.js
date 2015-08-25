@@ -68,11 +68,7 @@ var wpLink;
 				inputs.queryNoticeTextHint.addClass( 'screen-reader-text' ).hide();
 			} );
 
-<<<<<<< Updated upstream
 			inputs.search.on( 'keyup input', function() {
-=======
-			inputs.search.keyup( function() {
->>>>>>> Stashed changes
 				var self = this;
 
 				window.clearTimeout( searchTimer );
@@ -81,7 +77,6 @@ var wpLink;
 				}, 500 );
 			});
 
-<<<<<<< Updated upstream
 			inputs.url.on( 'paste', function() {
 				setTimeout( wpLink.correctURL, 0 );
 			} );
@@ -104,28 +99,6 @@ var wpLink;
 				$body = $( document.body );
 
 			$body.addClass( 'modal-open' );
-=======
-			function correctURL() {
-				var url = $.trim( inputs.url.val() );
-
-				if ( url && correctedURL !== url && ! /^(?:[a-z]+:|#|\?|\.|\/)/.test( url ) ) {
-					inputs.url.val( 'http://' + url );
-					correctedURL = url;
-				}
-			}
-
-			inputs.url.on( 'paste', function() {
-				setTimeout( correctURL, 0 );
-			} );
-
-			inputs.url.on( 'blur', correctURL );
-		},
-
-		open: function( editorId ) {
-			var ed;
-
-			$( document.body ).addClass( 'modal-open' );
->>>>>>> Stashed changes
 
 			wpLink.range = null;
 
@@ -140,13 +113,10 @@ var wpLink;
 			this.textarea = $( '#' + window.wpActiveEditor ).get( 0 );
 
 			if ( typeof tinymce !== 'undefined' ) {
-<<<<<<< Updated upstream
 				// Make sure the link wrapper is the last element in the body,
 				// or the inline editor toolbar may show above the backdrop.
 				$body.append( inputs.backdrop, inputs.wrap );
 
-=======
->>>>>>> Stashed changes
 				ed = tinymce.get( wpActiveEditor );
 
 				if ( ed && ! ed.isHidden() ) {
@@ -296,18 +266,14 @@ var wpLink;
 		},
 
 		getAttrs: function() {
-<<<<<<< Updated upstream
 			wpLink.correctURL();
 
-=======
->>>>>>> Stashed changes
 			return {
 				href: $.trim( inputs.url.val() ),
 				target: inputs.openInNewTab.prop( 'checked' ) ? '_blank' : ''
 			};
 		},
 
-<<<<<<< Updated upstream
 		buildHtml: function(attrs) {
 			var html = '<a href="' + attrs.href + '"';
 
@@ -318,8 +284,6 @@ var wpLink;
 			return html + '>';
 		},
 
-=======
->>>>>>> Stashed changes
 		update: function() {
 			if ( wpLink.isMCE() ) {
 				wpLink.mceUpdate();
@@ -344,18 +308,7 @@ var wpLink;
 				return;
 			}
 
-<<<<<<< Updated upstream
 			html = wpLink.buildHtml(attrs);
-=======
-			// Build HTML
-			html = '<a href="' + attrs.href + '"';
-
-			if ( attrs.target ) {
-				html += ' target="' + attrs.target + '"';
-			}
-
-			html += '>';
->>>>>>> Stashed changes
 
 			// Insert HTML
 			if ( document.selection && wpLink.range ) {
@@ -412,14 +365,10 @@ var wpLink;
 			}
 
 			link = getLink();
-<<<<<<< Updated upstream
 
 			if ( inputs.wrap.hasClass( 'has-text-field' ) ) {
 				text = inputs.text.val() || attrs.href;
 			}
-=======
-			text = inputs.text.val();
->>>>>>> Stashed changes
 
 			if ( link ) {
 				if ( text ) {
@@ -438,11 +387,8 @@ var wpLink;
 					editor.execCommand( 'mceInsertLink', false, attrs );
 				}
 			}
-<<<<<<< Updated upstream
 
 			editor.nodeChanged();
-=======
->>>>>>> Stashed changes
 		},
 
 		updateFields: function( e, li ) {

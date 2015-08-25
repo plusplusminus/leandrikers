@@ -127,20 +127,11 @@ class Walker {
 	 * @param int    $depth             Depth of current element.
 	 * @param array  $args              An array of arguments.
 	 * @param string $output            Passed by reference. Used to append additional content.
-<<<<<<< Updated upstream
 	 */
 	public function display_element( $element, &$children_elements, $max_depth, $depth, $args, &$output ) {
 		if ( ! $element ) {
 			return;
 		}
-=======
-	 * @return null Null on failure with no changes to parameters.
-	 */
-	public function display_element( $element, &$children_elements, $max_depth, $depth, $args, &$output ) {
-
-		if ( !$element )
-			return;
->>>>>>> Stashed changes
 
 		$id_field = $this->db_fields['id'];
 		$id       = $element->$id_field;
@@ -196,7 +187,6 @@ class Walker {
 	 * @param int   $max_depth The maximum hierarchical depth.
 	 * @return string The hierarchical item output.
 	 */
-<<<<<<< Updated upstream
 	public function walk( $elements, $max_depth ) {
 		$args = array_slice(func_get_args(), 2);
 		$output = '';
@@ -205,18 +195,6 @@ class Walker {
 		if ( $max_depth < -1 || empty( $elements ) ) {
 			return $output;
 		}
-=======
-	public function walk( $elements, $max_depth) {
-
-		$args = array_slice(func_get_args(), 2);
-		$output = '';
-
-		if ($max_depth < -1) //invalid parameter
-			return $output;
-
-		if (empty($elements)) //nothing to walk
-			return $output;
->>>>>>> Stashed changes
 
 		$parent_field = $this->db_fields['parent'];
 
@@ -291,7 +269,6 @@ class Walker {
 	 *
  	 * @since 2.7.0
 	 *
-<<<<<<< Updated upstream
 	 * @param array $elements
 	 * @param int   $max_depth The maximum hierarchical depth.
 	 * @param int   $page_num The specific page number, beginning with 1.
@@ -302,17 +279,6 @@ class Walker {
 		if ( empty( $elements ) || $max_depth < -1 ) {
 			return '';
 		}
-=======
- 	 * @param int $max_depth The maximum hierarchical depth.
- 	 * @param int $page_num  The specific page number, beginning with 1.
- 	 * @return string XHTML of the specified page of elements
- 	 */
-	public function paged_walk( $elements, $max_depth, $page_num, $per_page ) {
-
-		/* sanity check */
-		if ( empty($elements) || $max_depth < -1 )
-			return '';
->>>>>>> Stashed changes
 
 		$args = array_slice( func_get_args(), 4 );
 		$output = '';
@@ -415,17 +381,12 @@ class Walker {
 		return $output;
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 *
 	 * @param array $elements
 	 * @return int
 	 */
 	public function get_number_of_root_elements( $elements ){
-=======
-	public function get_number_of_root_elements( $elements ){
-
->>>>>>> Stashed changes
 		$num = 0;
 		$parent_field = $this->db_fields['parent'];
 
@@ -436,7 +397,6 @@ class Walker {
 		return $num;
 	}
 
-<<<<<<< Updated upstream
 	/**
 	 * Unset all the children for a given top level element.
 	 *
@@ -447,13 +407,6 @@ class Walker {
 		if ( ! $e || ! $children_elements ) {
 			return;
 		}
-=======
-	// Unset all the children for a given top level element.
-	public function unset_children( $e, &$children_elements ){
-
-		if ( !$e || !$children_elements )
-			return;
->>>>>>> Stashed changes
 
 		$id_field = $this->db_fields['id'];
 		$id = $e->$id_field;
@@ -462,13 +415,7 @@ class Walker {
 			foreach ( (array) $children_elements[$id] as $child )
 				$this->unset_children( $child, $children_elements );
 
-<<<<<<< Updated upstream
 		unset( $children_elements[ $id ] );
-=======
-		if ( isset($children_elements[$id]) )
-			unset( $children_elements[$id] );
-
->>>>>>> Stashed changes
 	}
 
 } // Walker

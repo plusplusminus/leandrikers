@@ -288,8 +288,4 @@ class getid3_dts extends getid3_handler
 		return false;
 	}
 
-<<<<<<< Updated upstream
 }
-=======
-}
->>>>>>> Stashed changes

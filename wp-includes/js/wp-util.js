@@ -50,12 +50,8 @@ window.wp = window.wp || {};
 		 *
 		 * @param  {string} action The slug of the action to fire in WordPress.
 		 * @param  {object} data   The data to populate $_POST with.
-<<<<<<< Updated upstream
 		 * @return {$.promise}     A jQuery promise that represents the request,
 		 *                         decorated with an abort() method.
-=======
-		 * @return {$.promise}     A jQuery promise that represents the request.
->>>>>>> Stashed changes
 		 */
 		post: function( action, data ) {
 			return wp.ajax.send({
@@ -70,17 +66,11 @@ window.wp = window.wp || {};
 		 *
 		 * @param  {string} action  The slug of the action to fire in WordPress.
 		 * @param  {object} options The options passed to jQuery.ajax.
-<<<<<<< Updated upstream
 		 * @return {$.promise}      A jQuery promise that represents the request,
 		 *                          decorated with an abort() method.
 		 */
 		send: function( action, options ) {
 			var promise, deferred;
-=======
-		 * @return {$.promise}      A jQuery promise that represents the request.
-		 */
-		send: function( action, options ) {
->>>>>>> Stashed changes
 			if ( _.isObject( action ) ) {
 				options = action;
 			} else {
@@ -94,11 +84,7 @@ window.wp = window.wp || {};
 				context: this
 			});
 
-<<<<<<< Updated upstream
 			deferred = $.Deferred( function( deferred ) {
-=======
-			return $.Deferred( function( deferred ) {
->>>>>>> Stashed changes
 				// Transfer success/error callbacks.
 				if ( options.success )
 					deferred.done( options.success );
@@ -109,11 +95,7 @@ window.wp = window.wp || {};
 				delete options.error;
 
 				// Use with PHP's wp_send_json_success() and wp_send_json_error()
-<<<<<<< Updated upstream
 				deferred.jqXHR = $.ajax( options ).done( function( response ) {
-=======
-				$.ajax( options ).done( function( response ) {
->>>>>>> Stashed changes
 					// Treat a response of `1` as successful for backwards
 					// compatibility with existing handlers.
 					if ( response === '1' || response === 1 )
@@ -126,7 +108,6 @@ window.wp = window.wp || {};
 				}).fail( function() {
 					deferred.rejectWith( this, arguments );
 				});
-<<<<<<< Updated upstream
 			});
 
 			promise = deferred.promise();
@@ -136,9 +117,6 @@ window.wp = window.wp || {};
 			};
 
 			return promise;
-=======
-			}).promise();
->>>>>>> Stashed changes
 		}
 	};
 

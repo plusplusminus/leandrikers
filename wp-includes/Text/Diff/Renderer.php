@@ -33,11 +33,7 @@ class Text_Diff_Renderer {
     /**
      * Constructor.
      */
-<<<<<<< Updated upstream
     function __construct( $params = array() )
-=======
-    function Text_Diff_Renderer($params = array())
->>>>>>> Stashed changes
     {
         foreach ($params as $param => $value) {
             $v = '_' . $param;
@@ -47,7 +43,6 @@ class Text_Diff_Renderer {
         }
     }
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP4 constructor.
 	 */
@@ -55,8 +50,6 @@ class Text_Diff_Renderer {
 		self::__construct( $params );
 	}
 
-=======
->>>>>>> Stashed changes
     /**
      * Get any renderer parameters.
      *

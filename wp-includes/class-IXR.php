@@ -49,14 +49,10 @@ class IXR_Value {
     var $data;
     var $type;
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP5 constructor.
 	 */
 	function __construct( $data, $type = false )
-=======
-    function IXR_Value($data, $type = false)
->>>>>>> Stashed changes
     {
         $this->data = $data;
         if (!$type) {
@@ -76,7 +72,6 @@ class IXR_Value {
         }
     }
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP4 constructor.
 	 */
@@ -84,8 +79,6 @@ class IXR_Value {
 		self::__construct( $data, $type );
 	}
 
-=======
->>>>>>> Stashed changes
     function calculateType()
     {
         if ($this->data === true || $this->data === false) {
@@ -169,11 +162,7 @@ class IXR_Value {
      * Checks whether or not the supplied array is a struct or not
      *
      * @param array $array
-<<<<<<< Updated upstream
      * @return bool
-=======
-     * @return boolean
->>>>>>> Stashed changes
      */
     function isStruct($array)
     {
@@ -215,19 +204,14 @@ class IXR_Message
     // The XML parser
     var $_parser;
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP5 constructor.
 	 */
     function __construct( $message )
-=======
-    function IXR_Message($message)
->>>>>>> Stashed changes
     {
         $this->message =& $message;
     }
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP4 constructor.
 	 */
@@ -235,8 +219,6 @@ class IXR_Message
 		self::__construct( $message );
 	}
 
-=======
->>>>>>> Stashed changes
     function parse()
     {
         // first remove the XML declaration
@@ -424,14 +406,10 @@ class IXR_Server
     var $message;
     var $capabilities;
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP5 constructor.
 	 */
     function __construct( $callbacks = false, $data = false, $wait = false )
-=======
-    function IXR_Server($callbacks = false, $data = false, $wait = false)
->>>>>>> Stashed changes
     {
         $this->setCapabilities();
         if ($callbacks) {
@@ -443,7 +421,6 @@ class IXR_Server
         }
     }
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP4 constructor.
 	 */
@@ -451,8 +428,6 @@ class IXR_Server
 		self::__construct( $callbacks, $data, $wait );
 	}
 
-=======
->>>>>>> Stashed changes
     function serve($data = false)
     {
         if (!$data) {
@@ -655,14 +630,10 @@ class IXR_Request
     var $args;
     var $xml;
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP5 constructor.
 	 */
     function __construct($method, $args)
-=======
-    function IXR_Request($method, $args)
->>>>>>> Stashed changes
     {
         $this->method = $method;
         $this->args = $args;
@@ -682,7 +653,6 @@ EOD;
         $this->xml .= '</params></methodCall>';
     }
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP4 constructor.
 	 */
@@ -690,8 +660,6 @@ EOD;
 		self::__construct( $method, $args );
 	}
 
-=======
->>>>>>> Stashed changes
     function getLength()
     {
         return strlen($this->xml);
@@ -725,14 +693,10 @@ class IXR_Client
     // Storage place for an error message
     var $error = false;
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP5 constructor.
 	 */
     function __construct( $server, $path = false, $port = 80, $timeout = 15 )
-=======
-    function IXR_Client($server, $path = false, $port = 80, $timeout = 15)
->>>>>>> Stashed changes
     {
         if (!$path) {
             // Assume we have been given a URL instead
@@ -758,7 +722,6 @@ class IXR_Client
         $this->timeout = $timeout;
     }
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP4 constructor.
 	 */
@@ -766,8 +729,6 @@ class IXR_Client
 		self::__construct( $server, $path, $port, $timeout );
 	}
 
-=======
->>>>>>> Stashed changes
     function query()
     {
         $args = func_get_args();
@@ -887,20 +848,15 @@ class IXR_Error
     var $code;
     var $message;
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP5 constructor.
 	 */
     function __construct( $code, $message )
-=======
-    function IXR_Error($code, $message)
->>>>>>> Stashed changes
     {
         $this->code = $code;
         $this->message = htmlspecialchars($message);
     }
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP4 constructor.
 	 */
@@ -908,8 +864,6 @@ class IXR_Error
 		self::__construct( $code, $message );
 	}
 
-=======
->>>>>>> Stashed changes
     function getXml()
     {
         $xml = <<<EOD
@@ -950,14 +904,10 @@ class IXR_Date {
     var $second;
     var $timezone;
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP5 constructor.
 	 */
     function __construct( $time )
-=======
-    function IXR_Date($time)
->>>>>>> Stashed changes
     {
         // $time can be a PHP timestamp or an ISO one
         if (is_numeric($time)) {
@@ -967,7 +917,6 @@ class IXR_Date {
         }
     }
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP4 constructor.
 	 */
@@ -975,8 +924,6 @@ class IXR_Date {
 		self::__construct( $time );
 	}
 
-=======
->>>>>>> Stashed changes
     function parseTimestamp($timestamp)
     {
         $this->year = date('Y', $timestamp);
@@ -1025,19 +972,14 @@ class IXR_Base64
 {
     var $data;
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP5 constructor.
 	 */
     function __construct( $data )
-=======
-    function IXR_Base64($data)
->>>>>>> Stashed changes
     {
         $this->data = $data;
     }
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP4 constructor.
 	 */
@@ -1045,8 +987,6 @@ class IXR_Base64
 		self::__construct( $data );
 	}
 
-=======
->>>>>>> Stashed changes
     function getXml()
     {
         return '<base64>'.base64_encode($this->data).'</base64>';
@@ -1064,14 +1004,10 @@ class IXR_IntrospectionServer extends IXR_Server
     var $signatures;
     var $help;
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP5 constructor.
 	 */
     function __construct()
-=======
-    function IXR_IntrospectionServer()
->>>>>>> Stashed changes
     {
         $this->setCallbacks();
         $this->setCapabilities();
@@ -1105,7 +1041,6 @@ class IXR_IntrospectionServer extends IXR_Server
         );
     }
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP4 constructor.
 	 */
@@ -1113,8 +1048,6 @@ class IXR_IntrospectionServer extends IXR_Server
 		self::__construct();
 	}
 
-=======
->>>>>>> Stashed changes
     function addCallback($method, $callback, $args, $help)
     {
         $this->callbacks[$method] = $callback;
@@ -1243,20 +1176,15 @@ class IXR_ClientMulticall extends IXR_Client
 {
     var $calls = array();
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP5 constructor.
 	 */
     function __construct( $server, $path = false, $port = 80 )
-=======
-    function IXR_ClientMulticall($server, $path = false, $port = 80)
->>>>>>> Stashed changes
     {
         parent::IXR_Client($server, $path, $port);
         $this->useragent = 'The Incutio XML-RPC PHP Library (multicall client)';
     }
 
-<<<<<<< Updated upstream
 	/**
 	 * PHP4 constructor.
 	 */
@@ -1264,8 +1192,6 @@ class IXR_ClientMulticall extends IXR_Client
 		self::__construct( $server, $path, $port );
 	}
 
-=======
->>>>>>> Stashed changes
     function addCall()
     {
         $args = func_get_args();

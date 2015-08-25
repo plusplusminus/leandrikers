@@ -210,11 +210,7 @@ function get_most_active_blogs( $num = 10, $display = true ) {
 		$most_active = $t;
 	}
 
-<<<<<<< Updated upstream
 	if ( $display ) {
-=======
-	if ( $display == true ) {
->>>>>>> Stashed changes
 		if ( is_array( $most_active ) ) {
 			reset( $most_active );
 			foreach ( (array) $most_active as $key => $details ) {
@@ -257,11 +253,7 @@ function wpmu_admin_do_redirect( $url = '' ) {
 		wp_redirect( $ref );
 		exit();
 	}
-<<<<<<< Updated upstream
 	if ( ! empty( $_SERVER['HTTP_REFERER'] ) ) {
-=======
-	if ( empty( $_SERVER['HTTP_REFERER'] ) == false ) {
->>>>>>> Stashed changes
 		wp_redirect( $_SERVER['HTTP_REFERER'] );
 		exit();
 	}

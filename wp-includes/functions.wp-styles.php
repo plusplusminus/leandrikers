@@ -98,10 +98,7 @@ function wp_add_inline_style( $handle, $data ) {
  * @link http://www.w3.org/TR/CSS2/media.html#media-types List of CSS media types.
  *
  * @since 2.6.0
-<<<<<<< Updated upstream
  * @since 4.3.0 A return value was added.
-=======
->>>>>>> Stashed changes
  *
  * @param string      $handle Name of the stylesheet.
  * @param string|bool $src    Path to the stylesheet from the WordPress root directory. Example: '/css/mystyle.css'.
@@ -111,19 +108,12 @@ function wp_add_inline_style( $handle, $data ) {
  * @param string      $media  Optional. The media for which this stylesheet has been defined.
  *                            Default 'all'. Accepts 'all', 'aural', 'braille', 'handheld', 'projection', 'print',
  *                            'screen', 'tty', or 'tv'.
-<<<<<<< Updated upstream
  * @return bool Whether the style has been registered. True on success, false on failure.
-=======
->>>>>>> Stashed changes
  */
 function wp_register_style( $handle, $src, $deps = array(), $ver = false, $media = 'all' ) {
 	_wp_scripts_maybe_doing_it_wrong( __FUNCTION__ );
 
-<<<<<<< Updated upstream
 	return wp_styles()->add( $handle, $src, $deps, $ver, $media );
-=======
-	wp_styles()->add( $handle, $src, $deps, $ver, $media );
->>>>>>> Stashed changes
 }
 
 /**
@@ -162,10 +152,6 @@ function wp_deregister_style( $handle ) {
  *                            'screen', 'tty', or 'tv'.
  */
 function wp_enqueue_style( $handle, $src = false, $deps = array(), $ver = false, $media = 'all' ) {
-<<<<<<< Updated upstream
-=======
-	global $wp_styles;
->>>>>>> Stashed changes
 	_wp_scripts_maybe_doing_it_wrong( __FUNCTION__ );
 
 	$wp_styles = wp_styles();
@@ -195,11 +181,6 @@ function wp_dequeue_style( $handle ) {
 /**
  * Check whether a CSS stylesheet has been added to the queue.
  *
-<<<<<<< Updated upstream
-=======
- * @global WP_Styles $wp_styles The WP_Styles object for printing styles.
- *
->>>>>>> Stashed changes
  * @since 2.8.0
  *
  * @param string $handle Name of the stylesheet.

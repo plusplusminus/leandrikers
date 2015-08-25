@@ -1,9 +1,4 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
-<<<<<<< Updated upstream
-=======
-/*globals wp, _ */
-
->>>>>>> Stashed changes
 var media = wp.media,
 	baseSettings = window._wpmejsSettings || {},
 	l10n = window._wpMediaViewsL10n || {};
@@ -221,11 +216,6 @@ media.view.AudioDetails = require( './views/audio-details.js' );
 media.view.VideoDetails = require( './views/video-details.js' );
 
 },{"./controllers/audio-details.js":2,"./controllers/video-details.js":3,"./models/post-media.js":4,"./views/audio-details.js":5,"./views/frame/audio-details.js":6,"./views/frame/media-details.js":7,"./views/frame/video-details.js":8,"./views/media-details.js":9,"./views/video-details.js":10}],2:[function(require,module,exports){
-<<<<<<< Updated upstream
-=======
-/*globals wp */
-
->>>>>>> Stashed changes
 /**
  * wp.media.controller.AudioDetails
  *
@@ -259,11 +249,6 @@ AudioDetails = State.extend({
 module.exports = AudioDetails;
 
 },{}],3:[function(require,module,exports){
-<<<<<<< Updated upstream
-=======
-/*globals wp */
-
->>>>>>> Stashed changes
 /**
  * wp.media.controller.VideoDetails
  *
@@ -297,11 +282,6 @@ VideoDetails = State.extend({
 module.exports = VideoDetails;
 
 },{}],4:[function(require,module,exports){
-<<<<<<< Updated upstream
-=======
-/*globals wp, Backbone, _ */
-
->>>>>>> Stashed changes
 /**
  * wp.media.model.PostMedia
  *
@@ -344,11 +324,6 @@ var PostMedia = Backbone.Model.extend({
 module.exports = PostMedia;
 
 },{}],5:[function(require,module,exports){
-<<<<<<< Updated upstream
-=======
-/*globals wp */
-
->>>>>>> Stashed changes
 /**
  * wp.media.view.AudioDetails
  *
@@ -387,11 +362,6 @@ AudioDetails = MediaDetails.extend({
 module.exports = AudioDetails;
 
 },{}],6:[function(require,module,exports){
-<<<<<<< Updated upstream
-=======
-/*globals wp */
-
->>>>>>> Stashed changes
 /**
  * wp.media.view.MediaFrame.AudioDetails
  *
@@ -468,11 +438,6 @@ AudioDetails = MediaDetails.extend({
 module.exports = AudioDetails;
 
 },{}],7:[function(require,module,exports){
-<<<<<<< Updated upstream
-=======
-/*globals wp */
-
->>>>>>> Stashed changes
 /**
  * wp.media.view.MediaFrame.MediaDetails
  *
@@ -603,11 +568,6 @@ MediaDetails = Select.extend({
 module.exports = MediaDetails;
 
 },{}],8:[function(require,module,exports){
-<<<<<<< Updated upstream
-=======
-/*globals wp, _ */
-
->>>>>>> Stashed changes
 /**
  * wp.media.view.MediaFrame.VideoDetails
  *
@@ -743,11 +703,7 @@ VideoDetails = MediaDetails.extend({
 module.exports = VideoDetails;
 
 },{}],9:[function(require,module,exports){
-<<<<<<< Updated upstream
 /* global MediaElementPlayer */
-=======
-/*global wp, jQuery, _, MediaElementPlayer */
->>>>>>> Stashed changes
 
 /**
  * wp.media.view.MediaDetails
@@ -915,11 +871,6 @@ MediaDetails = AttachmentDisplay.extend({
 module.exports = MediaDetails;
 
 },{}],10:[function(require,module,exports){
-<<<<<<< Updated upstream
-=======
-/*globals wp */
-
->>>>>>> Stashed changes
 /**
  * wp.media.view.VideoDetails
  *

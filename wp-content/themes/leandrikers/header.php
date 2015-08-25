@@ -11,7 +11,7 @@
 		<?php // Google Chrome Frame for IE ?>
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 
-		<title><?php if (is_front_page()) { bloginfo('name'); } else { wp_title(''); } ?></title>
+		<title><?php wp_title(''); ?></title>
 
 		<?php // mobile meta (hooray!) ?>
 		<meta name="HandheldFriendly" content="True">
@@ -60,46 +60,50 @@
 	<body <?php body_class(); ?>>
 		<header class="header">
 
-	      <nav role="navigation">
-	        <div class="navbar">
-				<div class="container">
-				<!-- .navbar-toggle is used as the toggle for collapsed navbar content -->
+			<nav role="navigation">
+		        <div class="navbar navbar-default navbar-fixed-top">
+		          	<div class="container">
+		            
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
+								<i class="fa fa-bars"></i>
+								Menu
+							</button>
 
-				    <div class="navbar-header">
-						<?php if ( ( '' != $tpb_options['site_logo']['url'] ) ) {
-							$logo_url = $tpb_options['site_logo']['url'];
-							$logo_compact_url = $tpb_options['site_compact_logo']['url'];
-							$site_url = get_bloginfo('url');
-							$site_name = get_bloginfo('name');
-							$site_description = get_bloginfo('description');
-						}// End IF Statement */
+							<?php if ( ( '' != $tpb_options['site_logo']['url'] ) ) {
+								$logo_url = $tpb_options['site_logo']['url'];
+								$logo_compact_url = $tpb_options['site_compact_logo']['url'];
+								$site_url = get_bloginfo('url');
+								$site_name = get_bloginfo('name');
+								$site_description = get_bloginfo('description');
+							}// End IF Statement */
 
-						if ( is_front_page() ) {
-							if ( is_ssl() ) $logo_url = str_replace( 'http://', 'https://', $logo_url );
-							echo '<a class="logo" href="' . esc_url( $site_url ) . '" title="' . esc_attr( $site_description ) . '"><img class="img-responsive" src="'.$logo_url.'" alt="'.esc_attr($site_name).'"/></a>' . "\n";
-						} else {
-							if ( is_ssl() ) $logo_url = str_replace( 'http://', 'https://', $logo_url );
-							echo '<a class="logo" href="' . esc_url( $site_url ) . '" title="' . esc_attr( $site_description ) . '"><img class="img-responsive" src="'.$logo_compact_url.'" alt="'.esc_attr($site_name).'"/></a>' . "\n";
-						} 
+							if ( is_front_page() ) {
+								if ( is_ssl() ) $logo_url = str_replace( 'http://', 'https://', $logo_url );
+								echo '<a class="logo" href="' . esc_url( $site_url ) . '" title="' . esc_attr( $site_description ) . '"><img class="img-responsive" src="'.$logo_url.'" alt="'.esc_attr($site_name).'"/></a>' . "\n";
+							} else {
+								if ( is_ssl() ) $logo_url = str_replace( 'http://', 'https://', $logo_url );
+								echo '<a class="logo" href="' . esc_url( $site_url ) . '" title="' . esc_attr( $site_description ) . '"><img class="img-responsive" src="'.$logo_compact_url.'" alt="'.esc_attr($site_name).'"/></a>' . "\n";
+							} 
 
-						?>
-						 <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-responsive-collapse">
-							<i class="fa fa-bars"></i>
-							Menu
-						</button>
-				    </div>
+							?>
+						</div>
 
-				    <div class="navbar-collapse collapse navbar-responsive-collapse">
-				      
-						<?php secondary_nav('secondary-nav','nav_secondary nav navbar-nav navbar-right'); ?>
-				     	<?php bones_main_nav(); ?>
 
-				    </div>
-						    
+						<div class="navbar-collapse collapse navbar-responsive-collapse">
+							<?php bones_main_nav(); ?>
+							<ul class="social_menu pull-right">
+								<li class="social_menu--item"><a href="<?php echo $tpb_options['twitter_url'];?>"><span class="fa fa-twitter"></span></a></li>
+								<li class="social_menu--item"><a href="<?php echo $tpb_options['facebook_url'];?>"><span class="fa fa-facebook"></span></a></li>
+								<li class="social_menu--item"><a href="<?php echo $tpb_options['instagram_url'];?>"><span class="fa fa-instagram"></span></a></li>
+								<li class="social_menu--item"><a href="<?php echo $tpb_options['pinterest_url'];?>"><span class="fa fa-pinterest"></span></a></li>
+							</ul>
+						</div>
+					</div>
+				</div> 
 
-	        </div> 
-	        
-	      </nav>
+		    </nav>
+
 
 		</header> <?php // end header ?>
 

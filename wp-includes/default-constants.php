@@ -17,11 +17,7 @@ function wp_initial_constants() {
 
 	// set memory limits
 	if ( !defined('WP_MEMORY_LIMIT') ) {
-<<<<<<< Updated upstream
 		if ( is_multisite() ) {
-=======
-		if( is_multisite() ) {
->>>>>>> Stashed changes
 			define('WP_MEMORY_LIMIT', '64M');
 		} else {
 			define('WP_MEMORY_LIMIT', '40M');
@@ -75,7 +71,6 @@ function wp_initial_constants() {
 	if ( !defined('WP_CACHE') )
 		define('WP_CACHE', false);
 
-<<<<<<< Updated upstream
 	// Add define('SCRIPT_DEBUG', true); to wp-config.php to enable loading of non-minified,
 	// non-concatenated scripts and stylesheets.
 	if ( ! defined( 'SCRIPT_DEBUG' ) ) {
@@ -88,8 +83,6 @@ function wp_initial_constants() {
 		define( 'SCRIPT_DEBUG', $develop_src );
 	}
 
-=======
->>>>>>> Stashed changes
 	/**
 	 * Private
 	 */
@@ -99,12 +92,9 @@ function wp_initial_constants() {
 	if ( !defined('SHORTINIT') )
 		define('SHORTINIT', false);
 
-<<<<<<< Updated upstream
 	// Constants for features added to WP that should short-circuit their plugin implementations
 	define( 'WP_FEATURE_BETTER_PASSWORDS', true );
 
-=======
->>>>>>> Stashed changes
 	// Constants for expressing human-readable intervals
 	// in their respective number of seconds.
 	define( 'MINUTE_IN_SECONDS', 60 );
