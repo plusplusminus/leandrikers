@@ -1,0 +1,53 @@
+/* Portfolio */
+
+.page_portfolio {
+	padding: 50px 15px;
+	text-align: center;
+	max-width: 50%;
+	margin: auto;
+}
+
+// Home Page
+.section_instagram{
+	padding-top: 60px;
+	padding-bottom: 100px;
+	.home{
+		background-color: @gray-lighter;
+	}
+}
+
+.section_profile{
+	.make-row();
+	padding-bottom: 100px;
+	.home{
+		padding-bottom: 140px;
+	}
+}
+
+
+// Articles Alternating
+
+.articles_article {
+
+	&:nth-child(2n+1) {
+		.article_content {
+			.pull-right();
+			width: 50%;
+		}
+		.article_image {
+			.pull-left();
+			width: 50%;
+		}
+	}
+	&:nth-child(2n) {
+		.article_content {
+			.pull-left();
+			width: 50%;
+		}
+		.article_image {
+			.pull-right();
+			width: 50%;
+		}
+	}
+	
+}

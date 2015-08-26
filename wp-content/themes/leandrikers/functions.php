@@ -32,13 +32,23 @@ function ppm_scripts_and_styles() {
 add_action( 'widgets_init', 'theme_slug_widgets_init' );
 function theme_slug_widgets_init() {
     register_sidebar( array(
-        'name' => __( 'Main Sidebar', 'theme-slug' ),
+        'name' => __( 'Main Sidebar', 'leandrikers' ),
         'id' => 'sidebar1',
-        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'theme-slug' ),
+        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'leandrikers' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
     'after_widget'  => '</div>',
     'before_title'  => '<div class="section_widget--heading"><h3 class="section_widget--title">',
     'after_title'   => '</h3></div>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Instagram Section', 'leandrikers' ),
+        'id' => 'sidebar-instagram',
+        'description' => __( 'Widgets in this area will be shown on all posts and pages.', 'leandrikers' ),
+        'before_widget' => '',
+        'after_widget'  => '',
+        'before_title'  => '',
+        'after_title'   => '',
     ) );
 }
 
@@ -51,18 +61,26 @@ function child_sections($sections){
         'title'         => __('Theme Options', 'peadig-framework'),
         'desc'          => __('<p class="description">Theme modifications</p>', 'ppm'),
         'fields' => array(
-                array(
-                        'id'=>'site_logo',
-                        'type' => 'media', 
-                        'url'=> true,
-                        'title' => __('Site Logo', 'ppm'),
-                        'compiler' => 'true',
-                        //'mode' => false, // Can be set to false to allow any media type, or can also be set to any mime type.
-                        'desc'=> __('Select main logo from media gallery', 'ppm'),
-                        'default'=>array('url'=>'http://s.wordpress.org/style/images/codeispoetry.png'),
-                        ),
-                
- 
+            array(
+                'id'=>'site_logo',
+                'type' => 'media', 
+                'url'=> true,
+                'title' => __('Site Logo', 'ppm'),
+                'compiler' => 'true',
+                //'mode' => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+                'desc'=> __('Select main logo from media gallery', 'ppm'),
+                'default'=>array('url'=>'http://s.wordpress.org/style/images/codeispoetry.png'),
+            ),
+            array(
+                'id'=>'footer_logo',
+                'type' => 'media', 
+                'url'=> true,
+                'title' => __('Site Footer Logo', 'ppm'),
+                'compiler' => 'true',
+                //'mode' => false, // Can be set to false to allow any media type, or can also be set to any mime type.
+                'desc'=> __('Select main logo from media gallery', 'ppm'),
+                'default'=>array('url'=>'http://s.wordpress.org/style/images/codeispoetry.png'),
+            ),
         )
     );
 
@@ -197,11 +215,44 @@ function campaign_register_metabox() {
      * Sample metabox to demonstrate each field type included
      */
     
+    $home_meta = new_cmb2_box( array(
+        'id'            => $prefix . 'home_metabox',
+        'title'         => __( 'Home Page Meta', 'cmb2' ),
+        'object_types'  => array( 'page' ), // Post type
+        'show_on' => array('key'=>'template','value'=>'template-home.php'),
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // true to keep the metabox closed by default
+    ) );
+
+
+    $home_meta->add_field( array(
+        'name'             => 'About Excerpt',
+        'desc'             => 'Enter about section excerpt...',
+        'id'               => $prefix.'about_excerpt',
+        'type'             => 'textarea_small',
+    ) );
+
+    $home_meta->add_field( array(
+        'name'             => 'About Profile Image',
+        'desc'             => 'Enter about section profile image...',
+        'id'               => $prefix.'about_image',
+        'type'             => 'file',
+    ) );
+
+    $home_meta->add_field( array(
+        'name'             => 'About Profile Link',
+        'desc'             => 'Enter about profile link',
+        'id'               => $prefix.'about_link',
+        'type'             => 'text',
+    ) );
+
     $post_meta = new_cmb2_box( array(
         'id'            => $prefix . 'post_metabox',
         'title'         => __( 'Post Meta', 'cmb2' ),
-        'object_types'  => array( 'page'), // Post type
-        'show_on' => array('key'=>'child_of','value'=>array(4)),
+        'object_types'  => array( 'post' ), // Post type
         'context'       => 'normal',
         'priority'      => 'high',
         'show_names'    => true, // Show field names on the left
@@ -209,165 +260,21 @@ function campaign_register_metabox() {
         // 'closed'     => true, // true to keep the metabox closed by default
     ) );
 
-    $menus = get_registered_nav_menus();
-
-    foreach ( $menus as $location => $description ) {
-        $options[$location] = $description;
-    }
 
     $post_meta->add_field( array(
-        'name'             => 'Menu Select',
-        'desc'             => 'Select a menu to show',
-        'id'               => $prefix.'menu_select',
-        'type'             => 'select',
-        'show_option_none' => true,
-        'default'          => 'custom',
-        'options'          => $options,
+        'name'             => 'Quote',
+        'desc'             => 'Enter quote...',
+        'id'               => $prefix.'quote_text',
+        'type'             => 'textarea_small',
     ) );
 
     $post_meta->add_field( array(
-        'name'             => 'Section Class',
-        'desc'             => 'Enter section class',
-        'id'               => $prefix.'section_class',
-        'type'             => 'text',
-        'default'          => 'col-md-6',
-    ) );
-
-    $post_meta->add_field( array(
-        'name'             => 'View More Link',
-        'desc'             => 'Enter view more link',
-        'id'               => $prefix.'section_link',
+        'name'             => 'Quote Citation',
+        'desc'             => 'Enter the quote citation...',
+        'id'               => $prefix.'quote_cite',
         'type'             => 'text',
     ) );
-
-    $products_meta = new_cmb2_box( array(
-        'id'            => $prefix . 'products_metabox',
-        'title'         => __( 'Products Meta', 'cmb2' ),
-        'object_types'  => array( 'isis-product'), // Post type
-        'context'       => 'normal',
-        'priority'      => 'high',
-        'show_names'    => true, // Show field names on the left
-        // 'cmb_styles' => false, // false to disable the CMB stylesheet
-        // 'closed'     => true, // true to keep the metabox closed by default
-    ) );
-
-    $products_meta->add_field( array(
-        'name'             => 'Product Subtitle',
-        'desc'             => 'Enter the product subtitle',
-        'id'               => $prefix.'product_subtitle',
-        'type'             => 'text'
-    ) );
-
-    $industries_meta = new_cmb2_box( array(
-        'id'            => $prefix . 'industries_metabox',
-        'title'         => __( 'Industries Meta', 'cmb2' ),
-        'object_types'  => array( 'industry'), // Post type
-        'context'       => 'normal',
-        'priority'      => 'high',
-        'show_names'    => true, // Show field names on the left
-        // 'cmb_styles' => false, // false to disable the CMB stylesheet
-        // 'closed'     => true, // true to keep the metabox closed by default
-    ) );
-
-    $industries_meta->add_field( array(
-        'name'             => 'Industry Subtitle',
-        'desc'             => 'Enter the industry subtitle',
-        'id'               => $prefix.'industry_subtitle',
-        'type'             => 'text'
-    ) );
-
-    $support_meta = new_cmb2_box( array(
-        'id'            => $prefix . 'support_metabox',
-        'title'         => __( 'Support Meta', 'cmb2' ),
-        'object_types'  => array( 'page'), // Post type
-        'show_on' => array('key'=>'child_of','value'=>array(54)),
-        'context'       => 'normal',
-        'priority'      => 'high',
-        'show_names'    => true, // Show field names on the left
-        // 'cmb_styles' => false, // false to disable the CMB stylesheet
-        // 'closed'     => true, // true to keep the metabox closed by default
-    ) );
-
-
-    $support_meta->add_field( array(
-        'name'             => 'Support Resources Title',
-        'desc'             => 'Enter section title',
-        'id'               => $prefix.'resource_title',
-        'type'             => 'text',
-    ) );
-
-    $support_meta->add_field( array(
-        'name'             => 'Support Resources Intro',
-        'desc'             => 'Enter section intro',
-        'id'               => $prefix.'resource_intro',
-        'type'             => 'textarea',
-    ) );
-
-    $support_meta->add_field( array(
-        'name'             => 'Support Premium Resources Title',
-        'desc'             => 'Enter section title',
-        'id'               => $prefix.'resource_premium_title',
-        'type'             => 'text',
-    ) );
-
-    $support_meta->add_field( array(
-        'name'             => 'Support Premium Resources Intro',
-        'desc'             => 'Enter section intro',
-        'id'               => $prefix.'resource_premium_intro',
-        'type'             => 'textarea',
-    ) );
-
-    $video_meta = new_cmb2_box( array(
-        'id'            => $prefix . 'video_metabox',
-        'title'         => __( 'Video Meta', 'cmb2' ),
-        'object_types'  => array( 'videos'), // Post type
-        'context'       => 'normal',
-        'priority'      => 'high',
-        'show_names'    => true, // Show field names on the left
-        // 'cmb_styles' => false, // false to disable the CMB stylesheet
-        // 'closed'     => true, // true to keep the metabox closed by default
-    ) );
-
-
-    $video_meta->add_field( array(
-        'name'             => 'Video Description',
-        'desc'             => 'Enter text to introduce video',
-        'id'               => $prefix.'video_description',
-        'type'             => 'textarea',
-    ) );
-
-    $video_meta->add_field( array(
-        'name'             => 'Video Duration',
-        'desc'             => 'Enter enter video duration (2:01s)',
-        'id'               => $prefix.'video_duration',
-        'type'             => 'text',
-    ) );
-
-    $header_meta = new_cmb2_box( array(
-        'id'            => $prefix . 'header_metabox',
-        'title'         => __( 'Header Meta', 'cmb2' ),
-        'object_types'  => array( 'page'), // Post type
-        'context'       => 'side',
-        'priority'      => 'low',
-        'show_names'    => true, // Show field names on the left
-        // 'cmb_styles' => false, // false to disable the CMB stylesheet
-        // 'closed'     => true, // true to keep the metabox closed by default
-    ) );
-
-
-    $header_meta->add_field( array(
-        'name'             => 'Button Text',
-        'desc'             => 'Enter section class',
-        'id'               => $prefix.'header_text',
-        'type'             => 'text',
-    ) );
-
-    $header_meta->add_field( array(
-        'name'             => 'Button Link',
-        'desc'             => 'Enter button link',
-        'id'               => $prefix.'header_link',
-        'type'             => 'text',
-    ) );
+   
 
 
 }
@@ -412,5 +319,6 @@ function be_metabox_show_on_child_of( $display, $meta_box ) {
     return in_array( $post_id, $pageids_unique );
 }
 add_filter( 'cmb2_show_on', 'be_metabox_show_on_child_of', 10, 2 );
+
 
 ?>
