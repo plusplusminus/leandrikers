@@ -1,11 +1,53 @@
-/* Portfolio */
 
-.page_portfolio {
-	padding: 50px 15px;
+
+.page-header {
+	
 	text-align: center;
 	max-width: 50%;
 	margin: auto;
 }
+
+
+/* Portfolio */
+
+.portfolio_page {
+	.page-header();
+}
+
+/* Contact */
+
+.contact_page {
+	.page-header();
+}
+
+.section_contact {
+	padding: 50px 15px;
+	background: @gray-lighter;
+	.contact_row {
+		background: #fff;
+	}
+}
+
+.contact_row {
+	.make-row(0);
+	.contact_image {
+		.make-sm-column(5,40px);
+	}
+	.contact_form {
+		.make-sm-column(7,80px);
+	}
+}
+
+.contact_image {
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
 
 // Home Page
 .section_instagram{
@@ -50,4 +92,18 @@
 		}
 	}
 	
+}
+
+/* Layout */
+
+.section_article {
+	padding: 120px 0;
+}
+
+
+/* Related */
+
+.related_stories {
+	padding: 70px 0;
+	background: @gray-lighter;
 }
