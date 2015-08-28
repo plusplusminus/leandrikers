@@ -21,8 +21,8 @@
 								<?php if ( have_posts() ) : ?>
 
 									<?php while ( have_posts() ) : the_post(); ?>
-										<div class="post_content">
-											<div class="post_entry clearfix">
+										<div class="page_content">
+											<div class="page_entry clearfix">
 												<?php the_content(); ?>
 											</div>
 										</div>

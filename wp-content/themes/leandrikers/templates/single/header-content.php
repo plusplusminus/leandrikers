@@ -7,12 +7,12 @@
 
 			<blockquote class="article_content--quote">
 				<?php echo esc_html($quote); ?>
+				<?php if ($cite) : ?>
+					<cite class="article_quote--cite">
+						<?php echo esc_html($cite); ?>
+					</cite>
+				<?php endif; ?>
 			</blockquote>
-			<?php if ($cite) : ?>
-				<cite class="article_quote--cite">
-					- <?php echo esc_html($cite); ?>
-				</cite>
-			<?php endif; ?>
 
 		<?php endif; ?>
 		<span class="article_content--meta"><?php the_time( get_option( 'date_format' ) ); ?> </span>

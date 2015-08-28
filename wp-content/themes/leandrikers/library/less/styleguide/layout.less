@@ -1,17 +1,23 @@
-
-
 .page-header {
 	
 	text-align: center;
-	max-width: 50%;
+	max-width: 65%;
 	margin: auto;
 }
 
-
 /* Portfolio */
+
+.section_portfolio {
+	padding: 120px 0 100px;
+}
 
 .portfolio_page {
 	.page-header();
+}
+
+.portfolio_blocks{
+	.make-xs-column(10);
+	.make-xs-column-offset(1);
 }
 
 /* Contact */
@@ -21,7 +27,7 @@
 }
 
 .section_contact {
-	padding: 50px 15px;
+	padding: 120px 15px 150px;
 	background: @gray-lighter;
 	.contact_row {
 		background: #fff;
@@ -51,10 +57,11 @@
 
 // Home Page
 .section_instagram{
-	padding-top: 60px;
-	padding-bottom: 100px;
-	.home{
-		background-color: @gray-lighter;
+	padding-top: 100px;
+	padding-bottom: 180px;
+	text-align: center;
+	.home &{
+		background: #faf9fa;
 	}
 }
 

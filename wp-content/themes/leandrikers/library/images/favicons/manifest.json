@@ -1,5 +1,5 @@
 {
-	"name": "ISIS",
+	"name": "Leandri Kers",
 	"icons": [
 		{
 			"src": "<?php echo get_stylesheet_directory_uri();?>\/library\/images\/favicons\/android-chrome-36x36.png",

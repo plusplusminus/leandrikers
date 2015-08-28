@@ -7,12 +7,12 @@
 
 			<blockquote class="article_content--quote">
 				<?php echo esc_html($quote); ?>
+				<?php if ($cite) : ?>
+					<cite class="article_quote--cite">
+						<?php echo esc_html($cite); ?>
+					</cite>
+				<?php endif; ?>
 			</blockquote>
-			<?php if ($cite) : ?>
-				<cite class="article_quote--cite">
-					- <?php echo esc_html($cite); ?>
-				</cite>
-			<?php endif; ?>
 
 		<?php endif; ?>
 		<a href="<?php the_permalink(); ?>" class="article_content--btn" title="<?php the_title(); ?>">View More <span class="icon icon-arrow"></span></a> 

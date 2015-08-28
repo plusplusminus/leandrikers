@@ -45,7 +45,7 @@
         <script>try{Typekit.load({ async: true });}catch(e){}</script>
         
         <!-- Google fonts -->
-        <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400italic' rel='stylesheet' type='text/css'>
+        <link href='https://fonts.googleapis.com/css?family=Crimson+Text:400italic' rel='stylesheet' type='text/css'>
 
 		<?php wp_head(); ?>
 
@@ -73,7 +73,7 @@
 
 
 							if ( is_ssl() ) $logo_url = str_replace( 'http://', 'https://', $logo_url );
-							echo '<a class="logo" href="' . esc_url( $site_url ) . '" title="' . esc_attr( $site_description ) . '"><img class="img-responsive" src="'.$logo_url.'" alt="'.esc_attr($site_name).'"/></a>' . "\n";
+							echo '<a class="navbar-brand" href="' . esc_url( $site_url ) . '" title="' . esc_attr( $site_description ) . '"><img class="img-responsive" src="'.$logo_url.'" alt="'.esc_attr($site_name).'"/></a>' . "\n";
 							
 							?>
 						</div>
@@ -81,10 +81,10 @@
 
 						<div class="navbar-collapse collapse navbar-responsive-collapse">
 							<ul class="social_menu pull-right">
-								<li class="social_menu--item"><a href="<?php echo $tpb_options['twitter_url'];?>"><span class="fa fa-twitter"></span></a></li>
-								<li class="social_menu--item"><a href="<?php echo $tpb_options['facebook_url'];?>"><span class="fa fa-facebook"></span></a></li>
-								<li class="social_menu--item"><a href="<?php echo $tpb_options['instagram_url'];?>"><span class="fa fa-instagram"></span></a></li>
-								<li class="social_menu--item"><a href="<?php echo $tpb_options['pinterest_url'];?>"><span class="fa fa-pinterest"></span></a></li>
+								<li class="social_menu--item"><a href="<?php echo $tpb_options['twitter_url'];?>"><span class="fa fa-fw fa-twitter"></span></a></li>
+								<li class="social_menu--item"><a href="<?php echo $tpb_options['facebook_url'];?>"><span class="fa fa-fw fa-facebook"></span></a></li>
+								<li class="social_menu--item"><a href="<?php echo $tpb_options['instagram_url'];?>"><span class="fa fa-fw fa-instagram"></span></a></li>
+								<li class="social_menu--item"><a href="<?php echo $tpb_options['pinterest_url'];?>"><span class="fa fa-fw fa-pinterest"></span></a></li>
 							</ul>
 							<?php bones_main_nav(); ?>
 							

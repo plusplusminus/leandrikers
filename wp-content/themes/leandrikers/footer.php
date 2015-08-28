@@ -18,7 +18,7 @@
               </div>
             </div>
             <div class="col-md-5">
-                <span class="primary_attribution">Created by <a href="http://www.plusplusminus.co.za/?utm_source=ISIS&amp;utm_medium=Footer&amp;utm_campaign=Credit" title="PlusPlusMinus Design &amp; Development" target="_blank">PlusPlusMinus</a></span>
+                <span class="primary_attribution">Created with <i class="fa fa-heart"></i> by <a href="http://www.plusplusminus.co.za/?utm_source=LeandriKers&amp;utm_medium=Footer&amp;utm_campaign=Credit" title="PlusPlusMinus Design &amp; Development" target="_blank">PlusPlusMinus</a></span>
             </div>
           </div>
         </div>

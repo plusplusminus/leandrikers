@@ -1,9 +1,4 @@
 // Nav Blocks
-
-.section_portfolio {
-	padding: 120px 0;
-}
-
 .portfolio_blocks{
 	.text-center();
 }
@@ -16,9 +11,10 @@
 	display: inline-block;
 	box-shadow: 0px 0px 0px transparent;
 	width: 100%;
+	margin-bottom: 20px;
 	.transition(0.5s);
 	&:hover{
-		box-shadow: 0px 0px 15px rgba(87, 87, 87, 0.2);
+		box-shadow: 0px 0px 15px rgba(87, 87, 87, 0.35);
 	}
 }
 
@@ -29,7 +25,11 @@
 .block_content--image{
 	text-align: center;
 	img{
-		.img-responsive();
+		width: 100%;
+		height: auto;
+		@media (min-width: @screen-sm-min) {
+			.img-responsive();
+		}
 	}
 }
 
