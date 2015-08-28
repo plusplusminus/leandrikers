@@ -1,4 +1,6 @@
 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full'); ?>
+<?php $cite = get_post_meta($post->ID,'_ppm_quote_cite',true); ?>
+
 <div class="article_image js-height" style="background-image:url('<?php echo $image[0]; ?>');min-height:550px;">
 	<a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
 		<?php the_post_thumbnail('full',array('class'=>'contact_image--img hide')); ?>
@@ -10,6 +12,11 @@
 		<?php if ($quote) : ?>
 			<blockquote class="article_content--quote">
 				<?php echo esc_html($quote); ?>
+				<?php if ($cite) : ?>
+					<cite class="article_quote--cite">
+						<?php echo esc_html($cite); ?>
+					</cite>
+				<?php endif; ?>
 			</blockquote>
 			<hr>
 		<?php endif; ?>
@@ -18,7 +25,7 @@
 		<span class="article_content--meta"><?php the_time( get_option( 'date_format' ) ); ?> </span>
 
 		<div class="article_content--more">
-			<a href="<?php the_permalink(); ?>" class="article_content--btn">Read More</a>
+			<a href="<?php the_permalink(); ?>" class="article_content--btn">Read More <svg class="icon-arrow"><use xlink:href="<?php echo get_stylesheet_directory_uri();?>/library/images/icons.svg#icon-arrow"></use></svg></a>
 		</div>
 	</div>
 </div>

@@ -16,7 +16,7 @@
 
 				<?php echo wpautop($description); ?>
 				
-				<a href="<?php echo esc_url($link); ?>" class="profile_description--btn">More About Me</a>
+				<a href="<?php echo esc_url($link); ?>" class="profile_description--btn">More About Me <svg class="icon-arrow"><use xlink:href="<?php echo get_stylesheet_directory_uri();?>/library/images/icons.svg#icon-arrow"></use></svg></a>
 			</div>
 		</div>
 	</div>

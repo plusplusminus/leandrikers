@@ -293,6 +293,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"<a href=\"",
 			"classie v1.0.0",
 			"third-party.js",
 			"third-party",
@@ -419,8 +420,7 @@
 			"dynamic_sidebar",
 			"font-fa",
 			"enumenu",
-			"transitions",
-			"header-title"
+			"transitions"
 		],
 		"highlight": true,
 		"in_selection": false,

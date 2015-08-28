@@ -33,6 +33,23 @@ hr{
 	z-index: 1000;
 }
 
+.border-image--gold{
+	border-style: solid;
+	border-width: 1px 1px;
+	-moz-border-image: url(../images/border_gold.png) 3 repeat;
+	-webkit-border-image: url(../images/border_gold.png) 3 repeat;
+	-o-border-image: url(../images/border_gold.png) 3 repeat;
+	border-image: url(../images/border_gold.png) 3 repeat;
+}
+
+.border-image--white{
+	border-style: solid;
+	border-width: 1px 1px;
+	-moz-border-image: url(../images/border_white.png) 3 repeat;
+	-webkit-border-image: url(../images/border_white.png) 3 repeat;
+	-o-border-image: url(../images/border_white.png) 3 repeat;
+	border-image: url(../images/border_white.png) 3 repeat;
+}
 .btn{
 	.btn-default();
 	.letter-spacing();
@@ -43,10 +60,31 @@ hr{
 	font-weight: 100;
 	padding-left: @padding-large-horizontal;
 	padding-right: @padding-large-horizontal;
+	background-position: center center;
+	background-color: transparent;
+	.transition(0.5s);
 	&:hover{
-		border-color: @brand-gold;
-		color: @brand-gold;
-		background: transparent;
+		color: #fff;
+		border-color: #fff;
+		background: url(../images/bg_gold.jpg) no-repeat center center;
+	}
+}
+
+.btn-gold{
+	.btn();
+	.border-image--gold();
+	&:hover{
+		
+	}
+}
+
+.btn-white{
+	.btn();
+	.border-image--white();
+	color: #fff;
+	&:hover{
+		color: @brand-primary;
+		background: #fff;
 	}
 }
 
@@ -55,8 +93,30 @@ hr{
 	font-family: @font-family-sans-serif;
 	font-weight: 100;
 	.letter-spacing();
+	&:hover{
+		.icon-arrow{
+			margin-left: 20px;
+		}
+	}
 }
 
 blockquote {
 	border:none;
+}
+
+// Icons
+[class^="icon-"],
+[class*=" icon-"] {
+    height: 32px;
+    width: 32px;
+    display: inline-block;
+    fill: currentColor;
+}
+
+svg.icon-arrow{
+	vertical-align: sub;
+	width: 20px;
+	height: 18px;
+	margin-left: 5px;
+	.transition(0.5s);
 }
