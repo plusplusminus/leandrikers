@@ -43,13 +43,19 @@
 	}
 }
 
+.centerDropdown {
+    right: 50%!important;
+    left: auto!important;
+    margin-right: -100px;
+}
+
 // Dropdown
 .primary_submenu{
+	.centerDropdown();
 	list-style: none;
 	padding-left: 0px;
 	text-align: center;
 	box-shadow: 0px 0px 15px rgba(87, 87, 87, 0.35);
-	position: relative;
 	z-index: 9999;
 	.menu-item{
 		a{

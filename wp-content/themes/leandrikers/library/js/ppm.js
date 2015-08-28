@@ -41,7 +41,7 @@ jQuery(window).load(function() {
         items:1,
     });
 
-    equalheight('.js-height');
+    equalheight('article > .js-height');
 
 });
 
