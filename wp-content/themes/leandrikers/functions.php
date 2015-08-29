@@ -274,6 +274,27 @@ function campaign_register_metabox() {
         'id'               => $prefix.'quote_cite',
         'type'             => 'text',
     ) );
+
+    $category_meta = new_cmb2_box( array(
+        'id'            => $prefix . 'category_metabox',
+        'title'         => __( 'Page Meta', 'cmb2' ),
+        'object_types'  => array( 'page' ), // Post type
+        'show_on'      => array( 'key' => 'page-template', 'value' => array('template-about.php','template-portfolio.php' )),
+        'context'       => 'normal',
+        'priority'      => 'high',
+        'show_names'    => true, // Show field names on the left
+        // 'cmb_styles' => false, // false to disable the CMB stylesheet
+        // 'closed'     => true, // true to keep the metabox closed by default
+    ) );
+
+
+    $category_meta->add_field( array(
+        'name'     => 'Category Select',
+        'desc'     => 'Description Goes Here',
+        'id'       => $prefix.'category_select',
+        'taxonomy' => 'category', 
+        'type'     => 'taxonomy_select',
+    ) );
    
 
 

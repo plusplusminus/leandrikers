@@ -81,25 +81,26 @@
 // Articles Alternating
 
 .articles_article {
-
-	&:nth-child(2n+1) {
-		.article_content {
-			.pull-right();
-			width: 50%;
+	@media(min-width:@screen-md-min) {
+		&:nth-child(2n+1) {
+			.article_content {
+				.pull-right();
+				width: 50%;
+			}
+			.article_image {
+				.pull-left();
+				width: 50%;
+			}
 		}
-		.article_image {
-			.pull-left();
-			width: 50%;
-		}
-	}
-	&:nth-child(2n) {
-		.article_content {
-			.pull-left();
-			width: 50%;
-		}
-		.article_image {
-			.pull-right();
-			width: 50%;
+		&:nth-child(2n) {
+			.article_content {
+				.pull-left();
+				width: 50%;
+			}
+			.article_image {
+				.pull-right();
+				width: 50%;
+			}
 		}
 	}
 	

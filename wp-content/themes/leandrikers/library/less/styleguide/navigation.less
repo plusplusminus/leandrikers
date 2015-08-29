@@ -51,7 +51,9 @@
 
 // Dropdown
 .primary_submenu{
-	.centerDropdown();
+	@media(min-width:@screen-md-min) {
+		.centerDropdown();
+	}
 	list-style: none;
 	padding: 0px;
 	border: none;
@@ -89,13 +91,18 @@
 	margin-bottom: 0px;
 	margin-left: 20px;
 	.social_menu--item{
-		float: left;
-		display: block;
+		@media(min-width:@screen-md-min) {
+			float: left;
+			display: block;
+		}
 		position: relative;
 		a{
-			padding: 45px 0;
-			line-height: @line-height-computed;
-			height: @navbar-height;
+			@media(min-width:@screen-md-min) {
+				padding: 45px 0;
+
+				line-height: @line-height-computed;
+				height: @navbar-height;
+			}
 			display: block;
 			span{
 				width: 31px;

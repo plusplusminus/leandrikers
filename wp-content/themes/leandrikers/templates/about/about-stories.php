@@ -7,9 +7,12 @@
 	if ( get_query_var( 'page' ) ) { $paged = get_query_var( 'page' ); }
 	$paged = intval( $paged );
 
+	$category = get_post_meta($post->ID,'_ppm_category_select',true);
+
 	$query_args = array(
 		'post_type' => 'post',
 		'paged' => $paged,
+		'cat'=> $category[0]
 	);
 
 	$query =  new WP_Query($query_args);

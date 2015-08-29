@@ -11,12 +11,24 @@
 }
 
 .article_image {
-	.img-responsive();
+
+	img {
+		.img-responsive();
+		@media(min-width:@screen-md-min) {
+			display: none;
+		}
+	}
+
+	@media(min-width:@screen-md-min) {
+		min-height: 550px;
+	}
+
 	.transition(0.5s);
 	
 	&:hover{
 		.opacity(0.85);
 	}
+
 	position: relative;
 	background-repeat: no-repeat;
 	background-position: center center;
@@ -55,13 +67,20 @@
 }
 
 .article_content{
-	width: 50%;
+
 	.text-center();
 	position: relative;
 
 	.article_content--inner {
-		padding: 80px 60px 60px 60px; 		
+		padding: 40px 30px 30px 30px; 	
+		@media(min-width:@screen-md-min) {
+
+			padding: 80px 60px 60px 60px; 		
+
+		}	
 	}
+
+	
 	
 	.article_content--quote{
 		text-transform: uppercase;

@@ -1,14 +1,13 @@
 <?php $image = wp_get_attachment_image_src( get_post_thumbnail_id(), 'full'); ?>
-<?php $cite = get_post_meta($post->ID,'_ppm_quote_cite',true); ?>
 
-<div class="article_image js-height" style="background-image:url('<?php echo $image[0]; ?>');min-height:550px;">
-	<a href="<?php the_permalink(); ?>" title="<?php the_title();?>">
-		<?php the_post_thumbnail('full',array('class'=>'contact_image--img hide')); ?>
-	</a>
+<div class="article_image js-height">
+	<?php the_post_thumbnail('full',array('class'=>'article_image--img')); ?>
+	<a href="<?php the_permalink(); ?>" title="<?php the_title();?>"></a>
 </div>
 <div class="article_content js-height">
 	<div class="article_content--inner">
 		<?php $quote = get_post_meta($post->ID,'_ppm_quote_text',true); ?>
+		<?php $cite = get_post_meta($post->ID,'_ppm_quote_cite',true); ?>
 		<?php if ($quote) : ?>
 			<blockquote class="article_content--quote">
 				<?php echo esc_html($quote); ?>

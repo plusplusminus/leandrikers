@@ -80,13 +80,19 @@
 
 
 						<div class="navbar-collapse collapse navbar-responsive-collapse">
-							<ul class="social_menu pull-right">
+							<ul class="social_menu pull-right hidden-xs hidden-sm">
 								<li class="social_menu--item"><a href="<?php echo $tpb_options['twitter_url'];?>"><span class="fa fa-fw fa-twitter"></span></a></li>
 								<li class="social_menu--item"><a href="<?php echo $tpb_options['facebook_url'];?>"><span class="fa fa-fw fa-facebook"></span></a></li>
 								<li class="social_menu--item"><a href="<?php echo $tpb_options['instagram_url'];?>"><span class="fa fa-fw fa-instagram"></span></a></li>
 								<li class="social_menu--item"><a href="<?php echo $tpb_options['pinterest_url'];?>"><span class="fa fa-fw fa-pinterest"></span></a></li>
 							</ul>
 							<?php bones_main_nav(); ?>
+							<ul class="social_menu text-center visible-xs visible-sm">
+								<li class="social_menu--item"><a href="<?php echo $tpb_options['twitter_url'];?>"><span class="fa fa-fw fa-twitter"></span></a></li>
+								<li class="social_menu--item"><a href="<?php echo $tpb_options['facebook_url'];?>"><span class="fa fa-fw fa-facebook"></span></a></li>
+								<li class="social_menu--item"><a href="<?php echo $tpb_options['instagram_url'];?>"><span class="fa fa-fw fa-instagram"></span></a></li>
+								<li class="social_menu--item"><a href="<?php echo $tpb_options['pinterest_url'];?>"><span class="fa fa-fw fa-pinterest"></span></a></li>
+							</ul>
 							
 						</div>
 					</div>

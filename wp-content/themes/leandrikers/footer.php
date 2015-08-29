@@ -3,10 +3,21 @@
       <div class="footer_primary">
         <div class="container">
           <div class="row">
+            <div class="col-md-2 visible-xs">
+              <div class="primary_logo">
+              <?php if ( ( '' != $tpb_options['footer_logo']['url'] ) ) {
+                $logo_url = $tpb_options['footer_logo']['url'];
+                $site_name = get_bloginfo('name');
+                $site_description = get_bloginfo('description');
+                echo '<img class="img-responsive" src="'.$logo_url.'" alt="'.esc_attr($site_name).'"/>' . "\n";
+              } // End IF Statement */
+              ?>
+              </div>
+            </div>
             <div class="col-md-5">
               <span class="primary_copy">Copyright &copy; <?php echo date('Y'); ?> <?php bloginfo( 'name' ); ?>.</span>
             </div>
-            <div class="col-md-2">
+            <div class="col-md-2 hidden-xs">
               <div class="primary_logo">
               <?php if ( ( '' != $tpb_options['footer_logo']['url'] ) ) {
                 $logo_url = $tpb_options['footer_logo']['url'];
