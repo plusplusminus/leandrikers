@@ -321,4 +321,15 @@ function be_metabox_show_on_child_of( $display, $meta_box ) {
 add_filter( 'cmb2_show_on', 'be_metabox_show_on_child_of', 10, 2 );
 
 
+
+
+// Default Image Linking
+function ppm_imagelink_setup() {
+    $image_set = get_option( 'image_default_link_type' );
+    
+    if ($image_set !== 'none') {
+        update_option('image_default_link_type', 'none');
+    }
+}
+add_action('admin_init', 'ppm_imagelink_setup', 10);
 ?>

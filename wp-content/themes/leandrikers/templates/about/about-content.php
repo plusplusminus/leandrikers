@@ -25,7 +25,7 @@
 											<div class="page_entry clearfix">
 												<?php the_content(); ?>
 												<br><br>
-												<a href="<?php echo esc_url($link); ?>" class="about_description--btn">Contact Me <svg class="icon-arrow"><use xlink:href="<?php echo get_stylesheet_directory_uri();?>/library/images/icons.svg#icon-arrow"></use></svg></a>
+												<a href="http://clients.plusplusminus.co.za/leandrikers/preview/contact-me/" class="about_description--btn">Contact Me <svg class="icon-arrow"><use xlink:href="<?php echo get_stylesheet_directory_uri();?>/library/images/icons.svg#icon-arrow"></use></svg></a>
 											</div>
 										</div>
 									<?php endwhile; ?>

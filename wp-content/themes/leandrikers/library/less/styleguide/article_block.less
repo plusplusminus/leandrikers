@@ -53,6 +53,7 @@
     position: absolute;
   }
 }
+
 .article_content{
 	width: 50%;
 	.text-center();
@@ -141,13 +142,15 @@
 		right: 0;
 	}
 	.article_content--btn{
-		.btn-link();
 		.transition(0.5s);
 		.articles_article:hover &{
-			color: #fff;
+			color: #fff !important;
 		}
 		.slide_article &{
 			.btn-white;
+		}
+		.articles_article &{
+			.btn-link();
 		}
 	}
 }
