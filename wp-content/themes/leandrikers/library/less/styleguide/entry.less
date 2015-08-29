@@ -16,5 +16,23 @@
 }
 
 .post_entry{
-
+	blockquote p{
+		text-transform: uppercase;
+		font-family: @font-family-serif;
+		.letter-spacing();
+		color: @brand-primary;
+		font-style: normal;
+	}
+	p a{
+		color: @text-color;
+		border-bottom: 1px solid @text-color;
+		.transition(0.5s);
+		&:hover{
+			border-bottom: 1px solid transparent;
+		}
+	}
+	img{
+		margin-bottom: 3px;
+		.img-responsive();
+	}
 }

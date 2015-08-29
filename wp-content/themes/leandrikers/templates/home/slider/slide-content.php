@@ -15,6 +15,6 @@
 			</blockquote>
 
 		<?php endif; ?>
-		<a href="<?php the_permalink(); ?>" class="article_content--btn" title="<?php the_title(); ?>">View More <span class="icon icon-arrow"></span></a> 
+		<a href="<?php the_permalink(); ?>" class="article_content--btn" title="<?php the_title(); ?>">View More <svg class="icon-arrow"><use xlink:href="<?php echo get_stylesheet_directory_uri();?>/library/images/icons.svg#icon-arrow"></use></svg></a> 
 	</div>
 </div>
