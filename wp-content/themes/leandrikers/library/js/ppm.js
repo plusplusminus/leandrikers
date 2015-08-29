@@ -32,7 +32,25 @@ function addListeners() {
 }
 
 function resize() {
-     equalheight('.js-height');
+    equalheight('.contact_image.js-height');
+
+    var width = window.innerWidth; 
+    if (width > 992) {
+        equalheight('article > .js-height');
+        jQuery('.article_image').each(function(){
+            var div = jQuery(this);
+            var image = div.find('img');
+            div.css('background-image','url('+image.attr('src')+')');
+        })
+    } else {
+        jQuery('.article_image').each(function(){
+            var div = jQuery(this);
+            div.css('background-image','none');
+            div.css('height','auto');
+        })
+        
+    }
+
 }
 
 jQuery(window).load(function() {
@@ -41,8 +59,17 @@ jQuery(window).load(function() {
         items:1,
     });
 
-    equalheight('article > .js-height');
+    equalheight('.section_contact .js-height');
 
+    var width = window.innerWidth; 
+    if (width > 992) {
+        equalheight('article > .js-height');
+        jQuery('.article_image').each(function(){
+            var div = jQuery(this);
+            var image = div.find('img');
+            div.css('background-image','url('+image.attr('src')+')');
+        })
+    } 
 });
 
 equalheight = function(container){

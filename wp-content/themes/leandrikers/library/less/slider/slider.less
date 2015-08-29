@@ -242,7 +242,10 @@
 .slide_article {
   display: table;
   height: 100%;
-  max-width: 50%;
+  max-width: 90%;
+  @media(min-width:@screen-md-min) {
+    max-width: 50%;
+  }
   text-align: center;
   transform-style: preserve-3d;
   -webkit-transform-style: preserve-3d;
