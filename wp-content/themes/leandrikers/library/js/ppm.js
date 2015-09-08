@@ -5,7 +5,7 @@ jQuery(document).ready(function(){
 
     jQuery('.js-comments').on('click', function(e){
         e.preventDefault();
-        var disqus_shortname = 'theprettyblog';
+        var disqus_shortname = 'leandrikers';
         jQuery.ajax({
               type: "GET",
               url: "http://" + disqus_shortname + ".disqus.com/embed.js",
