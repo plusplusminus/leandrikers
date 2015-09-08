@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"pad",
+				"padding-top"
+			],
+			[
+				"Mar",
+				"margin-top"
+			],
+			[
+				"mar",
+				"margin-bottom"
+			],
+			[
 				"font-s",
 				"font-size-small"
 			],
@@ -12,20 +24,12 @@
 				"text-align"
 			],
 			[
-				"mar",
-				"margin-top"
-			],
-			[
 				"pa",
 				"padding"
 			],
 			[
 				"ba",
 				"background"
-			],
-			[
-				"pad",
-				"padding-bottom"
 			],
 			[
 				"font-si",
@@ -510,10 +514,6 @@
 			[
 				"conact_n",
 				"contact_name"
-			],
-			[
-				"get_t",
-				"get_the_title"
 			]
 		]
 	},
@@ -568,10 +568,38 @@
 	},
 	"expanded_folders":
 	[
-		"/Users/iaanvn/Sites/leandrikers"
+		"/Users/iaanvn/Sites/leandrikers",
+		"/Users/iaanvn/Sites/leandrikers/wp-content",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/styleguide",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/about",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/features",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/home",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/instagram",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/single"
 	],
 	"file_history":
 	[
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/functions.php",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/js/ppm.js",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/home/section-slider.php",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/contact/contact-content.php",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/about/about-content.php",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/features/features-features.php",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/styleguide/features.less",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/styleguide/layout.less",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/styleguide/footer.less",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/styleguide/navigation.less",
+		"/Users/iaanvn/Sites/leandrikers/wp-config.php",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/tempalte-home.php",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/features.php",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/slider/slider.less",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/styleguide/article_block.less",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/styleguide/image_feed.less",
 		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/functions.php",
 		"/Users/iaanvn/Sites/htwe/wp-content/themes/plussed/library/navwalker.php",
 		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/templates/section-welcome.php",
@@ -683,27 +711,11 @@
 		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/directory/_listing-content.php",
 		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/directory/_listing-action.php",
 		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/includes/tpb-nav.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/plussed/library/navwalker.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-config.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/legacy.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/theme.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/widgets.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/links.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/bootstrap/buttons.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/plugins/show-some-love-kikicoza/show-some-love-plugin.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/grid.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/directory/_article.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/bootstrap-type.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/single/_single-sharing.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/single/_single-footer.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/directory/_listing-links.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/plussed/archive.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/single.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/_widget_videos.php"
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/plussed/library/navwalker.php"
 	],
 	"find":
 	{
-		"height": 25.0
+		"height": 35.0
 	},
 	"find_in_files":
 	{
@@ -845,6 +857,15 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"navbar-br",
+			"55,68,86,1",
+			"80%",
+			"rgba(148,166,182,1)",
+			"rgba(134,151,145,1)",
+			"rgba(237,237,237,0)",
+			"100%",
+			"buttons",
+			"next",
 			"dropdown-m",
 			"event",
 			"grid",
@@ -963,16 +984,7 @@
 			"@gray-lighter",
 			"gray-lighter",
 			"options_i",
-			".icon",
-			"social_item--bt",
-			"social_item--btN",
-			"footer--s",
-			"face",
-			"pint",
-			"css-facebook",
-			"sharing_social",
-			"social",
-			"single_"
+			".icon"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -980,6 +992,11 @@
 		"regex": false,
 		"replace_history":
 		[
+			"55,68,86,0.5",
+			"100%",
+			"rgba(55,68,86,1)",
+			"rgba(148,166,182,1)",
+			"rgb(148, 166, 182)",
 			"{% include \"product_single\" %}",
 			"<button class=\"btn btn-default buy_now\" data-toggle=\"modal\" data-target=\"#cartModal\">Buy Now</button>",
 			"pressModal",
@@ -1109,7 +1126,7 @@
 	"project": "leandrikers.sublime-project",
 	"replace":
 	{
-		"height": 46.0
+		"height": 64.0
 	},
 	"save_all_on_build": true,
 	"select_file":

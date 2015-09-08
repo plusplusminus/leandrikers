@@ -16,6 +16,7 @@
 							<header class="page_header">
 								<h1 class="page_header--title"><?php the_title(); ?>
 							</header>
+
 							<article id="post-<?php the_ID(); ?>" <?php post_class('article_post clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting"> 
 							
 								<?php if ( have_posts() ) : ?>
@@ -31,10 +32,11 @@
 									<?php endwhile; ?>
 								<?php endif; ?>
 								<?php wp_reset_query(); ?>
-							
+
 							</article><?php // end #wrapper ?>
 						</div>
 					</div>
+
 				</main>
 	            
 			</div>

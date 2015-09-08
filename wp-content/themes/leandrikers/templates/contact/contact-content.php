@@ -11,7 +11,13 @@
 			<div class="contact_form js-height">
 				<?php gravity_form(1, false, false, false, '', true, 12); ?>
 			</div>
+			<div class="clearfix"></div>
+			
 		</div>
 
+	</div>
+
+	<div class="container">
+		<?php get_template_part('templates/features/features','features'); ?>
 	</div>
 </section>

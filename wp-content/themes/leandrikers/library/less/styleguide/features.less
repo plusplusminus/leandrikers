@@ -1,0 +1,25 @@
+.widget_woothemes_features{
+	text-align: center;
+	margin-top: 120px;
+}
+
+.feature{
+	.make-xs-column(2);
+	.feature-title{
+		display: none;
+	}
+	.feature-content{
+		display: none;
+	}
+	img{
+		.img-responsive();
+		width: 100%;
+		.transition(0.5s);
+		&:hover{
+			.opacity(0.8);
+		}
+	}
+	&.first{
+		.make-xs-column-offset(1);
+	}
+}
