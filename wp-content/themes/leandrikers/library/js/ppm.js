@@ -57,6 +57,11 @@ jQuery(window).load(function() {
 
     jQuery('.owl-carousel').owlCarousel({
         items:1,
+        nav:true,
+        navText: [
+          "<i class='fa fa-angle-left fa-3x'></i>",
+          "<i class='fa fa-angle-right fa-3x'></i>"
+          ],
     });
 
     equalheight('.section_contact .js-height');

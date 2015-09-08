@@ -41,6 +41,15 @@
 			color: @brand-primary;
 		}
 	}
+	.navbar-toggle{
+		font-family: @font-family-title;
+		border-color: #fff;
+		.transition(0.5s);
+		&:hover{
+			background: #fff;
+			color: @brand-primary;
+		}
+	}
 }
 
 .centerDropdown {
@@ -90,6 +99,9 @@
 	.list-inline();
 	margin-bottom: 0px;
 	margin-left: 20px;
+	&.visible-xs{
+		padding-bottom: 40px;
+	}
 	.social_menu--item{
 		@media(min-width:@screen-md-min) {
 			float: left;

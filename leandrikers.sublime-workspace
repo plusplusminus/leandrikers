@@ -4,136 +4,516 @@
 		"selected_items":
 		[
 			[
-				"ma",
-				"margin"
-			],
-			[
-				"mar",
-				"margin-bottom"
-			],
-			[
-				"ba",
-				"background-color"
-			],
-			[
-				"b",
-				"background"
-			],
-			[
-				"bor",
-				"border-left"
-			],
-			[
-				"pad",
-				"padding-right"
-			],
-			[
 				"font-s",
-				"font-size-large"
-			],
-			[
-				"font",
-				"font-size"
+				"font-size-small"
 			],
 			[
 				"te",
-				"text-transform"
+				"text-align"
 			],
 			[
-				"fon",
-				"font-size"
-			],
-			[
-				"font-f",
-				"font-family-base"
-			],
-			[
-				"backgr",
-				"background-repeat"
-			],
-			[
-				"rg",
-				"rgba(r,g,b,a)"
-			],
-			[
-				"i",
-				"italic"
-			],
-			[
-				"bo",
-				"border-color"
-			],
-			[
-				"end",
-				"endif"
-			],
-			[
-				"box",
-				"box-shadow"
-			],
-			[
-				"in",
-				"inline-block"
-			],
-			[
-				"font-",
-				"font-family"
-			],
-			[
-				"make",
-				"make-md-column-offset"
-			],
-			[
-				"trans",
-				"transparent"
-			],
-			[
-				"bord",
-				"border"
-			],
-			[
-				"body",
-				"body-text"
-			],
-			[
-				"border",
-				"border-bottom"
-			],
-			[
-				"tr",
-				"transition"
-			],
-			[
-				"font-fa",
-				"font-famliy-script"
-			],
-			[
-				"border-r",
-				"border-radius"
+				"mar",
+				"margin-top"
 			],
 			[
 				"pa",
 				"padding"
 			],
 			[
-				"make-md-",
-				"make-md-column"
+				"ba",
+				"background"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"font-si",
+				"font-size-base"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"bs3me",
+				"bs3-input:email	bs3-input-email"
+			],
+			[
+				"bna",
+				"background-image"
+			],
+			[
+				"margin",
+				"margin-left"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"border",
+				"border-spacing"
+			],
+			[
+				"get_st",
+				"get_stylesheet_directory_uri"
+			],
+			[
+				"style",
+				"stylesheet_uri"
+			],
+			[
+				"bo",
+				"border-right"
+			],
+			[
+				"inlie",
+				"inline-block"
+			],
+			[
+				"inli",
+				"inline-table"
+			],
+			[
+				"tran",
+				"transition"
+			],
+			[
+				"rgb",
+				"rgba(r,g,b,a)"
+			],
+			[
+				"bac",
+				"background"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"font-f",
+				"font-family-serif"
+			],
+			[
+				"font-",
+				"font-family"
+			],
+			[
+				"pull",
+				"pull-left"
+			],
+			[
+				"ma",
+				"margin-bottom"
+			],
+			[
+				"le",
+				"letter-spacing"
+			],
+			[
+				"options_item",
+				"options_item--btn"
+			],
+			[
+				"padd",
+				"padding-top"
+			],
+			[
+				"lis",
+				"list-style"
+			],
+			[
+				"font-fam",
+				"font-family-serif"
+			],
+			[
+				"text",
+				"text-transform"
+			],
+			[
+				"borde",
+				"border-left"
+			],
+			[
+				"font-fa",
+				"font-family-serif"
+			],
+			[
+				"in",
+				"inline-block"
+			],
+			[
+				"gray-li",
+				"gray-lighter"
+			],
+			[
+				"gray",
+				"gray-darker"
+			],
+			[
+				"gray-l",
+				"gray-lighter"
+			],
+			[
+				"chos",
+				"chosen-drop"
+			],
+			[
+				"border-t",
+				"border-right"
+			],
+			[
+				"gray-ligh",
+				"gray-light"
+			],
+			[
+				"m",
+				"margin-bottom"
+			],
+			[
+				"cho",
+				"chosen-drop"
+			],
+			[
+				"font-se",
+				"font-size-small"
 			],
 			[
 				"back",
+				"background"
+			],
+			[
+				"brand",
+				"brand-success"
+			],
+			[
+				"icon",
+				"icon-wrap"
+			],
+			[
+				"btn",
+				"btn-success"
+			],
+			[
+				"trans",
+				"transparent"
+			],
+			[
+				"bn",
 				"background-color"
 			],
 			[
-				"mak",
-				"make-md-column"
+				"cont",
+				"contentOverlay"
 			],
 			[
-				"bod",
-				"body-text"
+				"con",
+				"contentOverlay"
 			],
 			[
-				"make-md",
-				"make-md-column-offset"
+				"r",
+				"right"
+			],
+			[
+				"panel",
+				"panel-heading"
+			],
+			[
+				"list",
+				"list-style-position"
+			],
+			[
+				"tex",
+				"text-transform"
+			],
+			[
+				"co",
+				"color"
+			],
+			[
+				"p",
+				"padding-top"
+			],
+			[
+				"c",
+				"cursor"
+			],
+			[
+				"lin",
+				"line-height"
+			],
+			[
+				"s",
+				"super"
+			],
+			[
+				"border-r",
+				"border-radius"
+			],
+			[
+				"gray-da",
+				"gray-dark"
+			],
+			[
+				"navba",
+				"navbar-nav"
+			],
+			[
+				"t",
+				"target	Attr"
+			],
+			[
+				"ta",
+				"target	Attr"
+			],
+			[
+				"margin-",
+				"margin-top"
+			],
+			[
+				"bord",
+				"border-color"
+			],
+			[
+				"blog",
+				"bloginfo"
+			],
+			[
+				"inl",
+				"inline"
+			],
+			[
+				"brand-",
+				"brand-primary"
+			],
+			[
+				"font-size",
+				"font-size-base"
+			],
+			[
+				"w",
+				"nowrap"
+			],
+			[
+				"fonts-",
+				"font-size"
+			],
+			[
+				"max",
+				"max-width"
+			],
+			[
+				"ad",
+				"padding"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"woocommerce",
+				"woocommerce-validated"
+			],
+			[
+				"tet",
+				"text-align"
+			],
+			[
+				"li",
+				"line-height"
+			],
+			[
+				"navbar-in",
+				"navbar-inverse-border"
+			],
+			[
+				"Font-s",
+				"font-style"
+			],
+			[
+				"gray-dark",
+				"gray-darker"
+			],
+			[
+				"singl",
+				"single-social"
+			],
+			[
+				"split-",
+				"split-border-top"
+			],
+			[
+				"site",
+				"site_description"
+			],
+			[
+				"site_",
+				"site_url"
+			],
+			[
+				"prin",
+				"print_r"
+			],
+			[
+				"ar",
+				"article	Tag"
+			],
+			[
+				"border-col",
+				"border-color"
+			],
+			[
+				"re",
+				"repeat"
+			],
+			[
+				"video",
+				"video_link"
+			],
+			[
+				"h",
+				"href	Attr"
+			],
+			[
+				"b",
+				"bottom"
+			],
+			[
+				"widt",
+				"width"
+			],
+			[
+				"im",
+				"important"
+			],
+			[
+				"hi",
+				"highlight-color"
+			],
+			[
+				"pri",
+				"primary-color"
+			],
+			[
+				"font-famil",
+				"font-family-base"
+			],
+			[
+				"link",
+				"link-hover-color"
+			],
+			[
+				"padd-lar",
+				"padding-large-horizontal"
+			],
+			[
+				"padding-la",
+				"padding-large-vertical"
+			],
+			[
+				"font-fal",
+				"font-family-bold"
+			],
+			[
+				"pd",
+				"padding"
+			],
+			[
+				"gfor",
+				"gform_footer"
+			],
+			[
+				"gform_b",
+				"gform_body"
+			],
+			[
+				"gfo",
+				"gform_wrapper"
+			],
+			[
+				"wid",
+				"widget_policies"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"img",
+				"img-responsive"
+			],
+			[
+				"sty",
+				"stylesheet_directory"
+			],
+			[
+				"the_t",
+				"the_title"
+			],
+			[
+				"import",
+				"important"
+			],
+			[
+				"list-g",
+				"list-group-item"
+			],
+			[
+				"gray-light",
+				"gray-lighter"
+			],
+			[
+				"border-left",
+				"border-left-color"
+			],
+			[
+				"min-",
+				"min-width"
+			],
+			[
+				"font-size-",
+				"font-size-large"
+			],
+			[
+				"att",
+				"attachments"
+			],
+			[
+				"the_pos",
+				"the_post_thumbnail"
+			],
+			[
+				"to",
+				"today"
+			],
+			[
+				"exp",
+				"explode"
+			],
+			[
+				"un",
+				"unserialize"
+			],
+			[
+				"strto",
+				"strtoupper"
+			],
+			[
+				"loc",
+				"locations_html"
+			],
+			[
+				"conact_n",
+				"contact_name"
+			],
+			[
+				"get_t",
+				"get_the_title"
 			]
 		]
 	},
@@ -147,27 +527,34 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 87.0,
-		"last_filter": "Package Control: rem",
+		"height": 67.0,
+		"last_filter": "Package Control: instaa",
 		"selected_items":
 		[
 			[
-				"Package Control: rem",
-				"Package Control: Remove Package"
+				"Package Control: instaa",
+				"Package Control: Install Package"
 			],
 			[
-				"Package Control: install",
-				"Package Control: Install Package"
+				"Package Control: ",
+				"Package Control: Add Repository"
+			],
+			[
+				"",
+				"Set Syntax: PHP"
+			],
+			[
+				"pack ",
+				"Preferences: Browse Packages"
 			]
 		],
 		"width": 575.0
 	},
 	"console":
 	{
-		"height": 126.0,
+		"height": 0.0,
 		"history":
 		[
-			"cd sites"
 		]
 	},
 	"distraction_free":
@@ -179,113 +566,278 @@
 		"side_bar_visible": false,
 		"status_bar_visible": false
 	},
+	"expanded_folders":
+	[
+		"/Users/iaanvn/Sites/leandrikers"
+	],
 	"file_history":
 	[
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/js/picturefill.min.js",
-		"/Users/iaanvn/Sites/campuskey/wp-content/themes/campuskey/library/js/app.js",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/less/ppm.less",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/campuses/rooms.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/campuses/gallery-content.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/header.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/lifestyle/rooms.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/template-lifestyle.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/single-rooms.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/buildings/gallery-content.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/less/single/single.less",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/less/theme.less",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/less/responsive.less",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/lifestyle/features-content.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/js/ppm.js",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/less/style.less",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/section-header.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/classes/theme-cpt.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/contact/page-content.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-config.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/less/fonts.less",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/rooms/gallery-content.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/functions.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/blog/page-content.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/buildings/header.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/campuses/buildings.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/footer.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/js/fancybox.js",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/less/fancybox.less",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/uploads/PDF_EXTENDED_TEMPLATES/configuration.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/library/less/custom-variables.less",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/section-feature.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/template-home.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/docs/page-content.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/campuses/archive.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/rooms/archive.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/campuses/header.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/section-campuses.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/rooms/grid.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/rooms/header.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/single-buildings.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/section-news.php",
-		"/Users/iaanvn/Sites/CampusKey/terminal.glue",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/about/terminal.glue",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/template-book.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/book/page-content.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/template-faq.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/faq/page-content.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/template-docs.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/templates/about/page-content.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/page.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/sidebar.php",
-		"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey/template-rooms.php",
-		"/Users/iaanvn/Desktop/googleec1bd01f518582dc.html",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/campuses.json",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/campuses.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/lifestyle.json",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/news.json",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/contact.json",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/rooms.json",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/index.json",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/includes/navigation.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/about-green.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/about-team.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/news-single.json",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/news-single.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/news.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/contact.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/about.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/includes/footer.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/includes/carousel.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/campus-single.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/building-single.json",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/campus-single.json",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/room-single.json",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/includes/jumbotron.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/building-single.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/room-single.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/book.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/rooms.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/lifestyle.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/layouts/layout.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/index.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/includes/vision.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/models/jumbotron.json",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/test.liquid",
-		"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates/includes/feature-item.liquid"
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/functions.php",
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/plussed/library/navwalker.php",
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/templates/section-welcome.php",
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/footer.php",
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/header.php",
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/library/svg.svg",
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/templates/shop/shop-header.php",
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/templates/post/post-header.php",
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/templates/post/post-content.php",
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/templates/products/products-content.php",
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/library/less/style.less",
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/library/less/fonts/fonts.less",
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/library/less/custom-variables.less",
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/library/less/theme.less",
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/templates/post/post-social.php",
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/template-contact.php",
+		"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe/templates/section-feature.php",
+		"/Users/iaanvn/Sites/htwe/wp-config.php",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/41A0F196-E043-4978-ADAF-0C6C6FD59738/template-user-gallery.php",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/AF1CD305-CFA9-45BF-B686-B54F46F24218/template-process.php",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/5C1A3C3A-4D67-4418-A376-FE5DDE1B8A7C/functions.php",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/E915A830-B083-49A3-B546-5347EB30BCC0/attachment.php",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/47AD3F3A-61E2-4BEC-839D-A912AFFBB389/template-user-gallery.php",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/07E09589-5E33-4889-8CE4-3C20F8068D6D/template-process.php",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/2F128E3F-8EC2-48EB-8963-E2140AB16AC0/content-home-page-grid.php",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/20CC6258-91C9-4998-B4A9-278AA557C413/template-client-galleries.php",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/7D8F71E6-8B82-48C7-ABF1-077A2620401B/template-user-gallery.php",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/about-premium.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/product_single.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/public/less/theme.less",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/product_single.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/tab-1.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/about.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/press.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/fav_modal.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/navigation.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/tabs_stockists.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/collections_single.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/about_slider.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/about-brand.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/about-africa.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/about-kat.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/filter.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/about-ethical.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/tab-2.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/tab-4.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/contact.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/accessories.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/garments.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/handbags.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/footer.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/full_slider.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/story.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/index.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/instagram_slider.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/main_slider.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/widget_slider.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/country_modal.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/product_slider.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/public/js/theme.js",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/cart_modal.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/layouts/layout.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/includes/tab-3.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/templates/collections.liquid",
+		"/Users/iaanvn/Sites/KVD/Prototype/public/less/steps.less",
+		"/Users/iaanvn/Sites/KVD/Prototype/public/less/bootstrap.less",
+		"/Users/iaanvn/Sites/KVD/Prototype/mixture.json",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/2532822A-F6C8-4271-8F1A-734A8FE1968B/style.css",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/4620AEC2-DB1A-462C-BB9A-479C8B9F2056/style.css",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/0404D6F6-E269-4BFA-83CC-5CC5F17E8AAC/wp-config.php",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/747AECFB-D96B-46F5-BA35-6B7958EFEF51/.htaccess",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/3B68CB56-209D-48C1-977B-6E903C81EF30/wp-config.php",
+		"/Users/iaanvn/Sites/llamabar/prototype/templates/includes/footer.liquid",
+		"/Users/iaanvn/Sites/llamabar/prototype/templates/index.liquid",
+		"/Users/iaanvn/Sites/llamabar/prototype/templates/about.liquid",
+		"/Users/iaanvn/Sites/llamabar/prototype/templates/products.liquid",
+		"/Users/iaanvn/Sites/llamabar/prototype/templates/products-original.liquid",
+		"/Users/iaanvn/Sites/llamabar/prototype/templates/products-peanut.liquid",
+		"/Users/iaanvn/Sites/llamabar/prototype/templates/layouts/layout.liquid",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/9548AD10-08A0-4BFB-B587-8389CC63ECCC/wp-config.php",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/2A69579E-21ED-4EDA-9F2C-57CA717C7BE2/wp-config.php",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/526CFBD6-3E82-42B5-87BA-DCA2AF78CF59/wp-config.php",
+		"/Users/iaanvn/Library/Caches/Cleanup At Startup/Transmit/FAB96987-2DD0-4059-A6E4-47FE8B9EBBAC/main.class.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/internal-widgets.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/header.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/header.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/badges.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/directory/archive.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/archive-vendors.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/footer.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/style.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/mpt.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/includes/tpb-widgets.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/template-search.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/js/ppm.js",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/footer.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/single-vendors.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/bootstrap-buttons.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/custom-variables.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/css/style.css",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/functions.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/directory/archive.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/template-badges.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/single/single.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/articles.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/gravityforms.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/directory/listing.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/single/_single-meta.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/directory/_listing-content.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/directory/_listing-action.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/includes/tpb-nav.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/plussed/library/navwalker.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-config.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/legacy.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/theme.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/widgets.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/links.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/bootstrap/buttons.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/plugins/show-some-love-kikicoza/show-some-love-plugin.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/grid.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/directory/_article.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/bootstrap-type.less",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/single/_single-sharing.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/single/_single-footer.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/directory/_listing-links.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/plussed/archive.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/single.php",
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/_widget_videos.php"
 	],
 	"find":
 	{
-		"height": 23.0
+		"height": 25.0
 	},
 	"find_in_files":
 	{
-		"height": 93.0,
+		"height": 203.0,
 		"where_history":
 		[
-			"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey",
-			"/Users/iaanvn/Sites/CampusKey/wp-content/themes",
-			"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey",
-			"/Users/iaanvn/Sites/CampusKey/wp-content",
-			"/Users/iaanvn/Sites/CampusKey/wp-content/themes/campuskey",
-			"/Users/iaanvn/Sites/CampusKey/wp-content/themes",
-			"/Users/iaanvn/Sites/CampusKey/prototype/v1/templates",
-			"/Users/iaanvn/Sites/CampusKey"
+			"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe",
+			"/Users/iaanvn/Sites/KVD/Prototype/templates",
+			"/Users/iaanvn/Sites/KVD/Prototype/templates/press.liquid",
+			"",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library",
+			"/Users/iaanvn/Sites/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/directory",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global",
+			"/Users/iaanvn/Sites/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/bootstrap",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/gravityforms.less",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/bootstrap",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/bootstrap/mixins",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/bootstrap",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/bootstrap",
+			"/Users/iaanvn/Sites/theprettyblog/wp-content/themes",
+			"/Users/iaanvn/Sites/alanameyer/wp-content/themes/alanameyer",
+			"/Users/iaanvn/Sites/alanameyer/wp-content/themes",
+			"/Users/iaanvn/Sites/alanameyer/wp-content/themes/alanameyer/library/less",
+			"/Users/iaanvn/Sites/aimeejones/wp-content/themes/plussed",
+			"/Users/iaanvn/Sites/nadiameliblog/wp-content/themes/nadiameli",
+			"/Users/iaanvn/Sites/nadiameliblog/wp-content",
+			"/Users/iaanvn/Sites/nadiameliblog/wp-content/themes",
+			"/Users/iaanvn/Sites/nadiameliblog/wp-content/themes/nadiameli/templates",
+			"/Users/iaanvn/Sites/nadiameliblog/wp-content/themes/nadiameli/library/less",
+			"/Users/iaanvn/Sites/formaphoto/converted-html",
+			"/Users/iaanvn/Sites/devlabel",
+			"",
+			"/Users/iaanvn/Sites/netcms/wp-content/themes/netcms/library/less/bootstrap",
+			"",
+			"/Users/iaanvn/Sites/louisevoster/wp-content/themes/canvas",
+			"/Users/iaanvn/Sites/louisevoster/wp-content/themes/lousievoster",
+			"/Users/iaanvn/Sites/louisevoster/wp-content/themes/canvas",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap/woocommerce",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/retutpro",
+			"/Users/iaanvn/Sites/retutpro/",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content/plugins/woocommerce",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"",
+			"/Users/iaanvn/Sites/retutpro/wp-content",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap/woocommerce",
+			"/Users/iaanvn/Sites/retutpro/wp-content/plugins",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap/woocommerce",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/canvas",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/retutpro/wp-content",
+			"/Users/iaanvn/Sites/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes/marinas",
+			"",
+			"/Users/iaanvn/Sites/marinas/wp-content",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes/marinas/library/less/brew",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes/marinas",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes/plussed",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes/marinas/library/less/brew",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes/marinas",
+			"/Users/iaanvn/Sites/marinas/wp-content/themes/plussed",
+			"",
+			"/Users/iaanvn/Sites/visiononfire/wp-content/plugins/woodojo",
+			"",
+			"<open files>",
+			"/Users/iaanvn/Sites/dev/retutpro/wp-content/themes/bootstrap",
+			"/Users/iaanvn/Sites/dev/retutpro/wp-content/themes/",
+			"/Users/iaanvn/Sites/dev/retutpro/wp-content/themes/bootstrap",
+			"",
+			"/Users/admin/Documents/Sites/ppmv3/wp-content/themes/canvas",
+			"/Users/admin/Documents/Sites/dev/tpb/wp-content/plugins/woocommerce-gateway-payfast",
+			"/Users/admin/Documents/Sites/dev/tpb/wp-content/plugins/woocommerce",
+			"/Users/admin/Documents/Sites/dev/nadiab/wp-content/themes/nadiab"
 		]
 	},
 	"find_state":
@@ -293,134 +845,134 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"<a href=\"",
-			"classie v1.0.0",
-			"third-party.js",
-			"third-party",
-			".js",
-			"vertical-ribbon",
-			"slider-title",
-			"room-f",
-			"slide",
-			"fancybox",
-			".slider-area",
-			".footer-left",
-			"lifestyle",
-			".hover",
-			"view-more",
-			"bubble",
-			"menu-icon",
-			"bubble",
-			"290px",
-			"header-main",
+			"dropdown-m",
+			"event",
+			"grid",
 			"header",
-			"header-right",
-			"header-man",
-			"fancy",
-			"dot",
-			"slider-title",
+			"post",
+			".top_navbar",
+			"mail",
+			"click",
+			"social",
+			"-webkit-appearance: none;",
+			"input",
+			"shape-logo-symbol",
+			"newsletter_text",
+			"newsletter",
+			"han",
+			"list-inline",
+			"<p>Continue Reading</p>",
+			"post_heading--title",
+			"input",
 			"footer",
-			"footer-logo",
-			"smaller",
-			"logo",
-			".article_blog",
-			"<a class=\"fancybox\"",
-			"equal",
-			"$key",
-			"$krykey",
-			"$kry",
-			"documents",
-			"$key",
-			"999",
-			"slider-container",
-			".slider-text",
-			"z-inde",
-			".slider-text-main",
-			"slider-btn",
-			"brand-red",
-			"campus",
-			"ul",
-			"header",
-			".bx-controls-direction",
-			"ppm",
-			"ppm.js",
-			"btn-cta",
-			"row-optio",
-			"footer",
-			"header-subtitle",
-			"section_widget--title",
-			".list-group ",
-			"section_widget--title",
-			"widget",
-			"subti",
-			"btn-cta",
-			"ribbon",
-			"header-titl",
-			"40px",
-			"ribbon",
-			".choose-campus",
-			"check",
-			"eet a students’ needs.",
-			"getElementById",
-			"center: {lat",
-			"lat",
-			"map",
-			"slide",
-			".header-right-top",
-			"body",
-			"weigh",
-			"'ProximaNova-Regular'",
-			"'Pacifico', cursive",
-			"'ProximaNova-Regular'",
-			"ProximaNova-Regular",
-			"min-he",
-			"header-ti",
-			"border-room",
-			"lifes",
-			"lifestyle",
-			"border-campus",
-			"owl",
-			"logo",
-			"also included",
-			"row-op",
-			"45",
-			"slide",
-			".header-content-area",
-			"booknow_image",
-			"room",
-			"This is the image caption",
-			"pager",
-			"slide",
-			"news",
-			"templates/section",
-			"news",
-			"faq",
-			"cta",
-			"gravity",
-			"script",
-			"famliy",
-			"blue",
-			"contact",
+			"_top",
+			"<<<<<<< HEAD",
+			"			<a href=\"product_single\">\n				<div class=\"product_single\">\n					<button class=\"btn btn-default buy_now\" data-toggle=\"modal\" data-target=\"#cartModal\">Buy Now</button>\n					<img src=\"http://placehold.it/450x450&text=Product\" class=\"img-responsive\">\n					<div class=\"product-info\">\n						<h5 class=\"text-center\">Product Name</h5>\n						<div class=\"price text-center\">$750.00</div>\n					</div>\n				</div>\n			</a>",
+			"<a href=\"product_single\">\n	<div class=\"product_single\">\n		<button class=\"btn btn-default buy_now\" data-toggle=\"modal\" data-target=\"#cartModal\">Buy Now</button>\n		<img src=\"http://placehold.it/450x450&text=Product\" class=\"img-responsive\">\n		<div class=\"product-info\">\n			<h5 class=\"text-center\">Product Name</h5>\n			<div class=\"price text-center\">$750.00</div>\n		</div>\n	</div>\n</a>",
+			"<button class=\"btn btn-default buy_now\">Buy Now</button>",
+			"buy Now",
+			"total",
+			"myModal",
+			"Buy Now",
+			".png",
+			"center",
+			"http://www.newsiteurl.com",
+			"modal",
+			"popover",
+			"button",
+			"refine search",
+			"css-style",
+			"quick_search",
 			"icon",
-			"descript",
-			"contact",
-			"room",
-			".lifestyle-area",
-			"feature_",
-			"ffd800",
-			"#FFD800",
-			"display-table-cell",
-			"descrip",
-			"slider-text",
-			"find out more",
-			".vertical-ribbon",
-			"room-grid-main",
-			"sidebar",
-			"about-1",
-			"dynamic_sidebar",
-			"font-fa",
-			"enumenu",
-			"transitions"
+			"newsletter.",
+			"header",
+			"ul",
+			"primary",
+			"download",
+			"day",
+			".opacity(0);",
+			"hover",
+			"content",
+			"contetn",
+			"get_avatar",
+			"meta",
+			"container_single",
+			".sidebar_listing",
+			"VIEW BY",
+			".directory_box",
+			"search",
+			"Select Category",
+			"directoryLocation",
+			"nav_pri",
+			"{\n",
+			"btn",
+			"angle-down",
+			"angle",
+			"icon",
+			"content",
+			"btn",
+			"submit",
+			"hover",
+			"long",
+			"border-color: transparent",
+			"border-c",
+			".btn-link",
+			"background-color: transparent",
+			".excerpt--link",
+			"header--link",
+			"border-color: transparent",
+			"links",
+			"dropdown-toggle",
+			"hover",
+			".widget_form--btn",
+			"subm",
+			"hover",
+			"button",
+			"media",
+			"search_form--input",
+			"image--share",
+			".watermark_image--share",
+			"span",
+			"padding",
+			"title",
+			"options_item",
+			"options_item ",
+			".save-btn",
+			"right",
+			"action",
+			"listing_action",
+			"@tpb-weddings:",
+			"@tpb-weddings",
+			"color",
+			"content",
+			".links_item--btn",
+			"grid_header--title",
+			"slide-image",
+			"slider-image--btn btn btn-primary js-slideshow",
+			"badge",
+			"translate3d(-50%, -50%, 0)",
+			"translate3d",
+			"translate3d(-50%, -50%, 0)",
+			"listing pro",
+			".listing_action--list",
+			"list",
+			"action",
+			"content",
+			"options",
+			"social",
+			"@gray-lighter",
+			"gray-lighter",
+			"options_i",
+			".icon",
+			"social_item--bt",
+			"social_item--btN",
+			"footer--s",
+			"face",
+			"pint",
+			"css-facebook",
+			"sharing_social",
+			"social",
+			"single_"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -428,16 +980,84 @@
 		"regex": false,
 		"replace_history":
 		[
-			"@font-family-base",
-			"@font-family-script",
-			"@font-family-base",
-			"family",
-			"@brand-yellow",
-			"300x250",
-			"icon"
+			"{% include \"product_single\" %}",
+			"<button class=\"btn btn-default buy_now\" data-toggle=\"modal\" data-target=\"#cartModal\">Buy Now</button>",
+			"pressModal",
+			"Details",
+			"http://clients.plusplusminus.co.za/karens",
+			"@brand-danger",
+			"jQuery",
+			"Jquery",
+			"alanameyer",
+			"",
+			"public/",
+			"						<img src=\"holder.js/100%x150/auto/text:image/#ccc:#fff\">\n",
+			"						<img src=\"holder.js/100%x150/auto/text:image/#ccc:#000\">\n",
+			"400",
+			"800",
+			"636467",
+			"Braingear",
+			".transition(0.2s);",
+			"transition(0.2s)",
+			" ",
+			"",
+			"<ul class=\"nav nav-pills nav-pills-small\"><li class=\"active\"><a href=\"#\">Article Category</a></li></ul>",
+			"text-center",
+			"p",
+			"http://clients.plusplusminus.co.za/",
+			"collaborator",
+			"cccccc",
+			"http://testing.da.org.za",
+			"http://localhost/da/development",
+			"",
+			"</h3>",
+			"<h3>",
+			"",
+			"span",
+			"client",
+			"marketplace",
+			".woocommerce .woo-cart",
+			"",
+			"jQuery",
+			"Branch",
+			"jQuery",
+			"<?php bloginfo('template_url');?>/images/",
+			"<?php bloginfo('template_url');?>/images",
+			"images/",
+			"Lead",
+			"Market",
+			"Marekting",
+			"255, 255, 255,",
+			"http://www.plusplusminus.co.za/mmusi",
+			"http://localhost/dev/mmusi",
+			"Supplier",
+			"Suppliers",
+			"jQuery",
+			"images",
+			"font",
+			"Documents",
+			"Document",
+			"Documents",
+			"",
+			"www.theprettyblog.com",
+			"http://new/theprettyblog.com",
+			"http://localhost",
+			"col-6 col-sm-3 col-lg-3",
+			"col-6 col-sm-6 col-lg-3",
+			"col-12 col-sm-6 col-lg-3",
+			"col-12 col-lg-3",
+			"col-3",
+			"col-lg-3",
+			"ads",
+			"Ads",
+			"$setting_id",
+			"$style_id",
+			"$category_id",
+			"Wedding Dress",
+			".share-post.hover .share-counter"
 		],
 		"reverse": false,
-		"show_context": true,
+		"show_context": false,
 		"use_buffer2": true,
 		"whole_word": false,
 		"wrap": true
@@ -452,7 +1072,7 @@
 	],
 	"incremental_find":
 	{
-		"height": 23.0
+		"height": 25.0
 	},
 	"input":
 	{
@@ -489,7 +1109,7 @@
 	"project": "leandrikers.sublime-project",
 	"replace":
 	{
-		"height": 42.0
+		"height": 46.0
 	},
 	"save_all_on_build": true,
 	"select_file":
@@ -498,6 +1118,50 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"theme.",
+				"wp-includes/theme.php"
+			],
+			[
+				"single",
+				"wp-content/themes/marinas/single.php"
+			],
+			[
+				"footer",
+				"wp-content/themes/bootstrap/footer.php"
+			],
+			[
+				"theme-fun",
+				"wp-content/themes/canvas/includes/theme-functions.php"
+			],
+			[
+				"theme-pp",
+				"wp-content/themes/bootstrap/includes/theme-ppm.php"
+			],
+			[
+				"th",
+				"css/less/theme.less"
+			],
+			[
+				"theme",
+				"includes/theme-ppm.php"
+			],
+			[
+				"theem",
+				"css/less/theme.less"
+			],
+			[
+				"he",
+				"header.php"
+			],
+			[
+				"head",
+				"header.php"
+			],
+			[
+				"theme-ppm",
+				"includes/theme-ppm.php"
+			]
 		],
 		"width": 0.0
 	},
@@ -527,7 +1191,7 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 355.0,
+	"side_bar_width": 337.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

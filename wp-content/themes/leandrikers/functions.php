@@ -6,7 +6,6 @@
 
 require('classes/theme-cpt.php');
 
-
 add_action( 'wp_enqueue_scripts', 'ppm_scripts_and_styles', 999 );
 
 function ppm_scripts_and_styles() {
@@ -52,6 +51,45 @@ function theme_slug_widgets_init() {
     ) );
 }
 
+
+/**
+ * Metabox for Page Slug
+ * @author Tom Morton
+ * @link https://github.com/WebDevStudios/CMB2/wiki/Adding-your-own-show_on-filters
+ *
+ * @param bool $display
+ * @param array $meta_box
+ * @return bool display metabox
+ */
+function be_metabox_show_on_slug( $display, $meta_box ) {
+    if ( ! isset( $meta_box['show_on']['key'], $meta_box['show_on']['value'] ) ) {
+        return $display;
+    }
+
+    if ( 'slug' !== $meta_box['show_on']['key'] ) {
+        return $display;
+    }
+
+    $post_id = 0;
+
+    // If we're showing it based on ID, get the current ID
+    if ( isset( $_GET['post'] ) ) {
+        $post_id = $_GET['post'];
+    } elseif ( isset( $_POST['post_ID'] ) ) {
+        $post_id = $_POST['post_ID'];
+    }
+
+    if ( ! $post_id ) {
+        return $display;
+    }
+
+    $slug = get_post( $post_id )->post_name;
+
+    // See if there's a match
+    return in_array( $slug, (array) $meta_box['show_on']['value']);
+}
+add_filter( 'cmb2_show_on', 'be_metabox_show_on_slug', 10, 2 );
+
 add_filter('redux/options/tpb_options/sections', 'child_sections');
 function child_sections($sections){
     //$sections = array();
@@ -87,16 +125,10 @@ function child_sections($sections){
 
      $sections[] = array(
         'icon'          => 'ok',
-        'icon_class'    => 'fa fa-heart',
+        'icon_class'    => 'icon icon-heart',
         'title'         => __('Social Profiles', 'ppm-framework'),
         'desc'          => __('<p class="description">Social Network URLS</p>', 'ppm'),
         'fields' => array(
-            array(
-                        'id'=>'weddingwire_url',
-                        'type' => 'text',
-                        'title' => __('Wedding Wire', 'redux-framework-demo'),
-                        'desc' => __('Enter your wedding wire url', 'redux-framework-demo'),
-                        ),  
             array(
                         'id'=>'twitter_url',
                         'type' => 'text',
@@ -112,7 +144,7 @@ function child_sections($sections){
             array(
                         'id'=>'pinterest_url',
                         'type' => 'text',
-                        'title' => __('pinterest', 'redux-framework-demo'),
+                        'title' => __('Pinterest', 'redux-framework-demo'),
                         'desc' => __('Enter your pinterest URL', 'redux-framework-demo'),
                         ),  
             array(
@@ -123,11 +155,6 @@ function child_sections($sections){
                         ),  
         )
     );
-
-
-
-    
-
     return $sections;
 }
 

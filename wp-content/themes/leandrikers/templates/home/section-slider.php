@@ -10,7 +10,7 @@ $slider = new WP_Query($query_args);
 
 ?>
 
-<section class="section_slider">
+<section class="section_slider owl-theme">
 
 	<?php if ( $slider->have_posts() ) : $count = 0; ?>
 		<div class="slider_carousel owl-carousel">
