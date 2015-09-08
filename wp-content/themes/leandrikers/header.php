@@ -102,4 +102,41 @@
 
 		</header> <?php // end header ?>
 
+		<?php if (is_archive() || is_search() || is_page_template('template-portfolio.php')) : ?>
+			<nav role="navigation">
+		        <div class="navbar navbar-secondary">
+		          	<div class="container">
+		            
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-secondary-collapse">
+								<i class="fa fa-bars"></i>
+								Categories
+							</button>
+						</div>
+
+
+						<div class="navbar-collapse collapse navbar-secondary-collapse">
+							
+							<?php secondary_nav('secondary-nav','nav navbar-nav'); ?>
+
+							<form action="<?php echo home_url( '/' ); ?>" method="get" class="navbar-form navbar-right">
+							    <fieldset>
+							    <div class="input-group">
+							      <input type="text" name="s" id="search" placeholder="<?php _e("Search","bonestheme"); ?>" value="<?php the_search_query(); ?>" class="form-control" />
+							      <span class="input-group-btn">
+							        <button type="submit" class="btn btn-search"><span class="fa fa-search"></span></button>
+							      </span>
+							    </div>
+							    </fieldset>
+							</form>
+
+							
+							
+						</div>
+					</div>
+				</div> 
+
+		    </nav>
+		<?php endif; ?>	
+
 	    

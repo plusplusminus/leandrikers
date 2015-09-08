@@ -15,6 +15,18 @@ jQuery(document).ready(function(){
         jQuery(this).fadeOut();
     });
 
+    var ias = jQuery.ias({
+        container:  '.js-infinite-cont',
+        item:       '.js-infinite',
+        pagination: '.wp-prev-next',
+        next:       '.prev-link > a'
+    });
+
+    ias.extension(new IASPagingExtension());
+    ias.extension(new IASHistoryExtension({ prev: '.prev a' }));
+    ias.extension(new IASTriggerExtension({ html: '<div class="clearfix"></div><div class="ias-trigger ias-trigger-next" style="text-align: center; cursor: pointer;"><div class="row"><div class="load-more col-xs-12"><button class="load-more--btn">Show me more</button></div></div></div>'}));
+
+
 
 })
 

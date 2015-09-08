@@ -19,13 +19,13 @@
 define('DB_NAME', 'leandrikers');
 
 /** MySQL database username */
-define('DB_USER', 'root_2');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'root_2');
+define('DB_PASSWORD', 'root');
 
 /** MySQL hostname */
-define('DB_HOST', '192.168.2.174');
+define('DB_HOST', 'localhost');
 
 /** Database Charset to use in creating database tables. */
 define('DB_CHARSET', 'utf8mb4');

@@ -1,31 +1,27 @@
+<?php get_header(); ?>
+
 <?php global $post; ?>
 
-<?php
-
-	$paged = 1;
-	if ( get_query_var( 'paged' ) ) { $paged = get_query_var( 'paged' ); }
-	if ( get_query_var( 'page' ) ) { $paged = get_query_var( 'page' ); }
-	$paged = intval( $paged );
-
-	$category = get_post_meta($post->ID,'_ppm_category_select',true);
-
-	$query_args = array(
-		'post_type' => 'post',
-		'paged' => $paged,
-		'cat' => $category[0]
-	);
-
-	$query =  new WP_Query($query_args);
-
-?>
+<section class="portfolio_page">
+	<div class="row">
+		<div class="col-xs-12 col-md-8 col-md-offset-2">
+			<header class="page_header">
+				<h1 class="page_header--title">
+					<?php _e("Search Results for","bonestheme"); ?>:</span> <?php echo esc_attr(get_search_query()); ?>
+				</h1>
+			</header>
+			
+		</div>
+	</div>
+</section>
 
 <section class="portfolio_stories">
 	<div class="container">
 		
 
-		<?php if ( $query->have_posts() ) : $count = 0; ?>
+		<?php if ( have_posts() ) : $count = 0; ?>
 			<div class="stories_articles js-infinite-cont">
-				<?php while ( $query->have_posts() ) : $query->the_post(); $count++;?>
+				<?php while ( have_posts() ) : the_post(); $count++;?>
 				  	<article id="post-<?php the_ID(); ?>" <?php post_class('articles_article js-infinite'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 				    	<?php get_template_part('/templates/content','article'); ?>
 					</article>
@@ -43,3 +39,6 @@
 
 	</div>
 </section>
+
+
+<?php get_footer(); ?>
