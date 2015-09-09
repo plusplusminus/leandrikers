@@ -149,7 +149,7 @@
 	.navbar-form {
 		text-align: center;
 		@media(min-width:@screen-md-min) {
-			border-left: 1px solid @brand-light;
+			// border-left: 1px solid @brand-light;
 			margin-top: 10px;
 			margin-bottom: 10px;
 			text-align: left;
@@ -159,9 +159,10 @@
 			background: none;
 			color: @brand-light;
 			box-shadow: none;
-			font-family: "Georgia";
+			font-family: @font-family-base;
 			font-weight: 300;
 			font-style: italic;
+			.letter-spacing();
 			@media(min-width:@screen-md-min) {
 				max-width: 150px;
 			}
@@ -178,29 +179,23 @@
 	}
 	.navbar-nav{
 		.menu-item{
-			font-family: "Georgia";
+			font-family: @font-family-base;
 			font-weight: 300;
 			text-align: center;
 			font-style: italic;
-			// .letter-spacing();
 			margin-top: 10px;
 			margin-bottom: 10px;
+			.letter-spacing();
 			> a{
 				color: @brand-light;
-				padding-top: 10px;
-				padding-bottom: 10px;
-				&:hover,&:focus {
+				padding: 8px 20px 8px 0;
+				.transition(0.5s);
+				&:hover,
+				&:focus {
 					background: transparent;
 					color: #fff;
-					span {
-						padding-bottom: 5px;
-						border-bottom: 1px solid #fff;
-					}
 				}
 			}
-
-			
-
 			&.current-menu-item.active span{
 				padding-bottom: 5px;
 				border-bottom: 1px solid #fff;
