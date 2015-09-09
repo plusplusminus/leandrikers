@@ -22,7 +22,8 @@
 		$query_args = array(
 			'post_type' => 'post',
 			'paged' => $paged,
-			'cat' => $category[0],'posts_per_page'=>2
+			'cat' => $category[0],
+			'posts_per_page'=>2
 		);
 
 		query_posts($query_args);
