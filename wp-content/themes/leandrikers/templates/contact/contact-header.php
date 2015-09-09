@@ -1,5 +1,5 @@
 <section class="contact_page">
-	<header class="page_header">
+	<header class="page_head">
 		<h1 class="page_header--title"><?php the_title(); ?></h1>
 	</header>
 	<div class="page_content">
