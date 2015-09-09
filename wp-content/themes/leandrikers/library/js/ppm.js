@@ -89,6 +89,10 @@ jQuery(window).load(function() {
     } 
 });
 
+jQuery(document).ajaxComplete(function(){
+    resize();
+});
+
 equalheight = function(container){
 
     var currentTallest = 0,
