@@ -5,7 +5,7 @@
 <section class="portfolio_page">
 	<div class="row">
 		<div class="col-xs-12 col-md-8 col-md-offset-2">
-			<header class="page_header">
+			<header class="page_head">
 				<?php if (is_category()) { ?>
 					<h1 class="page_header--title">
 						<?php single_cat_title(); ?>
