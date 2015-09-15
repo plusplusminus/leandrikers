@@ -5,7 +5,7 @@
 		[
 			[
 				"pad",
-				"padding-top"
+				"padding"
 			],
 			[
 				"Mar",
@@ -577,6 +577,7 @@
 		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/styleguide",
 		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates",
 		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/about",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/contact",
 		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/features",
 		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/home",
 		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/instagram",
@@ -584,6 +585,18 @@
 	],
 	"file_history":
 	[
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/contact/contact-header.php",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/styleguide/pages.less",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/styleguide/navigation.less",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/style.less",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/styleguide/layout.less",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/theme.less",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/archive.php",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/template-portfolio.php",
+		"/Users/iaanvn/sites/isissoftware/wp-content/themes/isis/templates/top-header.php",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/template-styleguide.php",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/page.php",
+		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/vendors/bootstrap/less/type.less",
 		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/functions.php",
 		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/js/ppm.js",
 		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/home/section-slider.php",
@@ -591,9 +604,7 @@
 		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/about/about-content.php",
 		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/features/features-features.php",
 		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/styleguide/features.less",
-		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/styleguide/layout.less",
 		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/styleguide/footer.less",
-		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less/styleguide/navigation.less",
 		"/Users/iaanvn/Sites/leandrikers/wp-config.php",
 		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/tempalte-home.php",
 		"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/templates/features.php",
@@ -701,17 +712,7 @@
 		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/custom-variables.less",
 		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/css/style.css",
 		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/functions.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/directory/archive.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/template-badges.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/single/single.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/articles.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/global/gravityforms.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/directory/listing.less",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/single/_single-meta.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/directory/_listing-content.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/templates/directory/_listing-action.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/includes/tpb-nav.php",
-		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/plussed/library/navwalker.php"
+		"/Users/iaanvn/Sites/theprettyblog/wp-content/themes/theprettyblog/library/less/directory/archive.less"
 	],
 	"find":
 	{
@@ -722,6 +723,10 @@
 		"height": 203.0,
 		"where_history":
 		[
+			"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers",
+			"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library",
+			"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers",
+			"/Users/iaanvn/Sites/leandrikers/wp-content/themes/leandrikers/library/less",
 			"/Users/iaanvn/Sites/htwe/wp-content/themes/htwe",
 			"/Users/iaanvn/Sites/KVD/Prototype/templates",
 			"/Users/iaanvn/Sites/KVD/Prototype/templates/press.liquid",
@@ -845,11 +850,7 @@
 			"/Users/iaanvn/Sites/dev/retutpro/wp-content/themes/bootstrap",
 			"/Users/iaanvn/Sites/dev/retutpro/wp-content/themes/",
 			"/Users/iaanvn/Sites/dev/retutpro/wp-content/themes/bootstrap",
-			"",
-			"/Users/admin/Documents/Sites/ppmv3/wp-content/themes/canvas",
-			"/Users/admin/Documents/Sites/dev/tpb/wp-content/plugins/woocommerce-gateway-payfast",
-			"/Users/admin/Documents/Sites/dev/tpb/wp-content/plugins/woocommerce",
-			"/Users/admin/Documents/Sites/dev/nadiab/wp-content/themes/nadiab"
+			""
 		]
 	},
 	"find_state":
@@ -857,6 +858,14 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			".page-head",
+			"page-header",
+			"48px 0 24px",
+			"portfolio_page",
+			"max-width: 65%",
+			"border-bottom: 1px solid",
+			"border-bottom: 1px solid @gray-lighter",
+			"portfolio_page",
 			"navbar-br",
 			"55,68,86,1",
 			"80%",
@@ -976,15 +985,7 @@
 			"translate3d(-50%, -50%, 0)",
 			"listing pro",
 			".listing_action--list",
-			"list",
-			"action",
-			"content",
-			"options",
-			"social",
-			"@gray-lighter",
-			"gray-lighter",
-			"options_i",
-			".icon"
+			"list"
 		],
 		"highlight": true,
 		"in_selection": false,
