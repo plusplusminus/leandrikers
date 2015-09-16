@@ -3,6 +3,7 @@
 		array(
 			'after' => '<div class="clearfix"></div></div>',
 			'per_row' => 5,
+			'size' => 165,
 			'title' => 'I am happy to have been featured',
 			'before_title' => '<div class="section_instagram--heading"><h4 class="section_instagram--title"><span>',
 			'after_title' => '</span><h4></div>'
