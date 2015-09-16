@@ -22,6 +22,10 @@ jQuery(document).ready(function(){
         next:       '.prev-link > a'
     });
 
+    ias.on('rendered', function(items) {
+        resize();
+    })
+
     ias.extension(new IASPagingExtension());
     ias.extension(new IASHistoryExtension({ prev: '.prev a' }));
     ias.extension(new IASTriggerExtension({ html: '<div class="clearfix"></div><div class="ias-trigger ias-trigger-next" style="text-align: center; cursor: pointer;"><div class="row"><div class="load-more col-xs-12"><button class="load-more--btn">Show me more</button></div></div></div>'}));
@@ -53,12 +57,14 @@ function resize() {
             var div = jQuery(this);
             var image = div.find('img');
             div.css('background-image','url('+image.attr('src')+')');
+            console.log("rewrwewedasds");
         })
     } else {
         jQuery('.article_image').each(function(){
             var div = jQuery(this);
             div.css('background-image','none');
             div.css('height','auto');
+            console.log("rewrwssewe");
         })
         
     }
@@ -89,9 +95,6 @@ jQuery(window).load(function() {
     } 
 });
 
-jQuery(document).ajaxComplete(function(){
-    resize();
-});
 
 equalheight = function(container){
 
