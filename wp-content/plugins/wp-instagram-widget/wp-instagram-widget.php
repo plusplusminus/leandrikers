@@ -3,7 +3,7 @@
 Plugin Name: WP Instagram Widget
 Plugin URI: https://github.com/scottsweb/wp-instagram-widget
 Description: A WordPress widget for showing your latest Instagram photos.
-Version: 1.6
+Version: 1.8
 Author: Scott Evans
 Author URI: http://scott.ee
 Text Domain: wpiw
@@ -62,11 +62,12 @@ class null_instagram_widget extends WP_Widget {
 		$title = empty( $instance['title'] ) ? '' : apply_filters( 'widget_title', $instance['title'] );
 		$username = empty( $instance['username'] ) ? '' : $instance['username'];
 		$limit = empty( $instance['number'] ) ? 9 : $instance['number'];
+		$size = empty( $instance['size'] ) ? 'large' : $instance['size'];
 		$target = empty( $instance['target'] ) ? '_self' : $instance['target'];
 		$link = empty( $instance['link'] ) ? '' : $instance['link'];
 
 		echo $before_widget;
-		if ( !empty( $title ) ) { echo $before_title . $title . $after_title; };
+		if ( ! empty( $title ) ) { echo $before_title . $title . $after_title; };
 
 		do_action( 'wpiw_before_widget', $instance );
 
@@ -89,17 +90,21 @@ class null_instagram_widget extends WP_Widget {
 				$aclass = esc_attr( apply_filters( 'wpiw_a_class', '' ) );
 				$imgclass = esc_attr( apply_filters( 'wpiw_img_class', '' ) );
 
-				?><div class="instagram_feed"><?php
+				?><ul class="instagram-pics instagram-size-<?php echo esc_attr( $size ); ?>"><?php
 				foreach ( $media_array as $item ) {
 					// copy the else line into a new file (parts/wp-instagram-widget.php) within your theme and customise accordingly
-					if ( locate_template( 'templates/instagram/wp-instagram-widget.php' ) != '' ) {
-						include locate_template( 'templates/instagram/wp-instagram-widget.php' );
+					if ( locate_template( 'parts/wp-instagram-widget.php' ) != '' ) {
+						include locate_template( 'parts/wp-instagram-widget.php' );
 					} else {
-						echo '<li class="'. $liclass .'"><a href="'. esc_url( $item['link'] ) .'" target="'. esc_attr( $target ) .'"  class="'. $aclass .'"><img src="'. esc_url( $item['thumbnail'] ) .'"  alt="'. esc_attr( $item['description'] ) .'" title="'. esc_attr( $item['description'] ).'"  class="'. $imgclass .'"/></a></li>';
+						echo '<li class="'. $liclass .'"><a href="'. esc_url( $item['link'] ) .'" target="'. esc_attr( $target ) .'"  class="'. $aclass .'"><img src="'. esc_url( $item[$size] ) .'"  alt="'. esc_attr( $item['description'] ) .'" title="'. esc_attr( $item['description'] ).'"  class="'. $imgclass .'"/></a></li>';
 					}
 				}
-				?></div><?php
+				?></ul><?php
 			}
+		}
+
+		if ( $link != '' ) {
+			?><p class="clear"><a href="//instagram.com/<?php echo esc_attr( trim( $username ) ); ?>" rel="me" target="<?php echo esc_attr( $target ); ?>"><?php echo $link; ?></a></p><?php
 		}
 
 		do_action( 'wpiw_after_widget', $instance );
@@ -108,16 +113,24 @@ class null_instagram_widget extends WP_Widget {
 	}
 
 	function form( $instance ) {
-		$instance = wp_parse_args( (array) $instance, array( 'title' => __( 'Instagram', 'wpiw' ), 'username' => '', 'link' => __( 'Follow Us', 'wpiw' ), 'number' => 9, 'target' => '_self' ) );
+		$instance = wp_parse_args( (array) $instance, array( 'title' => __( 'Instagram', 'wpiw' ), 'username' => '', 'size' => 'large', 'link' => __( 'Follow Us', 'wpiw' ), 'number' => 9, 'target' => '_self' ) );
 		$title = esc_attr( $instance['title'] );
 		$username = esc_attr( $instance['username'] );
 		$number = absint( $instance['number'] );
+		$size = esc_attr( $instance['size'] );
 		$target = esc_attr( $instance['target'] );
 		$link = esc_attr( $instance['link'] );
 		?>
 		<p><label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title', 'wpiw' ); ?>: <input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo $title; ?>" /></label></p>
 		<p><label for="<?php echo $this->get_field_id( 'username' ); ?>"><?php _e( 'Username', 'wpiw' ); ?>: <input class="widefat" id="<?php echo $this->get_field_id( 'username' ); ?>" name="<?php echo $this->get_field_name( 'username' ); ?>" type="text" value="<?php echo $username; ?>" /></label></p>
 		<p><label for="<?php echo $this->get_field_id( 'number' ); ?>"><?php _e( 'Number of photos', 'wpiw' ); ?>: <input class="widefat" id="<?php echo $this->get_field_id( 'number' ); ?>" name="<?php echo $this->get_field_name( 'number' ); ?>" type="text" value="<?php echo $number; ?>" /></label></p>
+		<p><label for="<?php echo $this->get_field_id( 'size' ); ?>"><?php _e( 'Photo size', 'wpiw' ); ?>:</label>
+			<select id="<?php echo $this->get_field_id( 'size' ); ?>" name="<?php echo $this->get_field_name( 'size' ); ?>" class="widefat">
+				<option value="thumbnail" <?php selected( 'thumbnail', $size ) ?>><?php _e( 'Thumbnail', 'wpiw' ); ?></option>
+				<option value="small" <?php selected( 'small', $size ) ?>><?php _e( 'Small', 'wpiw' ); ?></option>
+				<option value="large" <?php selected( 'large', $size ) ?>><?php _e( 'Large', 'wpiw' ); ?></option>
+			</select>
+		</p>
 		<p><label for="<?php echo $this->get_field_id( 'target' ); ?>"><?php _e( 'Open links in', 'wpiw' ); ?>:</label>
 			<select id="<?php echo $this->get_field_id( 'target' ); ?>" name="<?php echo $this->get_field_name( 'target' ); ?>" class="widefat">
 				<option value="_self" <?php selected( '_self', $target ) ?>><?php _e( 'Current window (_self)', 'wpiw' ); ?></option>
@@ -133,7 +146,8 @@ class null_instagram_widget extends WP_Widget {
 		$instance = $old_instance;
 		$instance['title'] = strip_tags( $new_instance['title'] );
 		$instance['username'] = trim( strip_tags( $new_instance['username'] ) );
-		$instance['number'] = !absint( $new_instance['number'] ) ? 9 : $new_instance['number'];
+		$instance['number'] = ! absint( $new_instance['number'] ) ? 9 : $new_instance['number'];
+		$instance['size'] = ( ( $new_instance['size'] == 'thumbnail' || $new_instance['size'] == 'large' || $new_instance['size'] == 'small' ) ? $new_instance['size'] : 'thumbnail' );
 		$instance['target'] = ( ( $new_instance['target'] == '_self' || $new_instance['target'] == '_blank' ) ? $new_instance['target'] : '_self' );
 		$instance['link'] = strip_tags( $new_instance['link'] );
 		return $instance;
@@ -143,8 +157,9 @@ class null_instagram_widget extends WP_Widget {
 	function scrape_instagram( $username, $slice = 9 ) {
 
 		$username = strtolower( $username );
+		$username = str_replace( '@', '', $username );
 
-		if ( false === ( $instagram = get_transient( 'instagram-media-new-'.sanitize_title_with_dashes( $username ) ) ) ) {
+		if ( false === ( $instagram = get_transient( 'instagram-media-5-'.sanitize_title_with_dashes( $username ) ) ) ) {
 
 			$remote = wp_remote_get( 'http://instagram.com/'.trim( $username ) );
 
@@ -158,79 +173,57 @@ class null_instagram_widget extends WP_Widget {
 			$insta_json = explode( ';</script>', $shards[1] );
 			$insta_array = json_decode( $insta_json[0], TRUE );
 
-			if ( !$insta_array )
+			if ( ! $insta_array )
 				return new WP_Error( 'bad_json', __( 'Instagram has returned invalid data.', 'wpiw' ) );
 
-			// old style
-			if ( isset( $insta_array['entry_data']['UserProfile'][0]['userMedia'] ) ) {
-				$images = $insta_array['entry_data']['UserProfile'][0]['userMedia'];
-				$type = 'old';
-			// new style
-			} else if ( isset( $insta_array['entry_data']['ProfilePage'][0]['user']['media']['nodes'] ) ) {
+			if ( isset( $insta_array['entry_data']['ProfilePage'][0]['user']['media']['nodes'] ) ) {
 				$images = $insta_array['entry_data']['ProfilePage'][0]['user']['media']['nodes'];
-				$type = 'new';
 			} else {
 				return new WP_Error( 'bad_json_2', __( 'Instagram has returned invalid data.', 'wpiw' ) );
 			}
 
-			if ( !is_array( $images ) )
+			if ( ! is_array( $images ) )
 				return new WP_Error( 'bad_array', __( 'Instagram has returned invalid data.', 'wpiw' ) );
 
 			$instagram = array();
 
-			switch ( $type ) {
-				case 'old':
-					foreach ( $images as $image ) {
+			foreach ( $images as $image ) {
 
-						if ( $image['user']['username'] == $username ) {
+				$image['thumbnail_src'] = preg_replace( "/^https:/i", "", $image['thumbnail_src'] );
+				$image['thumbnail'] = str_replace( 's640x640', 's160x160', $image['thumbnail_src'] );
+				$image['small'] = str_replace( 's640x640', 's320x320', $image['thumbnail_src'] );
+				$image['large'] = $image['thumbnail_src'];
+				$image['display_src'] = preg_replace( "/^https:/i", "", $image['display_src'] );
 
-							$image['link']						  = preg_replace( "/^http:/i", "", $image['link'] );
-							$image['images']['thumbnail']		   = preg_replace( "/^http:/i", "", $image['images']['thumbnail'] );
-							$image['images']['standard_resolution'] = preg_replace( "/^http:/i", "", $image['images']['standard_resolution'] );
-							$image['images']['low_resolution']	  = preg_replace( "/^http:/i", "", $image['images']['low_resolution'] );
+				if ( $image['is_video'] == true ) {
+					$type = 'video';
+				} else {
+					$type = 'image';
+				}
 
-							$instagram[] = array(
-								'description'   => $image['caption']['text'],
-								'link'		  	=> $image['link'],
-								'time'		  	=> $image['created_time'],
-								'comments'	  	=> $image['comments']['count'],
-								'likes'		 	=> $image['likes']['count'],
-								'thumbnail'	 	=> $image['images']['thumbnail'],
-								'large'		 	=> $image['images']['standard_resolution'],
-								'small'		 	=> $image['images']['low_resolution'],
-								'type'		  	=> $image['type']
-							);
-						}
-					}
-				break;
-				default:
-					foreach ( $images as $image ) {
+				$caption = __( 'Instagram Image', 'wpiw' );
+				if ( ! empty( $image['caption'] ) ) {
+					$caption = $image['caption'];
+				}
 
-						$image['display_src'] = preg_replace( "/^http:/i", "", $image['display_src'] );
-
-						if ( $image['is_video']  == true ) {
-							$type = 'video';
-						} else {
-							$type = 'image';
-						}
-
-						$instagram[] = array(
-							'description'   => __( 'Instagram Image', 'wpiw' ),
-							'link'		  	=> '//instagram.com/p/' . $image['code'],
-							'time'		  	=> $image['date'],
-							'comments'	  	=> $image['comments']['count'],
-							'likes'		 	=> $image['likes']['count'],
-							'thumbnail'	 	=> $image['display_src'],
-							'type'		  	=> $type
-						);
-					}
-				break;
+				$instagram[] = array(
+					'description'   => $caption,
+					'link'		  	=> '//instagram.com/p/' . $image['code'],
+					'time'		  	=> $image['date'],
+					'comments'	  	=> $image['comments']['count'],
+					'likes'		 	=> $image['likes']['count'],
+					'thumbnail'	 	=> $image['thumbnail'],
+					'small'			=> $image['small'],
+					'large'			=> $image['large'],
+					'original'		=> $image['display_src'],
+					'type'		  	=> $type
+				);
 			}
 
 			// do not set an empty transient - should help catch private or empty accounts
 			if ( ! empty( $instagram ) ) {
 				$instagram = base64_encode( serialize( $instagram ) );
-				set_transient( 'instagram-media-new-'.sanitize_title_with_dashes( $username ), $instagram, apply_filters( 'null_instagram_cache_time', HOUR_IN_SECONDS*2 ) );
+				set_transient( 'instagram-media-5-'.sanitize_title_with_dashes( $username ), $instagram, apply_filters( 'null_instagram_cache_time', HOUR_IN_SECONDS*2 ) );
 			}
 		}
 

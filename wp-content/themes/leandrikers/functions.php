@@ -246,12 +246,24 @@ function campaign_register_metabox() {
         'id'            => $prefix . 'home_metabox',
         'title'         => __( 'Home Page Meta', 'cmb2' ),
         'object_types'  => array( 'page' ), // Post type
-        'show_on' => array('key'=>'template','value'=>'template-home.php'),
+        'show_on' => array('key'=>'page-template','value'=>'template-home.php'),
         'context'       => 'normal',
         'priority'      => 'high',
         'show_names'    => true, // Show field names on the left
         // 'cmb_styles' => false, // false to disable the CMB stylesheet
         // 'closed'     => true, // true to keep the metabox closed by default
+    ) );
+
+    $home_meta->add_field( array(
+        'name'    => __( 'Slider Posts', 'cmb2' ),
+        'desc'    => __( 'Drag posts from the left column to the right column to attach them to the home page slider.<br />You may rearrange the order of the slides in the right column by dragging and dropping.', 'cmb2' ),
+        'id'      => 'attached_cmb2_attached_posts',
+        'type'    => 'custom_attached_posts',
+        'options' => array(
+            'show_thumbnails' => true, // Show thumbnails on the left
+            'filter_boxes'    => true, // Show a text box for filtering the results
+            'query_args'      => array( 'posts_per_page' => 10 ), // override the get_posts args
+        )
     ) );
 
 

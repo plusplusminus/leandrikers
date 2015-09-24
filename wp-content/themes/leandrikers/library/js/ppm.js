@@ -31,7 +31,9 @@ jQuery(document).ready(function(){
     ias.extension(new IASTriggerExtension({ html: '<div class="clearfix"></div><div class="ias-trigger ias-trigger-next" style="text-align: center; cursor: pointer;"><div class="row"><div class="load-more col-xs-12"><button class="load-more--btn">Show me more</button></div></div></div>'}));
 
 
-
+    jQuery('.dropdown').hover(function(){ 
+      jQuery('.dropdown-toggle', this).trigger('click'); 
+    });
 })
 
 function initHeader() {
@@ -76,6 +78,8 @@ jQuery(window).load(function() {
     jQuery('.owl-carousel').owlCarousel({
         items:1,
         nav:true,
+        autoplay:true,
+        loop:true,
         navText: [
           "<i class='fa fa-angle-left fa-3x'></i>",
           "<i class='fa fa-angle-right fa-3x'></i>"

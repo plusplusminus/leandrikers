@@ -1,9 +1,11 @@
 <?php 
 
+$attached = get_post_meta( get_the_ID(), 'attached_cmb2_attached_posts', true );
+
 $query_args = array(
 	'post_type' => 'post',
-	'paged' => $paged,
-	'tag' => 'home-featured'
+	'post__in' => $attached,
+	'orderby' => 'post__in'
 );
 
 $slider = new WP_Query($query_args);
